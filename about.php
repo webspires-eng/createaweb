@@ -168,7 +168,7 @@
                                     <div class="btn-content">
                                         <div class="simple-btn-black gt_fade_anim" data-delay=".5" data-fade-from="top"
                                             data-ease="bounce">
-                                            <a href="about-1"
+                                            <a href="about"
                                             class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column ">
                                             <span class="gt-btn-circle-text-2">know more</span>
                                             <i class="gt-btn-circle-dot" style="top: 330.247px; left: 153.031px;"></i>
@@ -1711,4 +1711,5 @@
             <!-- Brand Section End -->
 
             <?php include 'include/footer.html'; ?>
+
 

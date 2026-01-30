@@ -64,7 +64,7 @@
                                     <div class="move-btn gt_fade_anim" data-delay=".5" data-fade-from="top"
                                         data-ease="bounce">
                                         <div class="gt-hover-btn-wrapper-two">
-                                            <a href="project-1"
+                                            <a href="project"
                                                 class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
                                                 <span class="gt-btn-circle-text-2">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="46" height="46"
@@ -87,4 +87,5 @@
             <!-- CTA Section End -->
 
              <?php include 'include/footer.html'; ?>
+
 

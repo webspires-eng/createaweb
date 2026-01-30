@@ -27,7 +27,7 @@
                                     <p>
                                         Provide data-driven stratege companies identifies opportunities, reduce risk and achieve long term our growth.
                                     </p>
-                                    <a href="about-1" class="arrow-icon">
+                                    <a href="about" class="arrow-icon">
                                         <i class="fa-solid fa-arrow-up-right"></i>
                                     </a>
                                 </div>
@@ -50,7 +50,7 @@
                                Driven By Passion, Guided By Purpose <br> — We Design Brands That People Truly <br> Remembered For Us.
                             </h2>
                             <div class="simple-btn-white gt_fade_anim mt-4" data-delay=".5">
-                                <a href="about-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                <a href="about" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                     <span class="gt-btn-circle-text-2">Learn more</span>
                                     <i class="gt-btn-circle-dot bg-2"></i>
                                 </a>
@@ -69,7 +69,7 @@
                                     <div class="bg-image">
                                         <img src="assets/img/home-5/work-process-img.jpg" alt="img">
                                     </div>
-                                    <a href="about-1" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                    <a href="about" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
@@ -84,7 +84,7 @@
                                     <div class="bg-image">
                                         <img src="assets/img/home-5/work-process-img-2.jpg" alt="img">
                                     </div>
-                                    <a href="about-1" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                    <a href="about" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
@@ -99,7 +99,7 @@
                                     <div class="bg-image">
                                         <img src="assets/img/home-5/work-process-img-3.jpg" alt="img">
                                     </div>
-                                    <a href="about-1" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                    <a href="about" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -116,7 +116,7 @@
                                 </h2>
                             </div>
                               <div class="simple-btn-white gt_fade_anim" data-delay=".5">
-                                <a href="project-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                <a href="project" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                     <span class="gt-btn-circle-text-2">View All Projects</span>
                                     <i class="gt-btn-circle-dot bg-2"></i>
                                 </a>
@@ -245,7 +245,7 @@
                                                 </p>
                                             </div>
                                            <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -289,7 +289,7 @@
                                                 </p>
                                             </div>
                                             <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -333,7 +333,7 @@
                                                 </p>
                                             </div>
                                             <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -377,7 +377,7 @@
                                                 </p>
                                             </div>
                                             <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -869,4 +869,5 @@
                 
                  <!-- Footer Section Start -->
                 <?php include 'include/footer.html'; ?>
+
 

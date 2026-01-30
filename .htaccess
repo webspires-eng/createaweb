@@ -4,12 +4,13 @@ RewriteEngine On
 # Default landing page
 DirectoryIndex index.php
 
-# Redirect to HTTPS
-RewriteCond %{HTTP:X-Forwarded-Proto} !https
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+# # Redirect to HTTPS (Skipped on localhost)
+# RewriteCond %{HTTP_HOST} !^localhost$ [NC]
+# RewriteCond %{HTTP:X-Forwarded-Proto} !https
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
 
 # Handle 404 Error
-ErrorDocument 404 /404
+ErrorDocument 404 /createaweb/404
 
 # Remove .php extension
 RewriteCond %{REQUEST_FILENAME} !-d
