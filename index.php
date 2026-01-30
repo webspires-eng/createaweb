@@ -1,410 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-    <!--<< Header Area >>-->
-    <head>
-    <!-- ========== Meta Tags ========== -->
-     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="author" content="Gramentheme">
-    <meta name="description" content="Createaweb- Creative Agency HTML Template">
-    <!-- ======== Page title ============ -->
-    <title>Createaweb- Creative Agency HTML Template</title>
-    <!--<< Favcion >>-->
-    <link rel="shortcut icon" href="assets/img/favicon.svg">
-    <!--<< Bootstrap min.css >>-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <!--<< All Min Css >>-->
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <!--<< Animate.css >>-->
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <!--<< Magnific Popup.css >>-->
-    <link rel="stylesheet" href="assets/css/magnific-popup.css">
-    <!--<< MeanMenu.css >>-->
-    <link rel="stylesheet" href="assets/css/meanmenu.css">
-    <!--<< Swiper Bundle.css >>-->
-    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <!--<< Nice Select.css >>-->
-    <link rel="stylesheet" href="assets/css/nice-select.css">
-    <!--<< Main.css >>-->
-    <link rel="stylesheet" href="assets/css/main.css">
-</head>
-     <body class="dark-bg-4">
+<?php include 'include/header.html'; ?>
 
-         <!-- loading-area-start -->
-    <div class="loader-wrap">
-        <svg viewBox="0 0 1000 1000" preserveAspectRatio="none">
-            <path id="svg" d="M0,1005S175,995,500,995s500,5,500,5V0H0Z"></path>
-        </svg>
-        <div class="loader-wrap-heading">
-            <div class="load-text">
-                <span>P</span>
-                <span>I</span>
-                <span>X</span>
-                <span>E</span>
-                <span>L</span>
-                <span>R</span>
-            </div>
-        </div>
-    </div>
-    <!-- loading-area-end -->
-
-    <!-- GT Back To Top Start -->
-    <button id="gt-back-top" class="gt-back-to-top">
-        <i class="fa-solid fa-chevrons-up"></i>
-    </button>
-
-    <!-- GT MouseCursor Start -->
-    <div class="mouseCursor cursor-outer"></div>
-    <div class="mouseCursor cursor-inner"></div>
-
-
-        <!-- Offcanvas Area Start -->
-    <div class="fix-area">
-        <div class="offcanvas__info">
-            <div class="offcanvas__wrapper">
-                <div class="offcanvas__content">
-                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
-                        <div class="offcanvas__logo">
-                            <a href="index.html">
-                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
-                            </a>
-                        </div>
-                        <div class="offcanvas__close">
-                            <button>
-                                <i class="fas fa-times"></i>
-                            </button>
-                        </div>
-                    </div>
-                    <p class="text d-none d-xl-block">
-                        Nullam dignissim, ante scelerisque the is euismod fermentum odio sem semper the is erat, a
-                        feugiat leo urna eget eros. Duis Aenean a imperdiet risus.
-                    </p>
-                    <div class="mobile-menu fix mb-3"></div>
-                    <div class="offcanvas__contact">
-                        <h4 class="d-none d-xl-block">Contact Info</h4>
-                        <ul class="d-none d-xl-block">
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon">
-                                    <i class="fal fa-map-marker-alt"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Main Street, Melbourne, Australia</a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="fal fa-envelope"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a href="mailto:info@example.com"><span
-                                            class="mailto:info@example.com">info@example.com</span></a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="fal fa-clock"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Mod-friday, 09am -05pm</a>
-                                </div>
-                            </li>
-                            <li class="d-flex align-items-center">
-                                <div class="offcanvas__contact-icon mr-15">
-                                    <i class="far fa-phone"></i>
-                                </div>
-                                <div class="offcanvas__contact-text">
-                                    <a href="tel:+11002345909">+11002345909</a>
-                                </div>
-                            </li>
-                        </ul>
-                        
-                        <div class="social-icon d-flex align-items-center">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="offcanvas__overlay"></div>
-
-    <!-- Header Section Start -->
-    <header class="header-section">
-        <div id="header-sticky" class="header-4">
-            <div class="container-fluid">
-                <div class="mega-menu-wrapper">
-                    <div class="header-main">
-                        <div class="logo">
-                            <a href="index.html" class="header-logo-2">
-                                <img src="assets/img/logo/black-logo.svg" alt="logo-img">
-                            </a>
-                        </div>
-
-                        <div class="header-left">
-                            <div class="mean__menu-wrapper">
-                                <div class="main-menu">
-                                    <nav id="mobile-menu">
-                                        <ul>
-                                            <li class="has-dropdown active menu-thumb">
-                                                    <a href="javascript:void(0)">
-                                                        Home 
-                                                        <i class="fa-solid fa-chevron-down"></i>
-                                                    </a>
-                                                    <ul class="submenu has-homemenu">
-                                                        <li>
-                                                            <div class="homemenu-items">
-                                                                <div class="row row-cols-xl-4 row-cols-md-2 row-cols-2">
-                                                                    <div class="col homemenu">
-                                                                        <div class="homemenu-thumb">
-                                                                            <img src="assets/img/header/home-01.jpg" alt="img">
-                                                                            <div class="demo-button">
-                                                                                <a href="index.html" class="theme-btn">
-                                                                                    Light Mode
-                                                                                </a>
-                                                                                <a href="index-dark.html" class="theme-btn">
-                                                                                    Dark Mode
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="homemenu-content text-center">
-                                                                            <h4 class="homemenu-title">
-                                                                                <a href="index.html">
-                                                                                  Digital Marketing
-                                                                                </a>
-                                                                            </h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col homemenu">
-                                                                        <div class="homemenu-thumb">
-                                                                            <img src="assets/img/header/home-02.jpg" alt="img">
-                                                                            <div class="demo-button">
-                                                                                <a href="index-2.html" class="theme-btn">
-                                                                                    Light Mode
-                                                                                </a>
-                                                                                <a href="index-dark-2.html" class="theme-btn">
-                                                                                    Dark Mode
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="homemenu-content text-center">
-                                                                            <h4 class="homemenu-title">
-                                                                                <a href="index-2.html">
-                                                                                   Creative Agency
-                                                                                </a>
-                                                                            </h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col homemenu">
-                                                                        <div class="homemenu-thumb">
-                                                                            <img src="assets/img/header/home-03.jpg" alt="img">
-                                                                            <div class="demo-button">
-                                                                                <a href="index-3.html" class="theme-btn">
-                                                                                    Light Mode
-                                                                                </a>
-                                                                                <a href="index-dark-3.html" class="theme-btn">
-                                                                                    Dark Mode
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="homemenu-content text-center">
-                                                                            <h4 class="homemenu-title">
-                                                                                <a href="index-3.html">
-                                                                              Startup Agency
-                                                                                </a>
-                                                                            </h4>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="col homemenu">
-                                                                        <div class="homemenu-thumb">
-                                                                            <img src="assets/img/header/home-04.jpg" alt="img">
-                                                                            <div class="demo-button">
-                                                                                <a href="index-4.html" class="theme-btn">
-                                                                                    Light Mode
-                                                                                </a>
-                                                                                <a href="index-dark-4.html" class="theme-btn">
-                                                                                    Dark Mode
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="homemenu-content text-center">
-                                                                            <h4 class="homemenu-title">
-                                                                                <a href="index-4.html">
-                                                                              Design Agency 
-                                                                                </a>
-                                                                            </h4>
-                                                                        </div>
-                                                                    </div>
-                                                                     <div class="col homemenu">
-                                                                        <div class="homemenu-thumb">
-                                                                            <img src="assets/img/header/home-05.jpg" alt="img">
-                                                                            <div class="demo-button">
-                                                                                <a href="index-5.html" class="theme-btn">
-                                                                                    Light Mode
-                                                                                </a>
-                                                                                <a href="index-dark-5.html" class="theme-btn">
-                                                                                    Dark Mode
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="homemenu-content text-center">
-                                                                            <h4 class="homemenu-title">
-                                                                                <a href="index-5.html">
-                                                                                    Marketing Agency
-                                                                                </a>
-                                                                            </h4>
-                                                                        </div>
-                                                                    </div>
-                                                                     <div class="col homemenu">
-                                                                        <div class="homemenu-thumb">
-                                                                            <img src="assets/img/header/home-06.jpg" alt="img">
-                                                                            <div class="demo-button">
-                                                                                <a href="index-6.html" class="theme-btn">
-                                                                                    Light Mode
-                                                                                </a>
-                                                                                <a href="index-dark-6.html" class="theme-btn">
-                                                                                    Dark Mode
-                                                                                </a>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="homemenu-content text-center">
-                                                                            <h4 class="homemenu-title">
-                                                                                <a href="index-6.html">
-                                                                                    Personal Portfolio
-                                                                                </a>
-                                                                            </h4>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                            </li>
-                                            <li class="has-dropdown active d-xl-none">
-                                                <a href="javascript:void(0)" class="border-none">
-                                                    Home
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="index.html">Digital Marketing Light</a></li>
-                                                    <li><a href="index-dark.html">Digital Marketing Dark</a></li>
-                                                    <li><a href="index-2.html">Creative Agency Light</a></li>
-                                                    <li><a href="index-dark-2.html">Creative Agency Dark</a></li>
-                                                    <li><a href="index-3.html">Startup Agency Light</a></li>
-                                                    <li><a href="index-dark-3.html">Startup Agency Dark</a></li>
-                                                    <li><a href="index-4.html">Design Agency Light </a></li>
-                                                    <li><a href="index-dark-4.html">Design Agency Dark </a></li>
-                                                    <li><a href="index-5.html">Marketing Agency Light</a></li>
-                                                    <li><a href="index-dark-5.html">Marketing Agency Dark</a></li>
-                                                    <li><a href="index-6.html">Personal Portfolio Light</a></li>
-                                                    <li><a href="index-dark-6.html">Personal Portfolio Dark</a></li>
-                                                </ul>
-                                            </li>
-                                           
-                                            <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
-                                                    about us <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-
-                                                <ul class="submenu">
-                                                    <li><a href="about-1.html">About Us One</a></li>
-                                                    <li><a href="about-2.html">About us Two</a></li>
-                                                </ul>
-                                            </li>
-
-                                            <li>
-                                                <a href="javascript:void(0)">
-                                                    Services <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="service-1.html">Service One</a></li>
-                                                    <li><a href="service-2.html">Service Two</a></li>
-                                                    <li><a href="service-details.html">Service Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li class="has-dropdown">
-                                                <a href="javascript:void(0)">
-                                                    Pages
-                                                    <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
-                                                            Projects
-                                                            <i class="fas fa-angle-right"></i>
-                                                        </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="project-1.html">Project page 01</a></li>
-                                                            <li><a href="project-2.html">Project page 02</a></li>
-                                                            <li><a href="project-details.html">Project Details</a></li>
-                                                        </ul>
-                                                    </li>  
-                                                    <li class="has-dropdown">
-                                                        <a href="javascript:void(0)">
-                                                            Our Team
-                                                            <i class="fas fa-angle-right"></i>
-                                                        </a>
-                                                        <ul class="submenu">
-                                                            <li><a href="team.html">Our Team</a></li>
-                                                            <li><a href="team-details.html">Team Details</a></li>
-                                                        </ul>
-                                                    </li>  
-                                                    <li><a href="faq.html">faq Page</a></li>
-                                                    <li><a href="404.html">404 Page</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="javascript:void(0)">
-                                                    our news <i class="fa-solid fa-chevron-down"></i>
-                                                </a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog-1.html">Blog One</a></li>
-                                                    <li><a href="blog-2.html">Blog Two</a></li>
-                                                    <li><a href="blog-details.html">Blog Details</a></li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <a href="contact.html">Contact Us</a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="header-right d-flex justify-content-end align-items-center">
-                            <div class="hero-button">
-                                <a href="contact.html" class="solid-btn">let’s talk</a>
-                            </div>
-
-                            <div class="header__hamburger">
-                                <div class="sidebar__toggle">
-                                    <div class="header-bar">
-                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13 18H5C4.4 18 4 17.6 4 17C4 16.4 4.4 16 5 16H13C13.6 16 14 16.4 14 17C14 17.6 13.6 18 13 18Z"
-                                                fill="#121212" />
-                                            <path
-                                                d="M19 13H5C4.4 13 4 12.6 4 12C4 11.4 4.4 11 5 11H19C19.6 11 20 11.4 20 12C20 12.6 19.6 13 19 13Z"
-                                                fill="#121212" />
-                                            <path
-                                                d="M19 8H11C10.4 8 10 7.6 10 7C10 6.4 10.4 6 11 6H19C19.6 6 20 6.4 20 7C20 7.6 19.6 8 19 8Z"
-                                                fill="#121212" />
-                                        </svg>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-    <!-- Header Section Start -->
 
          <div class="page-wrapper dark-bg-4">
             
@@ -432,7 +27,7 @@
                                     <p>
                                         Provide data-driven stratege companies identifies opportunities, reduce risk and achieve long term our growth.
                                     </p>
-                                    <a href="about-1.html" class="arrow-icon">
+                                    <a href="about-1" class="arrow-icon">
                                         <i class="fa-solid fa-arrow-up-right"></i>
                                     </a>
                                 </div>
@@ -455,7 +50,7 @@
                                Driven By Passion, Guided By Purpose <br> — We Design Brands That People Truly <br> Remembered For Us.
                             </h2>
                             <div class="simple-btn-white gt_fade_anim mt-4" data-delay=".5">
-                                <a href="about-1.html" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                <a href="about-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                     <span class="gt-btn-circle-text-2">Learn more</span>
                                     <i class="gt-btn-circle-dot bg-2"></i>
                                 </a>
@@ -474,7 +69,7 @@
                                     <div class="bg-image">
                                         <img src="assets/img/home-5/work-process-img.jpg" alt="img">
                                     </div>
-                                    <a href="about-1.html" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                    <a href="about-1" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
@@ -489,7 +84,7 @@
                                     <div class="bg-image">
                                         <img src="assets/img/home-5/work-process-img-2.jpg" alt="img">
                                     </div>
-                                    <a href="about-1.html" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                    <a href="about-1" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                             <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
@@ -504,7 +99,7 @@
                                     <div class="bg-image">
                                         <img src="assets/img/home-5/work-process-img-3.jpg" alt="img">
                                     </div>
-                                    <a href="about-1.html" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                    <a href="about-1" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -521,7 +116,7 @@
                                 </h2>
                             </div>
                               <div class="simple-btn-white gt_fade_anim" data-delay=".5">
-                                <a href="project-1.html" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                <a href="project-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                     <span class="gt-btn-circle-text-2">View All Projects</span>
                                     <i class="gt-btn-circle-dot bg-2"></i>
                                 </a>
@@ -535,16 +130,16 @@
                                 <img src="assets/img/home-5/project/project-01.jpg" alt="img">
                                 <div class="content">
                                     <h3>
-                                        <a href="project-details.html">
+                                        <a href="project-details">
                                             Market expansion
                                         </a>
                                     </h3>
                                     <ul>
                                         <li>
-                                            <a href="project-details.html">Consulting</a>
+                                            <a href="project-details">Consulting</a>
                                         </li>
                                         <li>
-                                            <a href="project-details.html">Business</a>
+                                            <a href="project-details">Business</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -556,16 +151,16 @@
                                 <img src="assets/img/home-5/project/project-02.jpg" alt="img">
                                 <div class="content">
                                     <h3>
-                                        <a href="project-details.html">
+                                        <a href="project-details">
                                             Market expansion
                                         </a>
                                     </h3>
                                     <ul>
                                         <li>
-                                            <a href="project-details.html">Consulting</a>
+                                            <a href="project-details">Consulting</a>
                                         </li>
                                         <li>
-                                            <a href="project-details.html">Business</a>
+                                            <a href="project-details">Business</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -577,16 +172,16 @@
                                 <img src="assets/img/home-5/project/project-03.jpg" alt="img">
                                 <div class="content">
                                     <h3>
-                                        <a href="project-details.html">
+                                        <a href="project-details">
                                             Market expansion
                                         </a>
                                     </h3>
                                     <ul>
                                         <li>
-                                            <a href="project-details.html">Consulting</a>
+                                            <a href="project-details">Consulting</a>
                                         </li>
                                         <li>
-                                            <a href="project-details.html">Business</a>
+                                            <a href="project-details">Business</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -598,16 +193,16 @@
                                 <img src="assets/img/home-5/project/project-04.jpg" alt="img">
                                 <div class="content">
                                     <h3>
-                                        <a href="project-details.html">
+                                        <a href="project-details">
                                             Market expansion
                                         </a>
                                     </h3>
                                     <ul>
                                         <li>
-                                            <a href="project-details.html">Consulting</a>
+                                            <a href="project-details">Consulting</a>
                                         </li>
                                         <li>
-                                            <a href="project-details.html">Business</a>
+                                            <a href="project-details">Business</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -650,7 +245,7 @@
                                                 </p>
                                             </div>
                                            <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1.html" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -694,7 +289,7 @@
                                                 </p>
                                             </div>
                                             <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1.html" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -738,7 +333,7 @@
                                                 </p>
                                             </div>
                                             <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1.html" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -782,7 +377,7 @@
                                                 </p>
                                             </div>
                                             <div class="simple-btn-white mt-4 gt_fade_anim" data-delay=".5">
-                                                <a href="service-1.html" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
+                                                <a href="service-1" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-inline-flex align-items-center justify-content-center flex-column bg-2">
                                                     <span class="gt-btn-circle-text-2">View Details</span>
                                                     <i class="gt-btn-circle-dot bg-2"></i>
                                                 </a>
@@ -1197,16 +792,16 @@
                                     <div class="content">
                                         <ul>
                                             <li>
-                                                <a href="news.html">Creative</a>
+                                                <a href="news">Creative</a>
                                             </li>
                                             <li>
                                                 <span>NOV 20, 2026</span>
                                             </li>
                                         </ul>
                                         <h3>
-                                            <a href="blog-details.html">Designing with purpose to make brands truly unforgettable.</a>
+                                            <a href="blog-details">Designing with purpose to make brands truly unforgettable.</a>
                                         </h3>
-                                        <a href="blog-details.html" class="link-btn">
+                                        <a href="blog-details" class="link-btn">
                                             Read more <i class="fa-solid fa-arrow-up-right"></i>
                                         </a>
                                     </div>
@@ -1223,18 +818,18 @@
                                             <div class="content">
                                                 <ul>
                                                     <li>
-                                                        <a href="news.html">Business</a>
+                                                        <a href="news">Business</a>
                                                     </li>
                                                     <li>
                                                         <span>NOV 20, 2026</span>
                                                     </li>
                                                 </ul>
                                                 <h3>
-                                                    <a href="blog-details.html">
+                                                    <a href="blog-details">
                                                         How emotion and design together shape powerful brand stories.
                                                     </a>
                                                 </h3>
-                                                <a href="blog-details.html" class="link-btn">
+                                                <a href="blog-details" class="link-btn">
                                                     Read more <i class="fa-solid fa-arrow-up-right"></i>
                                                 </a>
                                             </div>
@@ -1249,18 +844,18 @@
                                             <div class="content">
                                                 <ul>
                                                     <li>
-                                                        <a href="news.html">Design</a>
+                                                        <a href="news">Design</a>
                                                     </li>
                                                     <li>
                                                         <span>NOV 20, 2026</span>
                                                     </li>
                                                 </ul>
                                                 <h3>
-                                                    <a href="blog-details.html">
+                                                    <a href="blog-details">
                                                         How design thinking drives innovation in modern brand for growth.
                                                     </a>
                                                 </h3>
-                                                <a href="blog-details.html" class="link-btn">
+                                                <a href="blog-details" class="link-btn">
                                                     Read more <i class="fa-solid fa-arrow-up-right"></i>
                                                 </a>
                                             </div>
@@ -1273,196 +868,5 @@
                 </section>
                 
                  <!-- Footer Section Start -->
-                <footer class="footer-section-55 pb-0">
-                    <div class="footer-area style-footer-area-4 section-bg-6">
-                        <div class="container">
-                            <div class="footer-widget-wrapper55">
-                                <div class="row justify-content-between">
-                                    <div class="col-xl-4 col-lg-5 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".2s">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <a href="index.html" class="footer-logo">
-                                                    <img src="assets/img/logo/black-logo.svg" alt="img">
-                                                </a>
-                                            </div>
-                                            <div class="footer-content">
-                                                <p>
-                                                    The purpose of a FAQ is generally provide information on Perfect for Small Teams, Startups, and Growing.
-                                                </p>
-                                                <div class="social-icon d-flex align-items-center">
-                                                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                                    <a href="#"><i class="fab fa-twitter"></i></a>
-                                                    <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".4s">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Quick links</h3>
-                                            </div>
-                                            <ul class="gt-list-area">
-                                                <li>
-                                                    <a href="about-1.html">
-                                                        About Us
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="service-1.html">
-                                                        Services
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="faq.html">
-                                                      Faq
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="about-1.html">
-                                                       History
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="contact.html">
-                                                       Contact
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="blog-1.html">
-                                                       Blogs
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 ps-lg-0 col-lg-4 col-md-6 col-sm-6 col-6 wow fadeInUp" data-wow-delay=".6s">
-                                        <div class="footer-widget-items">
-                                            <div class="widget-head">
-                                                <h3>Our services</h3>
-                                            </div>
-                                            <ul class="gt-list-area">
-                                                <li>
-                                                    <a href="service-details.html">
-                                                        Strategic business
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="service-details.html">
-                                                       Financial growth
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="service-details.html">
-                                                        Digital transform
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="service-details.html">
-                                                       Creative brand
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="service-details.html">
-                                                       Business innovation
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a href="service-details.html">
-                                                       Solution hub
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 wow fadeInUp" data-wow-delay=".8s">
-                                        <div class="footer-widget-items">
-                                            <div class="footer-form-3">
-                                                <h3>
-                                                    Subscribe to our <br> newsletter.
-                                                </h3>
-                                                <form action="#">
-                                                    <input type="text" placeholder="Enter Email*">
-                                                    <button class="email-btn" type="submit">
-                                                        <i class="fa-solid fa-paper-plane"></i>
-                                                    </button>
-                                                </form>
-                                                <label class="sq-checkbox">
-                                                    <input type="checkbox">
-                                                    <span class="box" aria-hidden="true">
-                                                        <svg viewBox="0 0 24 24" class="check" focusable="false" aria-hidden="true">
-                                                        <path d="M20 6L9 17l-5-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                                                        </svg>
-                                                    </span>
-                                                    <span class="label-text">Agree our Terms & Condition</span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="footer-bottom style-bottom-4">
-                            <div class="container">
-                                 <div class="footer-bottom-wrapper">
-                                    <p class="wow fadeInUp" data-wow-delay=".3s"> 
-                                        © 2026 <b>Createaweb.</b> All rights reserved.
-                                    </p>
-                                    <ul class="footer-list wow fadeInUp" data-wow-delay=".5s">
-                                        <li>
-                                            <a href="contact.html">Privacy policy</a>
-                                        </li>
-                                        <li>
-                                            <a href="contact.html">Terms & conditions</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </footer>
-            </div>
-            </div>
-        </div>
-        </div>
+                <?php include 'include/footer.html'; ?>
 
-    
-        <!--<< All JS Plugins >>-->
-    <script src="assets/js/jquery-3.7.1.min.js"></script>
-    <!--<< Viewport Js >>-->
-    <script src="assets/js/viewport.jquery.js"></script>
-    <!--<< Bootstrap Js >>-->
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <!--<< nice-selec Js >>-->
-    <script src="assets/js/jquery.nice-select.min.js"></script>
-    <!--<< Waypoints Js >>-->
-    <script src="assets/js/jquery.waypoints.js"></script>
-    <!--<< Counterup Js >>-->
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <!--<< Swiper Slider Js >>-->
-    <script src="assets/js/swiper-bundle.min.js"></script>
-    <!--<< MeanMenu Js >>-->
-    <script src="assets/js/jquery.meanmenu.min.js"></script>
-    <!--<< Parallaxie Js >>-->
-    <script src="assets/js/parallaxie.js"></script>
-    <!--<< Magnific Popup Js >>-->
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <!--<< Wow Animation Js >>-->
-    <script src="assets/js/wow.min.js"></script>
-    <script src="assets/js/gasp/plugin.js"></script>
-    <script src="assets/js/gasp/scroll-magic.js"></script>
-    <script src="assets/js/gasp/parallax-slider.js"></script>
-    <script src="assets/js/gasp/nice-select.js"></script>
-    <script src="assets/js/gasp/purecounter.js"></script>
-    <script src="assets/js/gasp/imagesloaded-pkgd.js"></script>
-    <script src="assets/js/gasp/Observer.min.js"></script>
-    <script src="assets/js/gasp/splitting.min.js"></script>
-    <script src="assets/js/gasp/webgl.js"></script>
-    <script src="assets/js/gasp/parallax-scroll.js"></script>
-    <script src="assets/js/gasp/atropos.js"></script>
-
-    <!--<< Main.js >>-->
-    <script src="assets/js/main.js"></script>
-    </body>
-</html>
