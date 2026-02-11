@@ -2,7 +2,12 @@ body {
     background-color: #000 !important;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: #fff !important;
 }
 
@@ -40,15 +45,15 @@ p {
     border: 1px solid rgba(255, 255, 255, .2) !important;
 
     .gt-btn-circle-text-2 {
-         color: #fff;
-    }   
+        color: #fff;
+    }
 
     &:hover {
         .gt-btn-circle-text-2 {
             color: #000;
-        }   
+        }
     }
-   
+
 }
 
 .counter-area-four .counter-wrapper .counter-items .counter-title h4 {
@@ -67,7 +72,7 @@ p {
     color: #fff !important;
 }
 
-.about-wrapper.style-4 .about-right-content .btn-content .about-cta-wrap img{
+.about-wrapper.style-4 .about-right-content .btn-content .about-cta-wrap img {
     filter: grayscale(1) brightness(0) invert(1) !important;
 }
 
@@ -109,7 +114,7 @@ p {
 }
 
 .our-client-area-four .our-client-wrapper .cards .card-items {
-     border: 1px solid rgba(255, 255, 255, .2) !important;
+    border: 1px solid rgba(255, 255, 255, .2) !important;
 }
 
 
@@ -134,6 +139,7 @@ p {
 
 .team-area-four .team-wrapper .team-main-content .social-icon ul li a {
     border: 1px solid rgba(255, 255, 255, .2) !important;
+
     svg path {
         fill: #fff;
     }
@@ -144,10 +150,10 @@ p {
 }
 
 .team-area-four .team-wrapper .item-border {
-     border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .2) !important;
 }
 
-.gt_text_invert > div {
+.gt_text_invert>div {
     background-image: linear-gradient(to right, #fff 50%, #fff 50%) !important;
 }
 
@@ -165,7 +171,7 @@ p {
 }
 
 .contact-area-four .contact-wrapper {
-     background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .blog-area-one .blog-wrapper .blog-card .card-content .blog-composed .name {
@@ -173,15 +179,15 @@ p {
 }
 
 .contact-area-four .contact-wrapper .logo img {
-     filter: grayscale(1) brightness(0) invert(1) !important;
+    filter: grayscale(1) brightness(0) invert(1) !important;
 }
 
 .contact-area-four .contact-wrapper .contact-cta .cta-item .icon {
-     border: 1px solid rgba(255, 255, 255, .2) !important;
-     
-     svg path {
+    border: 1px solid rgba(255, 255, 255, .2) !important;
+
+    svg path {
         fill: #fff;
-     }
+    }
 }
 
 .contact-area-four .contact-wrapper .contact-cta .cta-item .location {
@@ -212,8 +218,8 @@ p {
 }
 
 .sticky {
-     background-color: #0e0d0d !important;
-     box-shadow: none !important;
+    background-color: #0e0d0d !important;
+    box-shadow: none !important;
 }
 
 .header-4 .mega-menu-wrapper .header-main {
@@ -229,7 +235,7 @@ p {
 }
 
 .hero-area-three .hero-wrapper .hero-section-title .title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .section-title-three .title span {
@@ -241,31 +247,33 @@ p {
 }
 
 .about-wrapper.style-3 .about-card .about-card-wrapper {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .about-wrapper.style-3 .about-card .about-card-wrapper .card-content span {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .project-area-three .project-wrapper .thumb-wrap .thumb a .card-text-content {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .work-process-area-three .work-process-wrapper .work-process-content {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .work-process-area-three .work-process-wrapper .work-process-content .work-process-items.items-2 {
     background-color: #454343 !important;
-     .title {
+
+    .title {
         color: #fff;
     }
 }
 
 .work-process-area-three .work-process-wrapper .work-process-content .work-process-items.items-1 {
     background-color: #454343 !important;
-     .title {
+
+    .title {
         color: #fff;
     }
 }
@@ -279,11 +287,11 @@ p {
 }
 
 .solid-btn-2 {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .service-area-three .service-wrapper .services-card-wrap .rolling-text .marquee-text {
-     color: #282828 !important;
+    color: #282828 !important;
 }
 
 .line-shape-1 {
@@ -299,7 +307,7 @@ p {
 }
 
 .testimonial-area-three .testimonial-wrapper .testimonial-card {
-     background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .testimonial-area-three .testimonial-wrapper .testimonial-card::before {
@@ -311,11 +319,11 @@ p {
 }
 
 .testimonial-area-three .testimonial-wrapper .testimonial-card .card-cta .page .page-1::after {
-     background: #fff !important;
+    background: #fff !important;
 }
 
 .testimonial-area-three .testimonial-wrapper .testimonial-card .card-cta .page .page-2 {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .cta-area-three .cta-wrapper .cta-content {
@@ -323,11 +331,11 @@ p {
 }
 
 .cta-area-three .cta-wrapper .cta-content .cta-content-wrap .title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-three .footer-wrapper .footer-items .footer-menu li a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-three .footer-wrapper .footer-items.border-content {
@@ -335,8 +343,8 @@ p {
 }
 
 .footer-area-three .footer-wrapper .footer-items .company-info {
-     background-color: #282828 !important;
-      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    background-color: #282828 !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .footer-area-three .footer-wrapper .footer-items .company-info .location {
@@ -346,15 +354,15 @@ p {
 }
 
 .footer-area-three .footer-wrapper .footer-items .contact-info .company-copy-right span {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-three .footer-wrapper .footer-items .contact-info .company-copy-right .policy {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-three .footer-wrapper {
-     border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .header-3 .mega-menu-wrapper .header-main .header-right .search-toggler {
@@ -377,15 +385,15 @@ p {
 
 .accolades-area-two .accolades-wrapper .accolades-card .accolades-logo {
     img {
-           filter: grayscale(1) brightness(0) invert(1) !important;
+        filter: grayscale(1) brightness(0) invert(1) !important;
     }
 }
 
 .hero-area-three .hero-wrapper .hero-clint-part img {
-     filter: grayscale(1) brightness(0) invert(1) !important;
+    filter: grayscale(1) brightness(0) invert(1) !important;
 }
 
-.gt_text_invert_3 > div {
+.gt_text_invert_3>div {
     background-image: linear-gradient(to right, #fff 50%, #fff 50%) !important;
 }
 
@@ -395,14 +403,14 @@ p {
 
 .about-wrapper.style-2 .about-counter-wrap .counter-item {
     border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
-} 
+}
 
 .about-wrapper.style-2 .about-counter-wrap .counter-item .counter span {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .project-area-two {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .project-area-two .project-wrapper .section-title .section-tab-wrap ul li {
@@ -410,19 +418,19 @@ p {
 }
 
 .service-area-two .service-wrapper .sub-title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .service-area-two .service-wrapper .service-card-content .items-wrap .item .item-title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .service-area-two .service-wrapper .service-card-content .title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .group .cta-area .cta-area-inner .area-bg {
-     background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .testimonial-area-two .testimonial-wrapper .testimonial-card .review-text {
@@ -430,23 +438,23 @@ p {
 }
 
 .slider-control .page-control::before {
-     background-color: #fff !important;
+    background-color: #fff !important;
 }
 
 .slider-control .page-control .page-1 {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .slider-control .page-control .page-2 {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .blog-area-two .blog-card .title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .marquee-wrap {
-     background-color: #000 !important;
+    background-color: #000 !important;
 }
 
 .brand-logo {
@@ -454,15 +462,15 @@ p {
 }
 
 .contact-area-two .contact-wrapper {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .contact-area-two .contact-wrapper .section-title .title {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .contact-area-two .contact-wrapper .contact-text {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .contact-area-two .contact-wrapper .section-title .gt-svg-btn {
@@ -472,7 +480,7 @@ p {
 }
 
 .contact-area-two .contact-wrapper .contact-text a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-two .footer-wrapper {
@@ -480,7 +488,7 @@ p {
 }
 
 .about-wrapper .sub-title2 {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .about-wrapper .about-btn-content .arrow-shape {
@@ -498,23 +506,23 @@ p {
 }
 
 .project-area-one .project-wrapper .project-card-wrapper {
-      background-color: #000 !important;
+    background-color: #000 !important;
 }
 
 .service-area-one {
-   background-color: #000 !important;
+    background-color: #000 !important;
 }
 
 .service-area-one .service-wrapper .service-card {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .service-area-one .service-wrapper .service-card .card-back {
-     background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .testimonial-area-one {
-      background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .testimonial-area-one {
@@ -522,7 +530,7 @@ p {
 }
 
 .testimonial-area-one .testimonial-wrapper .testimonial-content {
-     background-color: #000 !important;
+    background-color: #000 !important;
 }
 
 .solutions-wrapper1 .solutions-content .left-bottom-content .award-content .award-list-items span {
@@ -530,7 +538,7 @@ p {
 }
 
 .footer-area-one {
-     background-color: #282828 !important;
+    background-color: #282828 !important;
 }
 
 .footer-area-one .footer-wrapper .footer-top-left-content .footer-logo {
@@ -544,7 +552,7 @@ p {
 }
 
 .footer-area-one .footer-wrapper .footer-main-part .footer-menu ul li a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-one .footer-wrapper .footer-main-part .footer-menu ul li a:hover {
@@ -556,7 +564,7 @@ p {
 }
 
 .footer-area-one .footer-wrapper .footer-top-left-content .contact-info .phone-number {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-area-one .footer-wrapper .footer-top-left-content .contact-info .email {
@@ -590,7 +598,7 @@ p {
 }
 
 .contact-area .contact-wrapper .contact-cta-wrap .contact-cta .text {
-     color: #000 !important;
+    color: #000 !important;
 }
 
 .hero-4 .hero-content .hero-bottom .content {
@@ -610,7 +618,7 @@ p {
 }
 
 .service-box-style-4 .service-list-wrap.active-block {
-     background-color: #010514 !important;
+    background-color: #010514 !important;
 }
 
 .service-box-style-4 .service-list-wrap .service-wrap .item-text ul li {
@@ -622,8 +630,8 @@ p {
 }
 
 .service-box-style-4 .service-list-wrap .service-acc-btn .icon {
-     border: 1px solid rgba(255, 255, 255, 0.2) !important;
-     color: #fff !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: #fff !important;
 }
 
 .service-section-4 .service-box-style-4 .block .service-acc-btn.active .icon {
@@ -633,11 +641,11 @@ p {
 }
 
 .testimonial-box-style-4 {
-     background-color: #010514 !important;
+    background-color: #010514 !important;
 }
 
 .testimonial-box-style-4 .client-info-item .client-info span {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .testimonial-section-4 .swiper-dot .swiper-pagination-bullet {
@@ -645,7 +653,7 @@ p {
 }
 
 .testimonial-section-4 .swiper-dot .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background-color: #C9F31D !important;
+    background-color: #f5a623 !important;
 }
 
 .award-section {
@@ -653,12 +661,12 @@ p {
 }
 
 .award-wrapper .award-box-items {
-     background-color: #010514 !important;
+    background-color: #010514 !important;
 }
 
 .award-wrapper .award-box-items {
     img {
-         filter: grayscale(1) brightness(0) invert(1) !important;
+        filter: grayscale(1) brightness(0) invert(1) !important;
     }
 }
 
@@ -671,52 +679,52 @@ p {
 }
 
 .brand-box-1.style-4 {
-   img {
-         filter: grayscale(1) brightness(0) invert(1) !important;
+    img {
+        filter: grayscale(1) brightness(0) invert(1) !important;
     }
 }
 
 .news-left-items {
-     border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .news-left-items .content h3 a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .news-left-items .content .link-btn {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .news-right-list li .news-box-style-4 {
-      border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
 }
 
 .news-right-list li .news-box-style-4 .content h3 a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .news-right-list li .news-box-style-4 .content .link-btn {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .news-left-items .content ul li a {
-    background-color: #C9F31D !important;
+    background-color: #f5a623 !important;
     color: #000 !important;
 }
 
 .news-right-list li .news-box-style-4 .content ul li a {
-    background-color: #C9F31D !important;
+    background-color: #f5a623 !important;
     color: #000 !important;
 }
 
 .footer-section-55 {
-     background-color: #010514 !important;
+    background-color: #010514 !important;
 }
 
 .footer-section-55 .footer-widget-wrapper55 .footer-logo {
     img {
-         filter: grayscale(1) brightness(0) invert(1) !important;
+        filter: grayscale(1) brightness(0) invert(1) !important;
     }
 }
 
@@ -728,7 +736,7 @@ p {
     background-color: #000 !important;
 
     &:hover {
-         background-color: #C9F31D !important;
+        background-color: #f5a623 !important;
     }
 }
 
@@ -741,21 +749,21 @@ p {
 }
 
 .footer-section-55 .footer-widget-wrapper55 .footer-widget-items .gt-list-area li a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-section-55 .footer-widget-wrapper55 .footer-form-3 .sq-checkbox {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-bottom .footer-bottom-wrapper .footer-list li {
     a {
-         color: #fff !important;
+        color: #fff !important;
     }
 }
 
 .footer-section-55 .footer-bottom-wrapper p {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .footer-section-55 .footer-bottom {
@@ -766,34 +774,34 @@ p {
     background-image: none !important;
 }
 
-    .project-wrapper .project-items .content {
-        span {
+.project-wrapper .project-items .content {
+    span {
+        color: #fff !important;
+    }
+}
+
+.project-wrapper .project-items .content {
+    h4 {
+        a {
             color: #fff !important;
         }
     }
+}
 
-    .project-wrapper .project-items .content {
-        h4 {
-            a {
-                  color: #fff !important;
-            }
-        }
+.project-wrapper .project-items .content .icon a {
+    i {
+        color: #fff !important;
     }
 
-    .project-wrapper .project-items .content .icon a {
+    &:hover {
         i {
-            color: #fff !important;
-        }
-
-        &:hover {
-            i {
-                color: #000 !important;
-            }
+            color: #000 !important;
         }
     }
+}
 
-    .awards-wrapper .awards-item {
-   
+.awards-wrapper .awards-item {
+
     border: var(--gt-border);
     transition: all 0.4s ease-in-out;
     background: #282828 !important;
@@ -809,7 +817,7 @@ p {
 }
 
 .pricing-section22 {
-   background: #282828 !important;
+    background: #282828 !important;
 }
 
 .price-wrapper .price-item {
@@ -829,7 +837,7 @@ p {
 }
 
 .news-1 .news-item {
-   background: #282828 !important;
+    background: #282828 !important;
 }
 
 .news-1 .news-item .content .news-meta .green {
@@ -849,17 +857,15 @@ p {
 }
 
 .news-1 .news-item .content .news-btns a {
-     color: #fff !important;
+    color: #fff !important;
 }
 
 .hero-1 .hero-info a {
     color: #fff !important;
 }
 
-.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn
+.header-main .main-menu ul li .has-homemenu .homemenu-items .homemenu .homemenu-thumb .demo-button .theme-btn {
 
- {
-   
     color: var(--gt-black) !important;
 
     &:hover {
