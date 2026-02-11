@@ -28,6 +28,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // Handle Image Upload
     if (!empty($_FILES['image']['name'])) {
         $target_dir = "../assets/uploads/";
+        if (!file_exists($target_dir)) {
+            mkdir($target_dir, 0777, true);
+        }
         $file_name = time() . "_" . basename($_FILES["image"]["name"]);
         $target_file = $target_dir . $file_name;
         if (move_uploaded_file($_FILES["image"]["tmp_name"], $target_file)) {

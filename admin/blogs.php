@@ -27,6 +27,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if (!empty($_FILES['thumb']['name'])) {
         $target_dir = "../assets/uploads/";
+        if (!file_exists($target_dir)) {
+            mkdir($target_dir, 0777, true);
+        }
         $file_name = "blog_" . time() . "_" . basename($_FILES["thumb"]["name"]);
         $target_file = $target_dir . $file_name;
         if (move_uploaded_file($_FILES["thumb"]["tmp_name"], $target_file)) {

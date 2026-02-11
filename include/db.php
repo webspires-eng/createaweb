@@ -1,11 +1,27 @@
 <?php
-$host = '127.0.0.1';
-$db = 'createaweb_cms';
-$user = 'root';
-$pass = ''; // Default XAMPP password is empty
+$whitelist = array(
+    '127.0.0.1',
+    '::1',
+    'localhost'
+);
+
+if (in_array($_SERVER['REMOTE_ADDR'], $whitelist) && (strpos($_SERVER['HTTP_HOST'], 'localhost') !== false || strpos($_SERVER['HTTP_HOST'], '127.0.0.1') !== false)) {
+    // Local Credentials
+    $host = '127.0.0.1';
+    $db = 'createaweb_cms';
+    $user = 'root';
+    $pass = '';
+} else {
+    // Live Server Credentials
+    $host = 'localhost';
+    $db = 'tfwrwwhkyf';
+    $user = 'tfwrwwhkyf';
+    $pass = 'B7WZzHFjvx';
+}
+
 $charset = 'utf8mb4';
 
-$dsn = "mysql:host=$host;charset=$charset";
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 $options = [
     PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
     PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
@@ -14,9 +30,8 @@ $options = [
 
 try {
     $pdo = new PDO($dsn, $user, $pass, $options);
-    // Create database if it doesn't exist
-    $pdo->exec("CREATE DATABASE IF NOT EXISTS `$db` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci");
-    $pdo->exec("USE `$db`");
+    // Database creation logic removed for compatibility with live server restrictions.
+    // Ensure the database exists before connecting via DSN.
 
     // Create tables if they don't exist
     $pdo->exec("CREATE TABLE IF NOT EXISTS admins (
