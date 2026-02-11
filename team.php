@@ -1,583 +1,137 @@
-<?php include 'include/header.html'; ?>
+<?php
+require_once 'include/db.php';
+include 'include/header.html';
+
+// Fetch team members
+$stmt = $pdo->query("SELECT * FROM teams ORDER BY created_at DESC");
+$teams = $stmt->fetchAll();
+?>
 
 
-    <!-- GT Search Start -->
-    <div class="search-popup">
-        <div class="search-popup__overlay search-toggler"></div>
-        <div class="search-popup__content">
-            <form role="search" method="get" class="search-popup__form" action="#">
-                <input type="text" id="search" name="search" placeholder="Search Here...">
-                <button type="submit" aria-label="search submit" class="search-btn">
-                    <span><i class="fa-regular fa-magnifying-glass"></i></span>
-                </button>
-            </form>
-        </div>
+<!-- GT Search Start -->
+<div class="search-popup">
+    <div class="search-popup__overlay search-toggler"></div>
+    <div class="search-popup__content">
+        <form role="search" method="get" class="search-popup__form" action="#">
+            <input type="text" id="search" name="search" placeholder="Search Here...">
+            <button type="submit" aria-label="search submit" class="search-btn">
+                <span><i class="fa-regular fa-magnifying-glass"></i></span>
+            </button>
+        </form>
     </div>
+</div>
 
-    <div id="smooth-wrapper">
-        <div id="smooth-content">
-            <!-- Breadcrumb  page Section Start -->
-            <div class="breadcrumb-page-area-one">
-                <div class="breadcrumb-page-wrap pb-150">
-                    <div class="container">
-                        <div class="gt-breadcrumb-wrapper mb-0">
-                            <div class="title title-1">Our awesome team</div>
+<div id="smooth-wrapper">
+    <div id="smooth-content">
+        <!-- Breadcrumb  page Section Start -->
+        <div class="breadcrumb-page-area-one">
+            <div class="breadcrumb-page-wrap pb-150">
+                <div class="container">
+                    <div class="gt-breadcrumb-wrapper mb-0">
+                        <div class="title title-1">Our awesome team</div>
 
-                            <div class="right-contents">
-                                <p class="pra-text">
-                                    We work together by prioritizing quality, time, and innovation in every
-                                    project. Client satisfaction is our main goal, and that is the true strength of our
-                                    team.
-                                </p>
-                            </div>
+                        <div class="right-contents">
+                            <p class="pra-text">
+                                We work together by prioritizing quality, time, and innovation in every
+                                project. Client satisfaction is our main goal, and that is the true strength of our
+                                team.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Breadcrumb  page Section End -->
+        </div>
+        <!-- Breadcrumb  page Section End -->
 
-            <!-- Our Team Section Start -->
-            <div class="team-members team-members-page">
+        <!-- Our Team Section Start -->
+        <div class="team-members team-members-page">
 
-                <div class="container">
-                    <div class="section-title mb-75">
-                        <div class="title">Core team the driving force behind our vision and success</div>
+            <div class="container">
+                <div class="section-title mb-75">
+                    <div class="title">Core team the driving force behind our vision and success</div>
 
-                        <div class="slider-control">
-                            <div class="array-nav gt_fade_anim" data-delay=".5" data-fade-from="top" data-ease="bounce"
-                                style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
-                                <button class="array-prev slick-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M9.414 7.9961L18.021 16.6031L16.607 18.0171L8 9.4111L8 16.9961L6 16.9961L6 5.9961L17 5.9961L17 7.9961L9.414 7.9961Z"
-                                            fill="black"></path>
-                                    </svg>
-                                </button>
-                                <button class="array-next slick-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                        fill="none">
-                                        <path
-                                            d="M14.586 16.0039L5.979 7.39691L7.393 5.98291L16 14.5889L16 7.00391L18 7.00391L18 18.0039L7 18.0039L7 16.0039L14.586 16.0039Z"
-                                            fill="black"></path>
-                                    </svg>
-                                </button>
-                            </div>
+                    <div class="slider-control">
+                        <div class="array-nav gt_fade_anim" data-delay=".5" data-fade-from="top" data-ease="bounce"
+                            style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                            <button class="array-prev slick-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M9.414 7.9961L18.021 16.6031L16.607 18.0171L8 9.4111L8 16.9961L6 16.9961L6 5.9961L17 5.9961L17 7.9961L9.414 7.9961Z"
+                                        fill="black"></path>
+                                </svg>
+                            </button>
+                            <button class="array-next slick-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none">
+                                    <path
+                                        d="M14.586 16.0039L5.979 7.39691L7.393 5.98291L16 14.5889L16 7.00391L18 7.00391L18 18.0039L7 18.0039L7 16.0039L14.586 16.0039Z"
+                                        fill="black"></path>
+                                </svg>
+                            </button>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="swiper team-slider-active">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <div class="team-card">
-                                <div class="team-member-info">
-                                    <div class="name"><a class="text-black" href="team-details">Delwar hossain</a></div>
-                                    <p class="designation text-black">web developer</p>
-                                </div>
-                                <div class="thumb">
-                                    <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
-                                    <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
+            <div class="swiper team-slider-active">
+                <div class="swiper-wrapper">
+                    <?php foreach ($teams as $member): ?>
+                            <div class="swiper-slide">
+                                <div class="team-card">
+                                    <div class="team-member-info">
+                                        <div class="name"><a class="text-black" href="#"><?php echo htmlspecialchars($member['name']); ?></a></div>
+                                        <p class="designation text-black"><?php echo htmlspecialchars($member['designation']); ?></p>
+                                    </div>
+                                    <div class="thumb">
+                                        <?php if ($member['image']): ?>
+                                                <img class="thumb-1" src="./<?php echo $member['image']; ?>" alt="thumb" style="width: 100%; height: 400px; object-fit: cover;">
+                                                <img class="thumb-2" src="./<?php echo $member['image']; ?>" alt="thumb" style="width: 100%; height: 400px; object-fit: cover;">
+                                        <?php else: ?>
+                                                <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
+                                                <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
+                                        <?php endif; ?>
 
-                                    <div class="social-links">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_192)">
-                                                            <path
-                                                                d="M10.2426 12.5451C10.2081 12.5796 9.44862 13.3391 9.1034 13.6843C8.91928 13.8684 8.79269 13.8569 8.62008 13.6843C8.15978 13.224 7.68798 12.7522 7.22768 12.2919C7.04356 12.1078 7.05507 11.9812 7.22768 11.8086L8.36692 10.6693C8.3324 10.6348 7.66496 9.96738 7.35426 9.65668C6.89396 9.19638 6.53723 8.67855 6.36462 8.04564C6.19201 7.38971 6.26105 6.76831 6.53723 6.16992C6.72135 5.77867 6.96301 5.44495 7.27371 5.13425L8.40144 4.00652C8.56255 3.84541 8.70064 3.84541 8.86174 4.00652L10.1736 5.31837C10.3347 5.47947 10.3347 5.61756 10.1736 5.77867C9.86289 6.08937 9.55219 6.40007 9.25299 6.72228C8.94229 7.03298 8.93079 7.34368 9.25299 7.66589C9.58671 8.02262 9.93193 8.34483 10.2887 8.70156L11.6235 7.3667C11.8077 7.18258 11.9457 7.18258 12.1299 7.3667L13.5223 8.7591C13.7064 8.94322 13.7064 9.05829 13.5108 9.25392C13.0965 9.66819 12.2104 10.5543 12.1759 10.5888L15.9273 14.3402C16.1229 14.5358 16.1345 14.6624 15.9273 14.8696C15.444 15.3529 14.9722 15.8247 14.4889 16.308C14.3163 16.4806 14.1782 16.4806 14.0056 16.308C12.7973 15.0997 10.2772 12.5796 10.2426 12.5451Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_19228">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.849609 10.8441) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_202)">
-                                                            <path
-                                                                d="M10.609 8.46602L10.0233 0.668197L9.16875 1.52272L9.67725 8.29351L3.53676 7.1547L0.652344 10.0391L9.93789 11.7612L10.5518 19.9386L11.4064 19.084L10.8694 11.9339L17.354 13.1364L20.2385 10.252L10.6088 8.46623L10.609 8.46602ZM10.799 10.997L9.86781 10.8321L2.45813 9.51994L3.7707 8.20737L9.75049 9.2664L10.6817 9.43128L18.4546 10.8078L17.142 12.1203L10.7992 10.9972L10.799 10.997Z"
-                                                                fill="#121212" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_2029">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.546875 10.1456) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_196)">
-                                                            <path
-                                                                d="M1.57141 9.1344C0.844403 9.86141 0.844289 11.0451 1.57134 11.7732C2.29891 12.5008 3.48275 12.5008 4.21029 11.7733C4.93757 11.046 4.93726 9.86247 4.20968 9.13489C3.48218 8.40739 2.29865 8.40716 1.57141 9.1344Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M5.73141 11.3131L3.75072 13.2938C3.6565 13.3881 3.65646 13.5409 3.75076 13.6352L10.126 20.0104C10.2203 20.1047 10.3731 20.1046 10.4673 20.0104L12.4479 18.0298C12.5422 17.9355 12.5422 17.7826 12.448 17.6884L6.07273 11.3132C5.97843 11.2188 5.82566 11.2189 5.73141 11.3131Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M10.7204 6.17485C9.99551 6.89969 9.57925 7.75738 9.55047 8.50599L9.21558 8.17109C9.12128 8.0768 8.96847 8.07684 8.87422 8.17109L6.97425 10.0711C6.87999 10.1653 6.87995 10.3181 6.97425 10.4124L13.3495 16.7877C13.4437 16.8819 13.5966 16.8819 13.6908 16.7876L15.6696 14.8088C15.7639 14.7146 15.7639 14.5617 15.6696 14.4675L12.5155 11.3134C11.6105 10.4084 11.216 9.681 12.0468 8.85027C12.8662 8.03281 13.529 8.57306 14.4465 9.49055L17.5465 12.5906C17.6408 12.6849 17.7936 12.6848 17.8879 12.5906L19.8676 10.6109C19.9618 10.5166 19.9618 10.3638 19.8676 10.2696L16.3705 6.77247C14.916 5.31808 12.9594 3.93577 10.7204 6.17485Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_19622">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.246094 10.4471) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_205)">
-                                                            <path
-                                                                d="M13.7458 3.76926C13.1966 3.26645 12.7499 2.98989 12.3147 2.79839C11.8564 2.59148 11.3652 2.48709 10.8643 2.4929C10.3654 2.48905 9.87026 2.59345 9.41777 2.79847C8.98076 2.99178 8.53597 3.26645 7.98678 3.76926C7.4317 4.27403 7.25765 4.43644 5.91361 5.78049C4.56956 7.12453 4.40715 7.29858 3.90238 7.84973C3.39957 8.39892 3.12309 8.84567 2.93159 9.28072C2.7246 9.73911 2.6202 10.2303 2.62602 10.7312C2.62217 11.2302 2.72664 11.7252 2.93159 12.1778C3.12498 12.6148 3.39957 13.0596 3.90238 13.6087C4.40715 14.1638 4.56956 14.3379 5.91361 15.6819C7.25765 17.026 7.4317 17.1884 7.98285 17.6931C8.53204 18.1959 8.97879 18.4724 9.41399 18.6639C9.8723 18.8708 10.3654 18.9734 10.8643 18.9695C11.3633 18.9734 11.8584 18.869 12.3109 18.6639C12.748 18.4705 13.1927 18.1959 13.7419 17.6931C14.2931 17.1884 14.4671 17.0259 15.8112 15.6818C17.1552 14.3378 17.3177 14.1638 17.8224 13.6126C18.3252 13.0634 18.6018 12.6167 18.7932 12.1816C19.2013 11.2591 19.2013 10.2071 18.7933 9.28465C18.5998 8.84764 18.3252 8.40277 17.8224 7.85358C17.3176 7.30243 17.1552 7.12838 15.8112 5.78434C14.4671 4.4403 14.2969 4.27403 13.7458 3.76926ZM16.8961 8.70252C17.3583 9.20729 17.5381 9.54957 17.6445 9.79131C17.9094 10.3889 17.9094 11.0735 17.6445 11.6711C17.5381 11.9128 17.3564 12.257 16.896 12.7598C16.3972 13.3052 16.2463 13.4676 14.9255 14.7884C13.6046 16.1093 13.4403 16.2621 12.8968 16.7591C12.3921 17.2213 12.0498 17.4012 11.8081 17.5075C11.5141 17.6428 11.1931 17.7125 10.8701 17.7067C10.5452 17.7105 10.2261 17.6428 9.93221 17.5075C9.69047 17.4012 9.34623 17.2193 8.8435 16.7591C8.29809 16.2602 8.13567 16.1093 6.81482 14.7884C5.49397 13.4676 5.34115 13.3033 4.84423 12.7598C4.38199 12.2551 4.20213 11.9128 4.09576 11.6711C3.96039 11.3771 3.89082 11.0561 3.89852 10.7311C3.8946 10.4063 3.96228 10.0872 4.09773 9.79327C4.20409 9.55154 4.38592 9.20729 4.84612 8.70449C5.34508 8.15915 5.49593 7.99666 6.81671 6.67588C8.13952 5.35307 8.30194 5.20229 8.84539 4.70522C9.35016 4.24306 9.69244 4.06319 9.93417 3.95683C10.228 3.82146 10.5491 3.75181 10.872 3.75762C11.1969 3.75377 11.516 3.82146 11.81 3.95683C12.0518 4.06319 12.3959 4.24495 12.8988 4.70522C13.4442 5.20418 13.6066 5.35496 14.9274 6.67581C16.2483 7.99666 16.3972 8.15719 16.8961 8.70252Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M8.32039 8.1884C6.91644 9.59235 6.91636 11.8705 8.32039 13.2745C9.72441 14.6785 12.0025 14.6784 13.4065 13.2745C14.8105 11.8705 14.8105 9.59242 13.4065 8.1884C12.0025 6.78438 9.72441 6.78438 8.32039 8.1884ZM12.513 12.3811C11.6022 13.2919 10.1247 13.2919 9.21382 12.3811C8.30294 11.4702 8.30301 9.99265 9.21382 9.08184C10.1247 8.17095 11.6022 8.17095 12.513 9.08184C13.4239 9.99272 13.4239 11.4702 12.513 12.3811Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M11.4569 4.85009C11.7848 5.17794 11.7848 5.7096 11.4568 6.03753C11.129 6.36538 10.5973 6.36538 10.2695 6.03753C9.94154 5.7096 9.94161 5.17802 10.2695 4.85016C10.5974 4.52224 11.129 4.52216 11.4569 4.85009Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_2055">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.945312 10.7486) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
+                                        <div class="social-links">
+                                            <ul>
+                                                <?php if ($member['facebook']): ?>
+                                                    <li>
+                                                        <a href="<?php echo htmlspecialchars($member['facebook']); ?>">
+                                                            <i class="fab fa-facebook-f"></i>
+                                                        </a>
+                                                    </li>
+                                                <?php endif; ?>
+                                                <?php if ($member['twitter']): ?>
+                                                    <li>
+                                                        <a href="<?php echo htmlspecialchars($member['twitter']); ?>">
+                                                            <i class="fab fa-twitter"></i>
+                                                        </a>
+                                                    </li>
+                                                <?php endif; ?>
+                                                <?php if ($member['linkedin']): ?>
+                                                    <li>
+                                                        <a href="<?php echo htmlspecialchars($member['linkedin']); ?>">
+                                                            <i class="fab fa-linkedin-in"></i>
+                                                        </a>
+                                                    </li>
+                                                <?php endif; ?>
+                                                <?php if ($member['instagram']): ?>
+                                                    <li>
+                                                        <a href="<?php echo htmlspecialchars($member['instagram']); ?>">
+                                                            <i class="fab fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                <?php endif; ?>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="team-card">
-                                <div class="team-member-info">
-                                    <div class="name"><a class="text-black" href="team-details">Sophia williams</a></div>
-                                    <p class="designation text-black">Creative Director</p>
-                                </div>
-                                <div class="thumb">
-                                    <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_1.png" alt="thumb">
-                                    <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_1.png" alt="thumb">
-
-                                    <div class="social-links">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_192)">
-                                                            <path
-                                                                d="M10.2426 12.5451C10.2081 12.5796 9.44862 13.3391 9.1034 13.6843C8.91928 13.8684 8.79269 13.8569 8.62008 13.6843C8.15978 13.224 7.68798 12.7522 7.22768 12.2919C7.04356 12.1078 7.05507 11.9812 7.22768 11.8086L8.36692 10.6693C8.3324 10.6348 7.66496 9.96738 7.35426 9.65668C6.89396 9.19638 6.53723 8.67855 6.36462 8.04564C6.19201 7.38971 6.26105 6.76831 6.53723 6.16992C6.72135 5.77867 6.96301 5.44495 7.27371 5.13425L8.40144 4.00652C8.56255 3.84541 8.70064 3.84541 8.86174 4.00652L10.1736 5.31837C10.3347 5.47947 10.3347 5.61756 10.1736 5.77867C9.86289 6.08937 9.55219 6.40007 9.25299 6.72228C8.94229 7.03298 8.93079 7.34368 9.25299 7.66589C9.58671 8.02262 9.93193 8.34483 10.2887 8.70156L11.6235 7.3667C11.8077 7.18258 11.9457 7.18258 12.1299 7.3667L13.5223 8.7591C13.7064 8.94322 13.7064 9.05829 13.5108 9.25392C13.0965 9.66819 12.2104 10.5543 12.1759 10.5888L15.9273 14.3402C16.1229 14.5358 16.1345 14.6624 15.9273 14.8696C15.444 15.3529 14.9722 15.8247 14.4889 16.308C14.3163 16.4806 14.1782 16.4806 14.0056 16.308C12.7973 15.0997 10.2772 12.5796 10.2426 12.5451Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_1921">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.849609 10.8441) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_202)">
-                                                            <path
-                                                                d="M10.609 8.46602L10.0233 0.668197L9.16875 1.52272L9.67725 8.29351L3.53676 7.1547L0.652344 10.0391L9.93789 11.7612L10.5518 19.9386L11.4064 19.084L10.8694 11.9339L17.354 13.1364L20.2385 10.252L10.6088 8.46623L10.609 8.46602ZM10.799 10.997L9.86781 10.8321L2.45813 9.51994L3.7707 8.20737L9.75049 9.2664L10.6817 9.43128L18.4546 10.8078L17.142 12.1203L10.7992 10.9972L10.799 10.997Z"
-                                                                fill="#121212" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_2023">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.546875 10.1456) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_196)">
-                                                            <path
-                                                                d="M1.57141 9.1344C0.844403 9.86141 0.844289 11.0451 1.57134 11.7732C2.29891 12.5008 3.48275 12.5008 4.21029 11.7733C4.93757 11.046 4.93726 9.86247 4.20968 9.13489C3.48218 8.40739 2.29865 8.40716 1.57141 9.1344Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M5.73141 11.3131L3.75072 13.2938C3.6565 13.3881 3.65646 13.5409 3.75076 13.6352L10.126 20.0104C10.2203 20.1047 10.3731 20.1046 10.4673 20.0104L12.4479 18.0298C12.5422 17.9355 12.5422 17.7826 12.448 17.6884L6.07273 11.3132C5.97843 11.2188 5.82566 11.2189 5.73141 11.3131Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M10.7204 6.17485C9.99551 6.89969 9.57925 7.75738 9.55047 8.50599L9.21558 8.17109C9.12128 8.0768 8.96847 8.07684 8.87422 8.17109L6.97425 10.0711C6.87999 10.1653 6.87995 10.3181 6.97425 10.4124L13.3495 16.7877C13.4437 16.8819 13.5966 16.8819 13.6908 16.7876L15.6696 14.8088C15.7639 14.7146 15.7639 14.5617 15.6696 14.4675L12.5155 11.3134C11.6105 10.4084 11.216 9.681 12.0468 8.85027C12.8662 8.03281 13.529 8.57306 14.4465 9.49055L17.5465 12.5906C17.6408 12.6849 17.7936 12.6848 17.8879 12.5906L19.8676 10.6109C19.9618 10.5166 19.9618 10.3638 19.8676 10.2696L16.3705 6.77247C14.916 5.31808 12.9594 3.93577 10.7204 6.17485Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_1964">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.246094 10.4471) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_205)">
-                                                            <path
-                                                                d="M13.7458 3.76926C13.1966 3.26645 12.7499 2.98989 12.3147 2.79839C11.8564 2.59148 11.3652 2.48709 10.8643 2.4929C10.3654 2.48905 9.87026 2.59345 9.41777 2.79847C8.98076 2.99178 8.53597 3.26645 7.98678 3.76926C7.4317 4.27403 7.25765 4.43644 5.91361 5.78049C4.56956 7.12453 4.40715 7.29858 3.90238 7.84973C3.39957 8.39892 3.12309 8.84567 2.93159 9.28072C2.7246 9.73911 2.6202 10.2303 2.62602 10.7312C2.62217 11.2302 2.72664 11.7252 2.93159 12.1778C3.12498 12.6148 3.39957 13.0596 3.90238 13.6087C4.40715 14.1638 4.56956 14.3379 5.91361 15.6819C7.25765 17.026 7.4317 17.1884 7.98285 17.6931C8.53204 18.1959 8.97879 18.4724 9.41399 18.6639C9.8723 18.8708 10.3654 18.9734 10.8643 18.9695C11.3633 18.9734 11.8584 18.869 12.3109 18.6639C12.748 18.4705 13.1927 18.1959 13.7419 17.6931C14.2931 17.1884 14.4671 17.0259 15.8112 15.6818C17.1552 14.3378 17.3177 14.1638 17.8224 13.6126C18.3252 13.0634 18.6018 12.6167 18.7932 12.1816C19.2013 11.2591 19.2013 10.2071 18.7933 9.28465C18.5998 8.84764 18.3252 8.40277 17.8224 7.85358C17.3176 7.30243 17.1552 7.12838 15.8112 5.78434C14.4671 4.4403 14.2969 4.27403 13.7458 3.76926ZM16.8961 8.70252C17.3583 9.20729 17.5381 9.54957 17.6445 9.79131C17.9094 10.3889 17.9094 11.0735 17.6445 11.6711C17.5381 11.9128 17.3564 12.257 16.896 12.7598C16.3972 13.3052 16.2463 13.4676 14.9255 14.7884C13.6046 16.1093 13.4403 16.2621 12.8968 16.7591C12.3921 17.2213 12.0498 17.4012 11.8081 17.5075C11.5141 17.6428 11.1931 17.7125 10.8701 17.7067C10.5452 17.7105 10.2261 17.6428 9.93221 17.5075C9.69047 17.4012 9.34623 17.2193 8.8435 16.7591C8.29809 16.2602 8.13567 16.1093 6.81482 14.7884C5.49397 13.4676 5.34115 13.3033 4.84423 12.7598C4.38199 12.2551 4.20213 11.9128 4.09576 11.6711C3.96039 11.3771 3.89082 11.0561 3.89852 10.7311C3.8946 10.4063 3.96228 10.0872 4.09773 9.79327C4.20409 9.55154 4.38592 9.20729 4.84612 8.70449C5.34508 8.15915 5.49593 7.99666 6.81671 6.67588C8.13952 5.35307 8.30194 5.20229 8.84539 4.70522C9.35016 4.24306 9.69244 4.06319 9.93417 3.95683C10.228 3.82146 10.5491 3.75181 10.872 3.75762C11.1969 3.75377 11.516 3.82146 11.81 3.95683C12.0518 4.06319 12.3959 4.24495 12.8988 4.70522C13.4442 5.20418 13.6066 5.35496 14.9274 6.67581C16.2483 7.99666 16.3972 8.15719 16.8961 8.70252Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M8.32039 8.1884C6.91644 9.59235 6.91636 11.8705 8.32039 13.2745C9.72441 14.6785 12.0025 14.6784 13.4065 13.2745C14.8105 11.8705 14.8105 9.59242 13.4065 8.1884C12.0025 6.78438 9.72441 6.78438 8.32039 8.1884ZM12.513 12.3811C11.6022 13.2919 10.1247 13.2919 9.21382 12.3811C8.30294 11.4702 8.30301 9.99265 9.21382 9.08184C10.1247 8.17095 11.6022 8.17095 12.513 9.08184C13.4239 9.99272 13.4239 11.4702 12.513 12.3811Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M11.4569 4.85009C11.7848 5.17794 11.7848 5.7096 11.4568 6.03753C11.129 6.36538 10.5973 6.36538 10.2695 6.03753C9.94154 5.7096 9.94161 5.17802 10.2695 4.85016C10.5974 4.52224 11.129 4.52216 11.4569 4.85009Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_205">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.945312 10.7486) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="team-card">
-                                <div class="team-member-info">
-                                    <div class="name"><a class="text-black" href="team-details">David johnson</a></div>
-                                    <p class="designation text-black">Lead Developer</p>
-                                </div>
-                                <div class="thumb">
-                                    <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_3.png" alt="thumb">
-                                    <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_3.png" alt="thumb">
-
-                                    <div class="social-links">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_192)">
-                                                            <path
-                                                                d="M10.2426 12.5451C10.2081 12.5796 9.44862 13.3391 9.1034 13.6843C8.91928 13.8684 8.79269 13.8569 8.62008 13.6843C8.15978 13.224 7.68798 12.7522 7.22768 12.2919C7.04356 12.1078 7.05507 11.9812 7.22768 11.8086L8.36692 10.6693C8.3324 10.6348 7.66496 9.96738 7.35426 9.65668C6.89396 9.19638 6.53723 8.67855 6.36462 8.04564C6.19201 7.38971 6.26105 6.76831 6.53723 6.16992C6.72135 5.77867 6.96301 5.44495 7.27371 5.13425L8.40144 4.00652C8.56255 3.84541 8.70064 3.84541 8.86174 4.00652L10.1736 5.31837C10.3347 5.47947 10.3347 5.61756 10.1736 5.77867C9.86289 6.08937 9.55219 6.40007 9.25299 6.72228C8.94229 7.03298 8.93079 7.34368 9.25299 7.66589C9.58671 8.02262 9.93193 8.34483 10.2887 8.70156L11.6235 7.3667C11.8077 7.18258 11.9457 7.18258 12.1299 7.3667L13.5223 8.7591C13.7064 8.94322 13.7064 9.05829 13.5108 9.25392C13.0965 9.66819 12.2104 10.5543 12.1759 10.5888L15.9273 14.3402C16.1229 14.5358 16.1345 14.6624 15.9273 14.8696C15.444 15.3529 14.9722 15.8247 14.4889 16.308C14.3163 16.4806 14.1782 16.4806 14.0056 16.308C12.7973 15.0997 10.2772 12.5796 10.2426 12.5451Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_1926">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.849609 10.8441) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_202)">
-                                                            <path
-                                                                d="M10.609 8.46602L10.0233 0.668197L9.16875 1.52272L9.67725 8.29351L3.53676 7.1547L0.652344 10.0391L9.93789 11.7612L10.5518 19.9386L11.4064 19.084L10.8694 11.9339L17.354 13.1364L20.2385 10.252L10.6088 8.46623L10.609 8.46602ZM10.799 10.997L9.86781 10.8321L2.45813 9.51994L3.7707 8.20737L9.75049 9.2664L10.6817 9.43128L18.4546 10.8078L17.142 12.1203L10.7992 10.9972L10.799 10.997Z"
-                                                                fill="#121212" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_2027">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.546875 10.1456) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_196)">
-                                                            <path
-                                                                d="M1.57141 9.1344C0.844403 9.86141 0.844289 11.0451 1.57134 11.7732C2.29891 12.5008 3.48275 12.5008 4.21029 11.7733C4.93757 11.046 4.93726 9.86247 4.20968 9.13489C3.48218 8.40739 2.29865 8.40716 1.57141 9.1344Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M5.73141 11.3131L3.75072 13.2938C3.6565 13.3881 3.65646 13.5409 3.75076 13.6352L10.126 20.0104C10.2203 20.1047 10.3731 20.1046 10.4673 20.0104L12.4479 18.0298C12.5422 17.9355 12.5422 17.7826 12.448 17.6884L6.07273 11.3132C5.97843 11.2188 5.82566 11.2189 5.73141 11.3131Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M10.7204 6.17485C9.99551 6.89969 9.57925 7.75738 9.55047 8.50599L9.21558 8.17109C9.12128 8.0768 8.96847 8.07684 8.87422 8.17109L6.97425 10.0711C6.87999 10.1653 6.87995 10.3181 6.97425 10.4124L13.3495 16.7877C13.4437 16.8819 13.5966 16.8819 13.6908 16.7876L15.6696 14.8088C15.7639 14.7146 15.7639 14.5617 15.6696 14.4675L12.5155 11.3134C11.6105 10.4084 11.216 9.681 12.0468 8.85027C12.8662 8.03281 13.529 8.57306 14.4465 9.49055L17.5465 12.5906C17.6408 12.6849 17.7936 12.6848 17.8879 12.5906L19.8676 10.6109C19.9618 10.5166 19.9618 10.3638 19.8676 10.2696L16.3705 6.77247C14.916 5.31808 12.9594 3.93577 10.7204 6.17485Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_19611">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.246094 10.4471) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_205)">
-                                                            <path
-                                                                d="M13.7458 3.76926C13.1966 3.26645 12.7499 2.98989 12.3147 2.79839C11.8564 2.59148 11.3652 2.48709 10.8643 2.4929C10.3654 2.48905 9.87026 2.59345 9.41777 2.79847C8.98076 2.99178 8.53597 3.26645 7.98678 3.76926C7.4317 4.27403 7.25765 4.43644 5.91361 5.78049C4.56956 7.12453 4.40715 7.29858 3.90238 7.84973C3.39957 8.39892 3.12309 8.84567 2.93159 9.28072C2.7246 9.73911 2.6202 10.2303 2.62602 10.7312C2.62217 11.2302 2.72664 11.7252 2.93159 12.1778C3.12498 12.6148 3.39957 13.0596 3.90238 13.6087C4.40715 14.1638 4.56956 14.3379 5.91361 15.6819C7.25765 17.026 7.4317 17.1884 7.98285 17.6931C8.53204 18.1959 8.97879 18.4724 9.41399 18.6639C9.8723 18.8708 10.3654 18.9734 10.8643 18.9695C11.3633 18.9734 11.8584 18.869 12.3109 18.6639C12.748 18.4705 13.1927 18.1959 13.7419 17.6931C14.2931 17.1884 14.4671 17.0259 15.8112 15.6818C17.1552 14.3378 17.3177 14.1638 17.8224 13.6126C18.3252 13.0634 18.6018 12.6167 18.7932 12.1816C19.2013 11.2591 19.2013 10.2071 18.7933 9.28465C18.5998 8.84764 18.3252 8.40277 17.8224 7.85358C17.3176 7.30243 17.1552 7.12838 15.8112 5.78434C14.4671 4.4403 14.2969 4.27403 13.7458 3.76926ZM16.8961 8.70252C17.3583 9.20729 17.5381 9.54957 17.6445 9.79131C17.9094 10.3889 17.9094 11.0735 17.6445 11.6711C17.5381 11.9128 17.3564 12.257 16.896 12.7598C16.3972 13.3052 16.2463 13.4676 14.9255 14.7884C13.6046 16.1093 13.4403 16.2621 12.8968 16.7591C12.3921 17.2213 12.0498 17.4012 11.8081 17.5075C11.5141 17.6428 11.1931 17.7125 10.8701 17.7067C10.5452 17.7105 10.2261 17.6428 9.93221 17.5075C9.69047 17.4012 9.34623 17.2193 8.8435 16.7591C8.29809 16.2602 8.13567 16.1093 6.81482 14.7884C5.49397 13.4676 5.34115 13.3033 4.84423 12.7598C4.38199 12.2551 4.20213 11.9128 4.09576 11.6711C3.96039 11.3771 3.89082 11.0561 3.89852 10.7311C3.8946 10.4063 3.96228 10.0872 4.09773 9.79327C4.20409 9.55154 4.38592 9.20729 4.84612 8.70449C5.34508 8.15915 5.49593 7.99666 6.81671 6.67588C8.13952 5.35307 8.30194 5.20229 8.84539 4.70522C9.35016 4.24306 9.69244 4.06319 9.93417 3.95683C10.228 3.82146 10.5491 3.75181 10.872 3.75762C11.1969 3.75377 11.516 3.82146 11.81 3.95683C12.0518 4.06319 12.3959 4.24495 12.8988 4.70522C13.4442 5.20418 13.6066 5.35496 14.9274 6.67581C16.2483 7.99666 16.3972 8.15719 16.8961 8.70252Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M8.32039 8.1884C6.91644 9.59235 6.91636 11.8705 8.32039 13.2745C9.72441 14.6785 12.0025 14.6784 13.4065 13.2745C14.8105 11.8705 14.8105 9.59242 13.4065 8.1884C12.0025 6.78438 9.72441 6.78438 8.32039 8.1884ZM12.513 12.3811C11.6022 13.2919 10.1247 13.2919 9.21382 12.3811C8.30294 11.4702 8.30301 9.99265 9.21382 9.08184C10.1247 8.17095 11.6022 8.17095 12.513 9.08184C13.4239 9.99272 13.4239 11.4702 12.513 12.3811Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M11.4569 4.85009C11.7848 5.17794 11.7848 5.7096 11.4568 6.03753C11.129 6.36538 10.5973 6.36538 10.2695 6.03753C9.94154 5.7096 9.94161 5.17802 10.2695 4.85016C10.5974 4.52224 11.129 4.52216 11.4569 4.85009Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_20533">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.945312 10.7486) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="team-card">
-                                <div class="team-member-info">
-                                    <div class="name"><a class="text-black" href="team-details">Olivia davis</a></div>
-                                    <p class="designation text-black">Content Strategist</p>
-                                </div>
-                                <div class="thumb">
-                                    <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_4.png" alt="thumb">
-                                    <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_4.png" alt="thumb">
-
-                                    <div class="social-links">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_192)">
-                                                            <path
-                                                                d="M10.2426 12.5451C10.2081 12.5796 9.44862 13.3391 9.1034 13.6843C8.91928 13.8684 8.79269 13.8569 8.62008 13.6843C8.15978 13.224 7.68798 12.7522 7.22768 12.2919C7.04356 12.1078 7.05507 11.9812 7.22768 11.8086L8.36692 10.6693C8.3324 10.6348 7.66496 9.96738 7.35426 9.65668C6.89396 9.19638 6.53723 8.67855 6.36462 8.04564C6.19201 7.38971 6.26105 6.76831 6.53723 6.16992C6.72135 5.77867 6.96301 5.44495 7.27371 5.13425L8.40144 4.00652C8.56255 3.84541 8.70064 3.84541 8.86174 4.00652L10.1736 5.31837C10.3347 5.47947 10.3347 5.61756 10.1736 5.77867C9.86289 6.08937 9.55219 6.40007 9.25299 6.72228C8.94229 7.03298 8.93079 7.34368 9.25299 7.66589C9.58671 8.02262 9.93193 8.34483 10.2887 8.70156L11.6235 7.3667C11.8077 7.18258 11.9457 7.18258 12.1299 7.3667L13.5223 8.7591C13.7064 8.94322 13.7064 9.05829 13.5108 9.25392C13.0965 9.66819 12.2104 10.5543 12.1759 10.5888L15.9273 14.3402C16.1229 14.5358 16.1345 14.6624 15.9273 14.8696C15.444 15.3529 14.9722 15.8247 14.4889 16.308C14.3163 16.4806 14.1782 16.4806 14.0056 16.308C12.7973 15.0997 10.2772 12.5796 10.2426 12.5451Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_192">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.849609 10.8441) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_202)">
-                                                            <path
-                                                                d="M10.609 8.46602L10.0233 0.668197L9.16875 1.52272L9.67725 8.29351L3.53676 7.1547L0.652344 10.0391L9.93789 11.7612L10.5518 19.9386L11.4064 19.084L10.8694 11.9339L17.354 13.1364L20.2385 10.252L10.6088 8.46623L10.609 8.46602ZM10.799 10.997L9.86781 10.8321L2.45813 9.51994L3.7707 8.20737L9.75049 9.2664L10.6817 9.43128L18.4546 10.8078L17.142 12.1203L10.7992 10.9972L10.799 10.997Z"
-                                                                fill="#121212" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_20209">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.546875 10.1456) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_196)">
-                                                            <path
-                                                                d="M1.57141 9.1344C0.844403 9.86141 0.844289 11.0451 1.57134 11.7732C2.29891 12.5008 3.48275 12.5008 4.21029 11.7733C4.93757 11.046 4.93726 9.86247 4.20968 9.13489C3.48218 8.40739 2.29865 8.40716 1.57141 9.1344Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M5.73141 11.3131L3.75072 13.2938C3.6565 13.3881 3.65646 13.5409 3.75076 13.6352L10.126 20.0104C10.2203 20.1047 10.3731 20.1046 10.4673 20.0104L12.4479 18.0298C12.5422 17.9355 12.5422 17.7826 12.448 17.6884L6.07273 11.3132C5.97843 11.2188 5.82566 11.2189 5.73141 11.3131Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M10.7204 6.17485C9.99551 6.89969 9.57925 7.75738 9.55047 8.50599L9.21558 8.17109C9.12128 8.0768 8.96847 8.07684 8.87422 8.17109L6.97425 10.0711C6.87999 10.1653 6.87995 10.3181 6.97425 10.4124L13.3495 16.7877C13.4437 16.8819 13.5966 16.8819 13.6908 16.7876L15.6696 14.8088C15.7639 14.7146 15.7639 14.5617 15.6696 14.4675L12.5155 11.3134C11.6105 10.4084 11.216 9.681 12.0468 8.85027C12.8662 8.03281 13.529 8.57306 14.4465 9.49055L17.5465 12.5906C17.6408 12.6849 17.7936 12.6848 17.8879 12.5906L19.8676 10.6109C19.9618 10.5166 19.9618 10.3638 19.8676 10.2696L16.3705 6.77247C14.916 5.31808 12.9594 3.93577 10.7204 6.17485Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_19644">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.246094 10.4471) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_205)">
-                                                            <path
-                                                                d="M13.7458 3.76926C13.1966 3.26645 12.7499 2.98989 12.3147 2.79839C11.8564 2.59148 11.3652 2.48709 10.8643 2.4929C10.3654 2.48905 9.87026 2.59345 9.41777 2.79847C8.98076 2.99178 8.53597 3.26645 7.98678 3.76926C7.4317 4.27403 7.25765 4.43644 5.91361 5.78049C4.56956 7.12453 4.40715 7.29858 3.90238 7.84973C3.39957 8.39892 3.12309 8.84567 2.93159 9.28072C2.7246 9.73911 2.6202 10.2303 2.62602 10.7312C2.62217 11.2302 2.72664 11.7252 2.93159 12.1778C3.12498 12.6148 3.39957 13.0596 3.90238 13.6087C4.40715 14.1638 4.56956 14.3379 5.91361 15.6819C7.25765 17.026 7.4317 17.1884 7.98285 17.6931C8.53204 18.1959 8.97879 18.4724 9.41399 18.6639C9.8723 18.8708 10.3654 18.9734 10.8643 18.9695C11.3633 18.9734 11.8584 18.869 12.3109 18.6639C12.748 18.4705 13.1927 18.1959 13.7419 17.6931C14.2931 17.1884 14.4671 17.0259 15.8112 15.6818C17.1552 14.3378 17.3177 14.1638 17.8224 13.6126C18.3252 13.0634 18.6018 12.6167 18.7932 12.1816C19.2013 11.2591 19.2013 10.2071 18.7933 9.28465C18.5998 8.84764 18.3252 8.40277 17.8224 7.85358C17.3176 7.30243 17.1552 7.12838 15.8112 5.78434C14.4671 4.4403 14.2969 4.27403 13.7458 3.76926ZM16.8961 8.70252C17.3583 9.20729 17.5381 9.54957 17.6445 9.79131C17.9094 10.3889 17.9094 11.0735 17.6445 11.6711C17.5381 11.9128 17.3564 12.257 16.896 12.7598C16.3972 13.3052 16.2463 13.4676 14.9255 14.7884C13.6046 16.1093 13.4403 16.2621 12.8968 16.7591C12.3921 17.2213 12.0498 17.4012 11.8081 17.5075C11.5141 17.6428 11.1931 17.7125 10.8701 17.7067C10.5452 17.7105 10.2261 17.6428 9.93221 17.5075C9.69047 17.4012 9.34623 17.2193 8.8435 16.7591C8.29809 16.2602 8.13567 16.1093 6.81482 14.7884C5.49397 13.4676 5.34115 13.3033 4.84423 12.7598C4.38199 12.2551 4.20213 11.9128 4.09576 11.6711C3.96039 11.3771 3.89082 11.0561 3.89852 10.7311C3.8946 10.4063 3.96228 10.0872 4.09773 9.79327C4.20409 9.55154 4.38592 9.20729 4.84612 8.70449C5.34508 8.15915 5.49593 7.99666 6.81671 6.67588C8.13952 5.35307 8.30194 5.20229 8.84539 4.70522C9.35016 4.24306 9.69244 4.06319 9.93417 3.95683C10.228 3.82146 10.5491 3.75181 10.872 3.75762C11.1969 3.75377 11.516 3.82146 11.81 3.95683C12.0518 4.06319 12.3959 4.24495 12.8988 4.70522C13.4442 5.20418 13.6066 5.35496 14.9274 6.67581C16.2483 7.99666 16.3972 8.15719 16.8961 8.70252Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M8.32039 8.1884C6.91644 9.59235 6.91636 11.8705 8.32039 13.2745C9.72441 14.6785 12.0025 14.6784 13.4065 13.2745C14.8105 11.8705 14.8105 9.59242 13.4065 8.1884C12.0025 6.78438 9.72441 6.78438 8.32039 8.1884ZM12.513 12.3811C11.6022 13.2919 10.1247 13.2919 9.21382 12.3811C8.30294 11.4702 8.30301 9.99265 9.21382 9.08184C10.1247 8.17095 11.6022 8.17095 12.513 9.08184C13.4239 9.99272 13.4239 11.4702 12.513 12.3811Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M11.4569 4.85009C11.7848 5.17794 11.7848 5.7096 11.4568 6.03753C11.129 6.36538 10.5973 6.36538 10.2695 6.03753C9.94154 5.7096 9.94161 5.17802 10.2695 4.85016C10.5974 4.52224 11.129 4.52216 11.4569 4.85009Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_205556">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.945312 10.7486) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="swiper-slide">
-                            <div class="team-card">
-                                <div class="team-member-info">
-                                    <div class="name"><a class="text-black" href="team-details">Kajiul dox</a></div>
-                                    <p class="designation text-black">Marketing Specialist</p>
-                                </div>
-                                <div class="thumb">
-                                    <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_5.png" alt="thumb">
-                                    <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_5.png" alt="thumb">
-
-                                    <div class="social-links">
-                                        <ul>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_192)">
-                                                            <path
-                                                                d="M10.2426 12.5451C10.2081 12.5796 9.44862 13.3391 9.1034 13.6843C8.91928 13.8684 8.79269 13.8569 8.62008 13.6843C8.15978 13.224 7.68798 12.7522 7.22768 12.2919C7.04356 12.1078 7.05507 11.9812 7.22768 11.8086L8.36692 10.6693C8.3324 10.6348 7.66496 9.96738 7.35426 9.65668C6.89396 9.19638 6.53723 8.67855 6.36462 8.04564C6.19201 7.38971 6.26105 6.76831 6.53723 6.16992C6.72135 5.77867 6.96301 5.44495 7.27371 5.13425L8.40144 4.00652C8.56255 3.84541 8.70064 3.84541 8.86174 4.00652L10.1736 5.31837C10.3347 5.47947 10.3347 5.61756 10.1736 5.77867C9.86289 6.08937 9.55219 6.40007 9.25299 6.72228C8.94229 7.03298 8.93079 7.34368 9.25299 7.66589C9.58671 8.02262 9.93193 8.34483 10.2887 8.70156L11.6235 7.3667C11.8077 7.18258 11.9457 7.18258 12.1299 7.3667L13.5223 8.7591C13.7064 8.94322 13.7064 9.05829 13.5108 9.25392C13.0965 9.66819 12.2104 10.5543 12.1759 10.5888L15.9273 14.3402C16.1229 14.5358 16.1345 14.6624 15.9273 14.8696C15.444 15.3529 14.9722 15.8247 14.4889 16.308C14.3163 16.4806 14.1782 16.4806 14.0056 16.308C12.7973 15.0997 10.2772 12.5796 10.2426 12.5451Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_19233">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.849609 10.8441) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_202)">
-                                                            <path
-                                                                d="M10.609 8.46602L10.0233 0.668197L9.16875 1.52272L9.67725 8.29351L3.53676 7.1547L0.652344 10.0391L9.93789 11.7612L10.5518 19.9386L11.4064 19.084L10.8694 11.9339L17.354 13.1364L20.2385 10.252L10.6088 8.46623L10.609 8.46602ZM10.799 10.997L9.86781 10.8321L2.45813 9.51994L3.7707 8.20737L9.75049 9.2664L10.6817 9.43128L18.4546 10.8078L17.142 12.1203L10.7992 10.9972L10.799 10.997Z"
-                                                                fill="#121212" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_20200">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.546875 10.1456) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_196)">
-                                                            <path
-                                                                d="M1.57141 9.1344C0.844403 9.86141 0.844289 11.0451 1.57134 11.7732C2.29891 12.5008 3.48275 12.5008 4.21029 11.7733C4.93757 11.046 4.93726 9.86247 4.20968 9.13489C3.48218 8.40739 2.29865 8.40716 1.57141 9.1344Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M5.73141 11.3131L3.75072 13.2938C3.6565 13.3881 3.65646 13.5409 3.75076 13.6352L10.126 20.0104C10.2203 20.1047 10.3731 20.1046 10.4673 20.0104L12.4479 18.0298C12.5422 17.9355 12.5422 17.7826 12.448 17.6884L6.07273 11.3132C5.97843 11.2188 5.82566 11.2189 5.73141 11.3131Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M10.7204 6.17485C9.99551 6.89969 9.57925 7.75738 9.55047 8.50599L9.21558 8.17109C9.12128 8.0768 8.96847 8.07684 8.87422 8.17109L6.97425 10.0711C6.87999 10.1653 6.87995 10.3181 6.97425 10.4124L13.3495 16.7877C13.4437 16.8819 13.5966 16.8819 13.6908 16.7876L15.6696 14.8088C15.7639 14.7146 15.7639 14.5617 15.6696 14.4675L12.5155 11.3134C11.6105 10.4084 11.216 9.681 12.0468 8.85027C12.8662 8.03281 13.529 8.57306 14.4465 9.49055L17.5465 12.5906C17.6408 12.6849 17.7936 12.6848 17.8879 12.5906L19.8676 10.6109C19.9618 10.5166 19.9618 10.3638 19.8676 10.2696L16.3705 6.77247C14.916 5.31808 12.9594 3.93577 10.7204 6.17485Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_1964451">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.246094 10.4471) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21"
-                                                        viewBox="0 0 21 21" fill="none">
-                                                        <g clip-path="url(#clip0_222_205)">
-                                                            <path
-                                                                d="M13.7458 3.76926C13.1966 3.26645 12.7499 2.98989 12.3147 2.79839C11.8564 2.59148 11.3652 2.48709 10.8643 2.4929C10.3654 2.48905 9.87026 2.59345 9.41777 2.79847C8.98076 2.99178 8.53597 3.26645 7.98678 3.76926C7.4317 4.27403 7.25765 4.43644 5.91361 5.78049C4.56956 7.12453 4.40715 7.29858 3.90238 7.84973C3.39957 8.39892 3.12309 8.84567 2.93159 9.28072C2.7246 9.73911 2.6202 10.2303 2.62602 10.7312C2.62217 11.2302 2.72664 11.7252 2.93159 12.1778C3.12498 12.6148 3.39957 13.0596 3.90238 13.6087C4.40715 14.1638 4.56956 14.3379 5.91361 15.6819C7.25765 17.026 7.4317 17.1884 7.98285 17.6931C8.53204 18.1959 8.97879 18.4724 9.41399 18.6639C9.8723 18.8708 10.3654 18.9734 10.8643 18.9695C11.3633 18.9734 11.8584 18.869 12.3109 18.6639C12.748 18.4705 13.1927 18.1959 13.7419 17.6931C14.2931 17.1884 14.4671 17.0259 15.8112 15.6818C17.1552 14.3378 17.3177 14.1638 17.8224 13.6126C18.3252 13.0634 18.6018 12.6167 18.7932 12.1816C19.2013 11.2591 19.2013 10.2071 18.7933 9.28465C18.5998 8.84764 18.3252 8.40277 17.8224 7.85358C17.3176 7.30243 17.1552 7.12838 15.8112 5.78434C14.4671 4.4403 14.2969 4.27403 13.7458 3.76926ZM16.8961 8.70252C17.3583 9.20729 17.5381 9.54957 17.6445 9.79131C17.9094 10.3889 17.9094 11.0735 17.6445 11.6711C17.5381 11.9128 17.3564 12.257 16.896 12.7598C16.3972 13.3052 16.2463 13.4676 14.9255 14.7884C13.6046 16.1093 13.4403 16.2621 12.8968 16.7591C12.3921 17.2213 12.0498 17.4012 11.8081 17.5075C11.5141 17.6428 11.1931 17.7125 10.8701 17.7067C10.5452 17.7105 10.2261 17.6428 9.93221 17.5075C9.69047 17.4012 9.34623 17.2193 8.8435 16.7591C8.29809 16.2602 8.13567 16.1093 6.81482 14.7884C5.49397 13.4676 5.34115 13.3033 4.84423 12.7598C4.38199 12.2551 4.20213 11.9128 4.09576 11.6711C3.96039 11.3771 3.89082 11.0561 3.89852 10.7311C3.8946 10.4063 3.96228 10.0872 4.09773 9.79327C4.20409 9.55154 4.38592 9.20729 4.84612 8.70449C5.34508 8.15915 5.49593 7.99666 6.81671 6.67588C8.13952 5.35307 8.30194 5.20229 8.84539 4.70522C9.35016 4.24306 9.69244 4.06319 9.93417 3.95683C10.228 3.82146 10.5491 3.75181 10.872 3.75762C11.1969 3.75377 11.516 3.82146 11.81 3.95683C12.0518 4.06319 12.3959 4.24495 12.8988 4.70522C13.4442 5.20418 13.6066 5.35496 14.9274 6.67581C16.2483 7.99666 16.3972 8.15719 16.8961 8.70252Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M8.32039 8.1884C6.91644 9.59235 6.91636 11.8705 8.32039 13.2745C9.72441 14.6785 12.0025 14.6784 13.4065 13.2745C14.8105 11.8705 14.8105 9.59242 13.4065 8.1884C12.0025 6.78438 9.72441 6.78438 8.32039 8.1884ZM12.513 12.3811C11.6022 13.2919 10.1247 13.2919 9.21382 12.3811C8.30294 11.4702 8.30301 9.99265 9.21382 9.08184C10.1247 8.17095 11.6022 8.17095 12.513 9.08184C13.4239 9.99272 13.4239 11.4702 12.513 12.3811Z"
-                                                                fill="white" />
-                                                            <path
-                                                                d="M11.4569 4.85009C11.7848 5.17794 11.7848 5.7096 11.4568 6.03753C11.129 6.36538 10.5973 6.36538 10.2695 6.03753C9.94154 5.7096 9.94161 5.17802 10.2695 4.85016C10.5974 4.52224 11.129 4.52216 11.4569 4.85009Z"
-                                                                fill="white" />
-                                                        </g>
-                                                        <defs>
-                                                            <clipPath id="clip0_222_20555">
-                                                                <rect width="14" height="14" fill="white"
-                                                                    transform="translate(0.945312 10.7486) rotate(-45)" />
-                                                            </clipPath>
-                                                        </defs>
-                                                    </svg>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
+                        
+                        <?php if (empty($teams)): ?>
+                            <div class="container"><p class="text-center">No team members found.</p></div>
+                        <?php endif; ?>
                     </div>
                 </div>
 
@@ -676,4 +230,3 @@
             <!-- Contact Section Start -->
 
             <?php include 'include/footer.html'; ?>
-

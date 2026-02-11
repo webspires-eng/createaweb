@@ -1,5 +1,9 @@
 <?php
-require_once 'header.php';
+session_start();
+if (!isset($_SESSION['admin_logged_in'])) {
+    header("Location: index.php");
+    exit();
+}
 require_once '../include/db.php';
 
 $action = $_GET['action'] ?? 'list';
@@ -51,6 +55,7 @@ if ($id) {
 }
 
 if ($action == 'add' || $action == 'edit'): ?>
+    <?php require_once 'header.php'; ?>
 
     <!-- Page Header -->
     <div class="page-header animate-in">
@@ -152,6 +157,7 @@ if ($action == 'add' || $action == 'edit'): ?>
     </div>
 
 <?php else:
+    require_once 'header.php';
     $services = $pdo->query("SELECT * FROM services ORDER BY id DESC")->fetchAll();
     ?>
 
