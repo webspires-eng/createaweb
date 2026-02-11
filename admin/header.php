@@ -679,6 +679,21 @@ if (!isset($_SESSION['admin_id'])) {
                 <i class="fas fa-newspaper"></i>
                 <span>Blogs</span>
             </a>
+            <a href="projects.php"
+                class="sidebar-link <?php echo basename($_SERVER['PHP_SELF']) == 'projects.php' ? 'active' : ''; ?>">
+                <i class="fas fa-project-diagram"></i>
+                <span>Projects</span>
+            </a>
+            <a href="teams.php"
+                class="sidebar-link <?php echo basename($_SERVER['PHP_SELF']) == 'teams.php' ? 'active' : ''; ?>">
+                <i class="fas fa-users"></i>
+                <span>Teams</span>
+            </a>
+            <a href="faqs.php"
+                class="sidebar-link <?php echo basename($_SERVER['PHP_SELF']) == 'faqs.php' ? 'active' : ''; ?>">
+                <i class="fas fa-question-circle"></i>
+                <span>FAQs</span>
+            </a>
 
             <div class="sidebar-divider"></div>
 

@@ -1,5 +1,11 @@
-<?php include 'include/header.html'; ?>
+<?php
+require_once 'include/db.php';
+include 'include/header.html';
 
+// Fetch projects
+$stmt = $pdo->query("SELECT * FROM projects ORDER BY created_at DESC");
+$projects = $stmt->fetchAll();
+?>
 
 <!-- GT Search Start -->
 <div class="search-popup">
@@ -41,287 +47,78 @@
                 <div class="main-content">
                     <div class="swiper project-page-slider">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_1.png" alt="thumb">
+                            <?php foreach ($projects as $project): ?>
+                                <div class="swiper-slide">
+                                    <div class="project-slider-card">
+                                        <div class="card-wrapper">
+                                            <a href="project-details?id=<?php echo $project['id']; ?>" class="thumb">
+                                                <?php if ($project['image']): ?>
+                                                    <img src="./<?php echo $project['image']; ?>" alt="thumb"
+                                                        style="height: 400px; object-fit: cover;">
+                                                <?php else: ?>
+                                                    <img src="./assets/img/pages/projectPageThumb1_1.png" alt="thumb">
+                                                <?php endif; ?>
 
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
+                                                <div class="thumb-content">
+                                                    <div class="title"><?php echo htmlspecialchars($project['title']); ?>
+                                                    </div>
+                                                    <span><?php echo htmlspecialchars($project['category']); ?></span>
+                                                </div>
 
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
+                                                <div class="thumb-icon">
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
+                                                            fill="#f5a623" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_2.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
+                            <?php endforeach; ?>
+                            <?php if (empty($projects)): ?>
+                                <div class="container">
+                                    <p class="text-center">No projects found.</p>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_3.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_4.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_5.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_4.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endif; ?>
                         </div>
                     </div>
 
                     <div class="swiper project-page-slider-two" dir="rtl">
                         <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_6.png" alt="thumb">
+                            <?php foreach ($projects as $project): ?>
+                                <div class="swiper-slide">
+                                    <div class="project-slider-card">
+                                        <div class="card-wrapper">
+                                            <a href="project-details?id=<?php echo $project['id']; ?>" class="thumb">
+                                                <?php if ($project['image']): ?>
+                                                    <img src="./<?php echo $project['image']; ?>" alt="thumb"
+                                                        style="height: 400px; object-fit: cover;">
+                                                <?php else: ?>
+                                                    <img src="./assets/img/pages/projectPageThumb1_1.png" alt="thumb">
+                                                <?php endif; ?>
 
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
+                                                <div class="thumb-content">
+                                                    <div class="title"><?php echo htmlspecialchars($project['title']); ?>
+                                                    </div>
+                                                    <span><?php echo htmlspecialchars($project['category']); ?></span>
+                                                </div>
 
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
+                                                <div class="thumb-icon">
+                                                    <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
+                                                            fill="#f5a623" />
+                                                    </svg>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_7.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_8.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_9.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_10.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="project-slider-card">
-                                    <div class="card-wrapper">
-                                        <a href="project-details" class="thumb">
-                                            <img src="./assets/img/pages/projectPageThumb1_3.png" alt="thumb">
-
-                                            <div class="thumb-content">
-                                                <div class="title">Yoga online school platform</div>
-                                                <span>Design - 2024</span>
-                                            </div>
-
-                                            <div class="thumb-icon">
-                                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                                    xmlns="http://www.w3.org/2000/svg">
-                                                    <path
-                                                        d="M10.021 3.414L1.414 12.021L0 10.607L8.60599 2H1.021V0H12.021V11H10.021V3.414Z"
-                                                        fill="#f5a623" />
-                                                </svg>
-                                            </div>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
+                            <?php endforeach; ?>
                         </div>
                     </div>
                 </div>
