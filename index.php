@@ -40,7 +40,7 @@ include 'include/header.html';
                     </div>
                 </div>
                 <div class="hero-image fix wow fadeInUp" data-wow-delay=".3s">
-                    <img data-speed=".8" src="assets/img/home-5/hero-image.jpg" alt="img">
+                    <img data-speed=".8" src="assets/uploads/homehero.webp" alt="img">
                 </div>
             </section>
 
