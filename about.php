@@ -316,7 +316,7 @@
                                 </div>
 
                                 <h6 class="title">Acknowledged web design excellence</h6>
-                                <p class="text">Awarded Honorable Mentions by Awwwards, highlighting our ability to
+                                <p class="text">Awarded Honourable Mentions by Awwwards, highlighting our ability to
                                     deliver
                                     innovative and high-quality web designs.</p>
                             </div>
@@ -545,7 +545,7 @@
 
                                 <div class="title title-anim">
                                     Building brands with purpose,
-                                    <span>honored for excellence in innovation</span>
+                                    <span>honoured for excellence in innovation</span>
                                 </div>
                             </div>
 
@@ -558,7 +558,7 @@
                                             <span class="info-items">
                                                 <span class="year">2010</span>
 
-                                                <span class="info-content fast-items">Recognized for <span>outstanding
+                                                <span class="info-content fast-items">Recognised for <span>outstanding
                                                         creativity</span></span>
                                             </span>
                                         </span>
@@ -584,7 +584,7 @@
                                             <span class="info-items">
                                                 <span class="year">2020</span>
 
-                                                <span class="info-content">Honored <span>for
+                                                <span class="info-content">Honoured <span>for
                                                         customer-centric
                                                         excellence</span></span>
                                             </span>

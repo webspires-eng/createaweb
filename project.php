@@ -39,7 +39,7 @@ $projects = $stmt->fetchAll();
             <div class="project-page-wrapper style-2 pb-150">
                 <div class="container">
                     <div class="section-title">
-                        <div class="title">We design intuitive digital experiences that prioritize users, elevate
+                        <div class="title">We design intuitive digital experiences that prioritise users, elevate
                             brands</div>
                     </div>
                 </div>

@@ -254,7 +254,7 @@ include 'include/header.html';
                                         <ul>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
-                                                Personalization at scale
+                                                Personalisation at scale
                                             </li>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
@@ -301,7 +301,7 @@ include 'include/header.html';
                                         <ul>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
-                                                Personalization at scale
+                                                Personalisation at scale
                                             </li>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
@@ -348,7 +348,7 @@ include 'include/header.html';
                                         <ul>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
-                                                Personalization at scale
+                                                Personalisation at scale
                                             </li>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
@@ -395,7 +395,7 @@ include 'include/header.html';
                                         <ul>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
-                                                Personalization at scale
+                                                Personalisation at scale
                                             </li>
                                             <li>
                                                 <i class="fa-solid fa-circle-check"></i>
@@ -689,7 +689,7 @@ include 'include/header.html';
                             <div class="col-xl-9">
                                 <div class="section-title5 style-4">
                                     <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                                        Recognizing Our commitment To Excellence Through Prestigious For wards,
+                                        Recognising Our commitment To Excellence Through Prestigious For wards,
                                         celebrating creative, innovation, <span>and outstanding client achievements
                                             globally.</span>
                                     </h2>
@@ -809,87 +809,94 @@ include 'include/header.html';
                         </h2>
                     </div>
                     <div class="row">
-                        <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
-                            <div class="news-left-items">
-                                <div class="thumb">
-                                    <img src="assets/img/home-5/news/news-01.jpg" alt="img">
-                                    <img src="assets/img/home-5/news/news-01.jpg" alt="img">
-                                </div>
-                                <div class="content">
-                                    <ul>
-                                        <li>
-                                            <a href="news">Creative</a>
-                                        </li>
-                                        <li>
-                                            <span>NOV 20, 2026</span>
-                                        </li>
-                                    </ul>
-                                    <h3>
-                                        <a href="blog-details">Designing with purpose to make brands truly
-                                            unforgettable.</a>
-                                    </h3>
-                                    <a href="blog-details" class="link-btn">
-                                        Read more <i class="fa-solid fa-arrow-up-right"></i>
-                                    </a>
+                        <?php
+                        // Fetch latest 3 blogs
+                        $stmt = $pdo->query("SELECT * FROM blogs ORDER BY created_at DESC LIMIT 3");
+                        $blogs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+                        if ($blogs) {
+                            // Featured Blog (First Item)
+                            $featuredBlog = $blogs[0];
+                            ?>
+                            <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
+                                <div class="news-left-items">
+                                    <div class="thumb">
+                                        <?php if (!empty($featuredBlog['thumb'])): ?>
+                                            <img src="<?php echo htmlspecialchars($featuredBlog['thumb']); ?>" alt="img">
+                                            <img src="<?php echo htmlspecialchars($featuredBlog['thumb']); ?>" alt="img">
+                                        <?php else: ?>
+                                            <img src="assets/img/home-5/news/news-01.jpg" alt="img">
+                                            <img src="assets/img/home-5/news/news-01.jpg" alt="img">
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="content">
+                                        <ul>
+                                            <li>
+                                                <a href="blog">Creative</a>
+                                            </li>
+                                            <li>
+                                                <span><?php echo date('M d, Y', strtotime($featuredBlog['created_at'])); ?></span>
+                                            </li>
+                                        </ul>
+                                        <h3>
+                                            <a href="blog-details.php?id=<?php echo $featuredBlog['id']; ?>">
+                                                <?php echo htmlspecialchars($featuredBlog['title']); ?>
+                                            </a>
+                                        </h3>
+                                        <a href="blog-details.php?id=<?php echo $featuredBlog['id']; ?>" class="link-btn">
+                                            Read more <i class="fa-solid fa-arrow-up-right"></i>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-lg-6">
-                            <ul class="news-right-list">
-                                <li class="wow fadeInRight" data-wow-delay=".3s">
-                                    <div class="news-box-style-4">
-                                        <div class="thumb">
-                                            <img src="assets/img/home-5/news/news-02.jpg" alt="img">
-                                            <img src="assets/img/home-5/news/news-02.jpg" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <ul>
-                                                <li>
-                                                    <a href="news">Business</a>
-                                                </li>
-                                                <li>
-                                                    <span>NOV 20, 2026</span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <a href="blog-details">
-                                                    How emotion and design together shape powerful brand stories.
-                                                </a>
-                                            </h3>
-                                            <a href="blog-details" class="link-btn">
-                                                Read more <i class="fa-solid fa-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="wow fadeInRight" data-wow-delay=".5s">
-                                    <div class="news-box-style-4">
-                                        <div class="thumb">
-                                            <img src="assets/img/home-5/news/news-03.jpg" alt="img">
-                                            <img src="assets/img/home-5/news/news-03.jpg" alt="img">
-                                        </div>
-                                        <div class="content">
-                                            <ul>
-                                                <li>
-                                                    <a href="news">Design</a>
-                                                </li>
-                                                <li>
-                                                    <span>NOV 20, 2026</span>
-                                                </li>
-                                            </ul>
-                                            <h3>
-                                                <a href="blog-details">
-                                                    How design thinking drives innovation in modern brand for growth.
-                                                </a>
-                                            </h3>
-                                            <a href="blog-details" class="link-btn">
-                                                Read more <i class="fa-solid fa-arrow-up-right"></i>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
+
+                            <div class="col-lg-6">
+                                <ul class="news-right-list">
+                                    <?php
+                                    // Remaining Blogs (Items 2 and 3)
+                                    for ($i = 1; $i < count($blogs); $i++) {
+                                        $blog = $blogs[$i];
+                                        $delay = 0.3 + (($i - 1) * 0.2); // Calculate delay: 0.3, 0.5
+                                        ?>
+                                        <li class="wow fadeInRight" data-wow-delay="<?php echo $delay; ?>s">
+                                            <div class="news-box-style-4">
+                                                <div class="thumb">
+                                                    <?php if (!empty($blog['thumb'])): ?>
+                                                        <img src="<?php echo htmlspecialchars($blog['thumb']); ?>" alt="img">
+                                                        <img src="<?php echo htmlspecialchars($blog['thumb']); ?>" alt="img">
+                                                    <?php else: ?>
+                                                        <img src="assets/img/home-5/news/news-02.jpg" alt="img">
+                                                        <img src="assets/img/home-5/news/news-02.jpg" alt="img">
+                                                    <?php endif; ?>
+                                                </div>
+                                                <div class="content">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="blog">Creative</a>
+                                                        </li>
+                                                        <li>
+                                                            <span><?php echo date('M d, Y', strtotime($blog['created_at'])); ?></span>
+                                                        </li>
+                                                    </ul>
+                                                    <h3>
+                                                        <a href="blog-details.php?id=<?php echo $blog['id']; ?>">
+                                                            <?php echo htmlspecialchars($blog['title']); ?>
+                                                        </a>
+                                                    </h3>
+                                                    <a href="blog-details.php?id=<?php echo $blog['id']; ?>" class="link-btn">
+                                                        Read more <i class="fa-solid fa-arrow-up-right"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    <?php } // end for ?>
+                                </ul>
+                            </div>
+                        <?php } else { ?>
+                            <div class="col-12 text-center">
+                                <p>No blog posts found.</p>
+                            </div>
+                        <?php } ?>
                     </div>
                 </div>
             </section>
