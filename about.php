@@ -19,7 +19,7 @@
         <!-- Breadcrumb page Section Start -->
         <div class="breadcrumb-page-area-one style-2 pt-96 pb-150 fix">
             <div class="breadcrumb-page-wrap pt-150 pb-150"
-                style="background: url(./assets/img/pages/aboutPageBg1_1.png);">
+                style="background: url(./assets/uploads/abouthero.webp); background-size: cover; background-position: center;">
                 <div class="bg-shape">
                     <svg width="97" height="110" viewBox="0 0 97 110" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -39,15 +39,7 @@
                         <div class="right-content">
                             <p class="text">Blending design and tech to create inspiring digital experiences.</p>
 
-                            <div class="our-clint">
-                                <ul>
-                                    <li><img src="assets/img/home-1/hero/heroVector1_1.png" alt="img"></li>
-                                    <li><img src="assets/img/home-1/hero/heroVector1_2.png" alt="img"></li>
-                                    <li><img src="assets/img/home-1/hero/heroVector1_3.png" alt="img"></li>
-                                    <li><img src="assets/img/home-1/hero/heroVector1_4.png" alt="img"></li>
-                                </ul>
-                                <p class="text-1">trusted clients world wide</p>
-                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -97,17 +89,8 @@
                                 </div>
 
                                 <div class="thumb fix">
-                                    <img data-speed="0.7" src="./assets/img/home-4/about/aboutThumb1_1.png" alt="thumb">
-                                    <a href="https://www.youtube.com/watch?v=Cn4G2lZ_g2I" class="video-btn video-popup">
-                                        <span class="btn neon-pulse">
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                                viewBox="0 0 16 16" fill="none">
-                                                <path
-                                                    d="M14.792 7.30241L1.99205 0.10243C1.74405 -0.0367692 1.44165 -0.0335692 1.19685 0.10883C0.950448 0.25283 0.800049 0.515229 0.800049 0.800028V15.2C0.800049 15.4848 0.950448 15.7472 1.19685 15.8912C1.32165 15.9632 1.46085 16 1.60005 16C1.73445 16 1.87045 15.9664 1.99205 15.8976L14.792 8.6976C15.0432 8.5552 15.2 8.28961 15.2 8.00001C15.2 7.71041 15.0432 7.44481 14.792 7.30241Z"
-                                                    fill="#121212" />
-                                            </svg>
-                                        </span>
-                                    </a>
+                                    <img data-speed="0.7" src="./assets/uploads/abouthome.webp" alt="thumb">
+
                                 </div>
                             </div>
                         </div>
@@ -366,13 +349,13 @@
                                     </div>
 
                                     <div class="about-thumb thumb-1 fix">
-                                        <img data-speed="0.7" src="./assets/img/home-2/about/aboutThumb1_1.jpg"
+                                        <img data-speed="0.7" src="./assets/uploads/abiutthumb.webp"
                                             alt="thumb">
                                     </div>
                                 </div>
                                 <div class="about-content-item">
                                     <div class="about-thumb thumb-2 fix">
-                                        <img data-speed="0.7" src="./assets/img/home-2/about/aboutThumb1_2.jpg"
+                                        <img data-speed="0.7" src="./assets/uploads/table.webp"
                                             alt="thumb">
                                     </div>
                                 </div>
