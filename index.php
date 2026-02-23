@@ -73,7 +73,7 @@ include 'include/header.html';
                             foreach ($services as $service) {
                                 $activeClass = ($i == 1) ? 'active' : ''; // Make 2nd item active matching original design
                                 $count = str_pad($i + 1, 2, '0', STR_PAD_LEFT);
-                                ?>
+                        ?>
                                 <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="<?php echo $delay; ?>s">
                                     <div class="work-process-box-style-4 <?php echo $activeClass; ?> fix bg-cover"
                                         style="background-image: url('assets/img/home-5/process-shape.png');">
@@ -90,7 +90,7 @@ include 'include/header.html';
                                         <a href="about" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                     </div>
                                 </div>
-                                <?php
+                        <?php
                                 $delay += 0.2;
                                 $i++;
                             }
@@ -558,9 +558,7 @@ include 'include/header.html';
                             [ Clients testimonials ]
                         </h6>
                         <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
-                            Our Valued Clients Trust Us To <br> Innovative <span class="testi-iimg"><img
-                                    class="img-custom-anim-left" src="assets/img/home-5/client-info.png"
-                                    alt="img"></span>Solutions And <br> Outstanding Results.
+                            Our Valued Clients Trust Us To <br> Innovative <span class="testi-iimg"></span>Solutions And <br> Outstanding Results.
                         </h2>
                     </div>
                 </div>
@@ -817,7 +815,7 @@ include 'include/header.html';
                         if ($blogs) {
                             // Featured Blog (First Item)
                             $featuredBlog = $blogs[0];
-                            ?>
+                        ?>
                             <div class="col-lg-6 wow fadeInUp" data-wow-delay=".3s">
                                 <div class="news-left-items">
                                     <div class="thumb">
@@ -857,7 +855,7 @@ include 'include/header.html';
                                     for ($i = 1; $i < count($blogs); $i++) {
                                         $blog = $blogs[$i];
                                         $delay = 0.3 + (($i - 1) * 0.2); // Calculate delay: 0.3, 0.5
-                                        ?>
+                                    ?>
                                         <li class="wow fadeInRight" data-wow-delay="<?php echo $delay; ?>s">
                                             <div class="news-box-style-4">
                                                 <div class="thumb">
@@ -889,7 +887,8 @@ include 'include/header.html';
                                                 </div>
                                             </div>
                                         </li>
-                                    <?php } // end for ?>
+                                    <?php } // end for 
+                                    ?>
                                 </ul>
                             </div>
                         <?php } else { ?>

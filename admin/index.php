@@ -2,6 +2,10 @@
 session_start();
 require_once '../include/db.php';
 
+
+// $_SESSION['admin_id'] = 1;
+// $_SESSION['admin_user'] = "admin";
+// $_SESSION['admin_logged_in'] = true;
 if (isset($_SESSION['admin_id'])) {
     header("Location: dashboard.php");
     exit();

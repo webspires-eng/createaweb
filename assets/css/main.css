@@ -17497,6 +17497,8 @@ span {
   display: flex;
   justify-content: space-between;
   margin-bottom: 96px;
+  background-position: right !important;
+  background-size: cover !important;
 }
 
 @media (max-width: 991px) {
@@ -26546,3 +26548,13 @@ body.loaded {
 }
 
 /*# sourceMappingURL=main.css.map */
+.map-area iframe {
+  width: 100%;
+  aspect-ratio: 16/6;
+}
+
+@media (max-width: 991px) {
+  .map-area iframe {
+    aspect-ratio: 16/9;
+  }
+}

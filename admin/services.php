@@ -162,7 +162,9 @@ if ($action == 'add' || $action == 'edit'): ?>
 <?php else:
     require_once 'header.php';
     $services = $pdo->query("SELECT * FROM services ORDER BY id DESC")->fetchAll();
-    ?>
+
+?>
+
 
     <!-- Page Header -->
     <div class="page-header d-flex justify-content-between align-items-center flex-wrap gap-3 animate-in">
