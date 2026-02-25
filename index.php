@@ -209,9 +209,9 @@ include 'include/header.html';
             <!-- Service Section Start -->
             <section class="service-section-4 fix section-padding pt-0">
                 <div class="container">
-                    <div class="row justify-content-end">
+                    <div class="row justify-content-center">
                         <div class="col-lg-6">
-                            <div class="section-title5 style-4">
+                            <div class="section-title5 style-4 text-center">
                                 <h6 class="sub-title wow fadeInUp">
                                     [ our working process ]
                                 </h6>
