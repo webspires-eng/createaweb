@@ -17516,6 +17516,7 @@ span {
 .breadcrumb-page-area-one.style-2 .gt-breadcrumb-wrapper .text {
   color: var(--gt-white);
   margin-bottom: 79px;
+  transform: translateY(-60px);
 }
 
 @media (max-width: 991px) {
@@ -17575,7 +17576,7 @@ span {
 .gt-breadcrumb-wrapper .title {
   font-family: "Kanit", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 32px;
   line-height: 24px;
   letter-spacing: -0.01em;
   text-align: left;

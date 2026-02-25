@@ -39,14 +39,14 @@ if (!$blog) {
             <div class="blog-page-wrapper style-3 pt-150 pb-150">
                 <div class="container">
                     <div class="author text-center mb-30">
-                        <div class="author-thumb mb-20">
+                        <!-- <div class="author-thumb mb-20">
                             <img src="./assets/img/pages/blogPageVactor1_1.png" alt="author">
-                        </div>
+                        </div> -->
 
-                        <div class="author-name">
+                        <!-- <div class="author-name">
                             <div class="name"><?php echo htmlspecialchars($blog['author'] ?? 'Admin'); ?></div>
                             <span>Composed by</span>
-                        </div>
+                        </div> -->
                     </div>
 
                     <div class="section-title mb-30">

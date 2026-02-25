@@ -54,7 +54,7 @@
                     <div class="row gy-5">
                         <div class="col-xl-6">
                             <div class="about-left-content">
-                                <div class="about-review gt_fade_anim" data-delay=".5" data-fade-from="top"
+                                <!-- <div class="about-review gt_fade_anim" data-delay=".5" data-fade-from="top"
                                     data-ease="bounce">
                                     <span>4.9</span>
                                     <div class="about-review-content">
@@ -86,7 +86,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
 
                                 <div class="thumb fix">
                                     <img data-speed="0.7" src="./assets/uploads/abouthome.webp" alt="thumb">
@@ -275,7 +275,7 @@
         <!-- Work Process Section End -->
 
         <!-- Accolades Section Start -->
-        <section class="accolades-area-two fix">
+        <!-- <section class="accolades-area-two fix">
             <div class="accolades-wrapper pb-150">
                 <div class="container">
                     <div class="row gy-4">
@@ -320,7 +320,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Accolades Section End -->
 
         <!-- About Section Start -->
@@ -596,7 +596,7 @@
         </div>
         <!-- Award Section End -->
 
-        <div class="group tp-hero-2-wrapper fix pb-150">
+        <!-- <div class="group tp-hero-2-wrapper fix pb-150">
             <div class="">
                 <section class="p-relative">
                     <div class="cta-area overflow-hidden">
@@ -606,7 +606,7 @@
                                 <div class="section-content">
                                     <div class="section-title-wrapper">
                                         <div class="title-wrapper">
-                                            <!-- <div class="icon text-center">
+                                            <div class="icon text-center">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="115" height="30"
                                                     viewBox="0 0 115 30" fill="none">
                                                     <path
@@ -635,7 +635,7 @@
                                                         d="M33.6898 10.7393C33.6898 10.7208 33.6887 10.7026 33.6887 10.6841C33.6414 15.4302 29.9074 19.1531 25.1534 19.1347L6.39869 19.0621L6.36791 27.0114C6.36149 28.6686 4.93593 30.0065 3.2788 30C1.62167 29.9936 0.206497 28.6447 0.212912 26.9876L0.24385 18.9863C0.257301 15.5174 3.25448 12.5328 6.72342 12.5462L25.2987 12.6181C26.5581 12.623 27.5826 11.714 27.5875 10.4546C27.5923 9.19519 26.5749 8.27837 25.3155 8.27346L9.34067 8.21164C9.34067 8.21164 11.6637 4.96205 9.36452 2.05664L25.2193 2.118C29.9733 2.13641 33.6783 5.93743 33.6887 10.6841C33.6889 10.6656 33.6901 10.6475 33.6902 10.6289L33.6898 10.7393Z"
                                                         fill="#f5a623" />
                                                 </svg>
-                                            </div> -->
+                                            </div>
                                             <h2 class="title">Meet our team</h2>
                                         </div>
                                     </div>
@@ -1161,7 +1161,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <!-- Testimonial Section Start -->
         <section class="testimonial-area-three fix">

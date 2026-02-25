@@ -85,7 +85,7 @@ include 'include/header.html';
                                             </p>
                                         </div>
                                         <div class="bg-image">
-                                            <img src="<?php echo htmlspecialchars($service['image']); ?>" alt="img">
+                                            <!-- <img src="<?php echo htmlspecialchars($service['image']); ?>" alt="img"> -->
                                         </div>
                                         <a href="about" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                     </div>
@@ -101,7 +101,7 @@ include 'include/header.html';
             </section>
 
             <!-- Project Section Start -->
-            <section class="project-section-5 pt-0 fix section-padding">
+            <!-- <section class="project-section-5 pt-0 fix section-padding">
                 <div class="container">
                     <div class="section-title-area">
                         <div class="section-title style-4">
@@ -204,7 +204,7 @@ include 'include/header.html';
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Service Section Start -->
             <section class="service-section-4 fix section-padding pt-0">
@@ -683,8 +683,8 @@ include 'include/header.html';
                             Explore <br> Recognition
                         </h2>
                         <div class="row">
-                            <div class="col-xl-3"></div>
-                            <div class="col-xl-9">
+                            <!-- <div class="col-xl-3"></div> -->
+                            <div class="col-xl-12">
                                 <div class="section-title5 style-4">
                                     <h2 class="tx-title sec_title  tz-itm-title tz-itm-anim">
                                         Recognising Our commitment To Excellence Through Prestigious For wards,
@@ -693,7 +693,7 @@ include 'include/header.html';
                                     </h2>
                                 </div>
                                 <div class="row">
-                                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".3s">
                                         <div class="award-box-items bg-cover"
                                             style="background-image: url('assets/img/home-5/process-shape.png');">
                                             <div class="icon">
@@ -702,7 +702,7 @@ include 'include/header.html';
                                             <h3 class="award-title">Best innovative for <br> design award.</h3>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
+                                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".5s">
                                         <div class="award-box-items bg-cover"
                                             style="background-image: url('assets/img/home-5/process-shape.png');">
                                             <div class="icon">
@@ -711,7 +711,7 @@ include 'include/header.html';
                                             <h3 class="award-title">Excellence in <br> branding award.</h3>
                                         </div>
                                     </div>
-                                    <div class="col-xl-4 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
                                         <div class="award-box-items bg-cover"
                                             style="background-image: url('assets/img/home-5/process-shape.png');">
                                             <div class="icon">
@@ -720,6 +720,17 @@ include 'include/header.html';
                                             <h3 class="award-title">Top creative agency <br> of all time.</h3>
                                         </div>
                                     </div>
+
+                                    <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay=".7s">
+                                        <div class="award-box-items bg-cover"
+                                            style="">
+                                            <div class="icon">
+                                                <img src="assets/img/home-5/award/award-3.png" alt="img">
+                                            </div>
+                                            <h3 class="award-title">Global design <br> excellence award.</h3>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
                         </div>
@@ -728,7 +739,7 @@ include 'include/header.html';
             </section>
 
             <!-- Brand Section Start -->
-            <div class="brand-section">
+            <!-- <div class="brand-section">
                 <div class="swiper brand-slider">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
@@ -793,7 +804,7 @@ include 'include/header.html';
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
             <!-- News Section Start -->
             <section class="news-section-4 section-padding">
