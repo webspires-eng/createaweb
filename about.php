@@ -1410,7 +1410,7 @@
         <!-- Testimonial Section End -->
 
         <!-- Brand Section Start -->
-        <section class="brand-area-one">
+        <!-- <section class="brand-area-one">
             <div class="brand-wrapper pb-150">
                 <div class="container">
                     <p class="text-center mb-5 title-anim">We worked worldwide</p>
@@ -1677,7 +1677,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Brand Section End -->
 
         <?php include 'include/footer.html'; ?>
