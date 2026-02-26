@@ -3,12 +3,14 @@ require_once 'include/db.php';
 include 'include/header.html';
 ?>
 
-
 <div class="page-wrapper dark-bg-4">
+
 
 
     <div id="smooth-wrapper">
         <div id="smooth-content">
+
+
 
             <!-- Hero Section Start -->
             <section class="hero-section-4 hero-4 section-bg-6 bg-cover"
@@ -27,7 +29,7 @@ include 'include/header.html';
                                 <a href="#"><i class="fab fa-pinterest-p"></i></a>
                             </div>
                             <div class="content wow fadeInUp" data-wow-delay=".5s">
-                                <p>
+                                <p class="text-justify">
                                     We help companies turn data into direction. By uncovering actionable insights, we
                                     identify growth opportunities, reduce risk, and empower smarter decisions that drive
                                     sustainable, long-term success.
@@ -80,7 +82,7 @@ include 'include/header.html';
                                         <div class="content">
                                             <span><?php echo $count; ?></span>
                                             <h3><?php echo htmlspecialchars($service['title']); ?></h3>
-                                            <p>
+                                            <p class="text-justify">
                                                 <?php echo htmlspecialchars($service['description']); ?>
                                             </p>
                                         </div>
@@ -235,7 +237,7 @@ include 'include/header.html';
                                     <div class="item-text">
                                         <h4>Define identity:</h4>
                                         <div class="text">
-                                            <p>
+                                            <p class="text-justify">
                                                 Provide data-driven stratege help companies identifies opportunities,
                                                 reduce risk and achieve long term of our growth. Provide driven on
                                                 strategie.
@@ -282,7 +284,7 @@ include 'include/header.html';
                                     <div class="item-text">
                                         <h4>Define identity:</h4>
                                         <div class="text">
-                                            <p>
+                                            <p class="text-justify">
                                                 Provide data-driven stratege help companies identifies opportunities,
                                                 reduce risk and achieve long term of our growth. Provide driven on
                                                 strategie.
@@ -329,7 +331,7 @@ include 'include/header.html';
                                     <div class="item-text">
                                         <h4>Define identity:</h4>
                                         <div class="text">
-                                            <p>
+                                            <p class="text-justify">
                                                 Provide data-driven stratege help companies identifies opportunities,
                                                 reduce risk and achieve long term of our growth. Provide driven on
                                                 strategie.
@@ -376,7 +378,7 @@ include 'include/header.html';
                                     <div class="item-text">
                                         <h4>Define identity:</h4>
                                         <div class="text">
-                                            <p>
+                                            <p class="text-justify">
                                                 Provide data-driven stratege help companies identifies opportunities,
                                                 reduce risk and achieve long term of our growth. Provide driven on
                                                 strategie.
@@ -570,7 +572,7 @@ include 'include/header.html';
                                 <div class="quote-icon">
                                     <img src="assets/img/home-5/quote-icon.png" alt="img">
                                 </div>
-                                <h3>
+                                <h3 class="text-justify">
                                     “From the outset, we provid expectations and regular updates our progress. You’ll
                                     receive comprehensive reports outline. From the outset, we pro expectations and
                                     regular updates our progress.
@@ -596,7 +598,7 @@ include 'include/header.html';
                                 <div class="quote-icon">
                                     <img src="assets/img/home-5/quote-icon.png" alt="img">
                                 </div>
-                                <h3>
+                                <h3 class="text-justify">
                                     “From the outset, we provid expectations and regular updates our progress. You’ll
                                     receive comprehensive reports outline. From the outset, we pro expectations and
                                     regular updates our progress.
@@ -622,7 +624,7 @@ include 'include/header.html';
                                 <div class="quote-icon">
                                     <img src="assets/img/home-5/quote-icon.png" alt="img">
                                 </div>
-                                <h3>
+                                <h3 class="text-justify">
                                     “From the outset, we provid expectations and regular updates our progress. You’ll
                                     receive comprehensive reports outline. From the outset, we pro expectations and
                                     regular updates our progress.
@@ -648,7 +650,7 @@ include 'include/header.html';
                                 <div class="quote-icon">
                                     <img src="assets/img/home-5/quote-icon.png" alt="img">
                                 </div>
-                                <h3>
+                                <h3 class="text-justify">
                                     “From the outset, we provid expectations and regular updates our progress. You’ll
                                     receive comprehensive reports outline. From the outset, we pro expectations and
                                     regular updates our progress.
@@ -725,7 +727,7 @@ include 'include/header.html';
                                         <div class="award-box-items bg-cover"
                                             style="">
                                             <div class="icon">
-                                                <img src="assets/img/home-5/award/award-3.png" alt="img">
+                                                <img src="assets/img/home-5/award/award-4.png" width="100" alt="img">
                                             </div>
                                             <h3 class="award-title">Global design <br> excellence award.</h3>
                                         </div>
@@ -847,7 +849,7 @@ include 'include/header.html';
                                                 <span><?php echo date('M d, Y', strtotime($featuredBlog['created_at'])); ?></span>
                                             </li>
                                         </ul>
-                                        <h3>
+                                        <h3 class="text-justify">
                                             <a href="blog-details.php?id=<?php echo $featuredBlog['id']; ?>">
                                                 <?php echo htmlspecialchars($featuredBlog['title']); ?>
                                             </a>
@@ -904,7 +906,7 @@ include 'include/header.html';
                             </div>
                         <?php } else { ?>
                             <div class="col-12 text-center">
-                                <p>No blog posts found.</p>
+                                <p class="text-justify">No blog posts found.</p>
                             </div>
                         <?php } ?>
                     </div>

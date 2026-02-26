@@ -93,7 +93,7 @@ $services = $stmt->fetchAll();
                                             <h3 class="title"><?php echo htmlspecialchars($service['title']); ?></h3>
                                         </div>
 
-                                        <div class="service-desc p-4 text-white" style="font-size: 14px; line-height: 1.6;">
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
                                             <?php echo nl2br(htmlspecialchars(substr($service['description'], 0, 200))); ?><?php echo strlen($service['description']) > 200 ? '...' : ''; ?>
                                         </div>
 

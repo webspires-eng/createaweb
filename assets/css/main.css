@@ -8677,7 +8677,7 @@ span {
   font-style: normal;
   font-weight: 500;
   line-height: 30px;
-  width: 141px;
+  width: 100%;
 }
 
 @media (max-width: 575px) {
@@ -9837,6 +9837,10 @@ span {
   }
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
 .blog-page-wrapper.style-3 .middle-content .text-content .text {
   margin-bottom: 20px;
   font-family: "Kanit", sans-serif;
@@ -9844,7 +9848,7 @@ span {
   font-size: 16px;
   line-height: 26px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: justify;
   text-transform: capitalize;
   color: #555555;
 }

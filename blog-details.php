@@ -67,7 +67,7 @@ if (!$blog) {
 
                     <div class="middle-content">
                         <div class="text-content">
-                            <div class="text">
+                            <div class="text text-justify">
                                 <?php echo nl2br(($blog['content'])); ?>
                             </div>
                         </div>

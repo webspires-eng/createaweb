@@ -34,7 +34,7 @@
 
                 <div class="container">
                     <div class="gt-breadcrumb-wrapper mb-0">
-                        <div class="title">About us</div>
+                        <div class="title text-justify">About us</div>
 
                         <div class="right-content">
                             <p class="text">Blending design and tech to create inspiring digital experiences.</p>
@@ -118,9 +118,9 @@
                                     </div>
                                 </div>
 
-                                <div class="about-text-content">
+                                <div class="about-text-content flex-column ">
                                     <p class="content-text">Excellence in brand strategy</p>
-                                    <span>
+                                    <span class="text-justify">
                                         CreateAweb is about doing the right things for the right reasons. It starts with
                                         a deep understanding of your audience, clear communication of your value, and
                                         marketing built on genuine insight not trends or guesswork. By working with
@@ -205,7 +205,7 @@
                         </div>
 
                         <div class="work-process-items items-1">
-                            <div class="title">Briefing</div>
+                            <div class="title text-justify">Briefing</div>
 
                             <div class="arrow-icon">
                                 <svg class="move-shape" xmlns="http://www.w3.org/2000/svg" width="64" height="16"
@@ -217,7 +217,7 @@
                             </div>
                         </div>
                         <div class="work-process-items items-2">
-                            <div class="title">discovery</div>
+                            <div class="title text-justify">discovery</div>
 
                             <ul>
                                 <li class="gt-zoom-in-out">research</li>
@@ -237,7 +237,7 @@
                         <div class="work-process-items items-3">
                             <div class="item-content">
                                 <div class="left-content">
-                                    <div class="title">Briefing</div>
+                                    <div class="title text-justify">Briefing</div>
                                     <ul>
                                         <li class="gt-zoom-in-out">research</li>
                                         <li class="gt-zoom-in-out">user flow</li>
@@ -246,7 +246,7 @@
                                 </div>
                             </div>
 
-                            <div class="title">mvp development</div>
+                            <div class="title text-justify">mvp development</div>
 
 
                             <div class="arrow-icon">
@@ -266,7 +266,7 @@
                             </ul>
                         </div>
                         <div class="work-process-items items-4">
-                            <div class="title">support & grow</div>
+                            <div class="title text-justify">support & grow</div>
                         </div>
                     </div>
                 </div>
@@ -285,7 +285,7 @@
                                     <img src="./assets/img/home-2/accolades/accoladesImage1_1.png" alt="thumb">
                                 </div>
 
-                                <h6 class="title">Proven client satisfaction and expertise</h6>
+                                <h6 class="title text-justify">Proven client satisfaction and expertise</h6>
                                 <p class="text">With a 5-star rating on Clutch and over 62 reviews, our track record
                                     reflects our
                                     focus on effective, client-centric solutions.</p>
@@ -298,7 +298,7 @@
                                     <img src="./assets/img/home-2/accolades/accoladesImage1_2.png" alt="thumb">
                                 </div>
 
-                                <h6 class="title">Acknowledged web design excellence</h6>
+                                <h6 class="title text-justify">Acknowledged web design excellence</h6>
                                 <p class="text">Awarded Honourable Mentions by Awwwards, highlighting our ability to
                                     deliver
                                     innovative and high-quality web designs.</p>
@@ -311,7 +311,7 @@
                                     <img src="./assets/img/home-2/accolades/accoladesImage1_3.png" alt="thumb">
                                 </div>
 
-                                <h6 class="title">Celebrated for High-Impact Designe</h6>
+                                <h6 class="title text-justify">Celebrated for High-Impact Designe</h6>
                                 <p class="text">Our projects have earned ribbons on Behance, affirming our
                                     reputation for
                                     producing exceptional and inspiring digital experiences.</p>
@@ -431,7 +431,7 @@
                                         <span class="gt-count">150</span><span>+</span>
                                     </div>
 
-                                    <div class="title">Team members</div>
+                                    <div class="title text-justify">Team members</div>
                                 </div>
 
                                 <div class="counter-item">
@@ -448,7 +448,7 @@
                                         <span class="gt-count">500</span> <span>+</span>
                                     </div>
 
-                                    <div class="title">Completed projects</div>
+                                    <div class="title text-justify">Completed projects</div>
                                 </div>
 
                                 <div class="counter-item">
@@ -465,7 +465,7 @@
                                         <span class="gt-count gt-count-last">18</span> <span>years</span>
                                     </div>
 
-                                    <div class="title">In the business</div>
+                                    <div class="title text-justify">In the business</div>
                                 </div>
                             </div>
                         </div>
@@ -636,7 +636,7 @@
                                                         fill="#f5a623" />
                                                 </svg>
                                             </div>
-                                            <h2 class="title">Meet our team</h2>
+                                            <h2 class="title text-justify">Meet our team</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -1225,7 +1225,7 @@
                                             </div>
                                         </div>
 
-                                        <h4 class="title">Createaweb Creative Agency did an amazing job on our project.
+                                        <h4 class="title text-justify">Createaweb Creative Agency did an amazing job on our project.
                                             Their team is
                                             highly
                                             professional, creative, and always delivers on time. I’m really
@@ -1294,7 +1294,7 @@
                                             </div>
                                         </div>
 
-                                        <h4 class="title">Createaweb Creative Agency did an amazing job on our project.
+                                        <h4 class="title text-justify">Createaweb Creative Agency did an amazing job on our project.
                                             Their team is
                                             highly
                                             professional, creative, and always delivers on time. I’m really
@@ -1363,7 +1363,7 @@
                                             </div>
                                         </div>
 
-                                        <h4 class="title">Createaweb Creative Agency did an amazing job on our project.
+                                        <h4 class="title text-justify">Createaweb Creative Agency did an amazing job on our project.
                                             Their team is
                                             highly
                                             professional, creative, and always delivers on time. I’m really
@@ -1385,7 +1385,7 @@
 
                                                 <div class="info-text">
                                                     <h4 class="name">Caroline Caldwell</h4>
-                                                    <p class="title">VP of Marketing</p>
+                                                    <p class="title text-justify">VP of Marketing</p>
                                                 </div>
                                             </div>
 
