@@ -115,8 +115,14 @@ if ($action == 'add' || $action == 'edit'): ?>
                         </div>
 
                         <div class="col-12">
-                            <label class="form-label">Description</label>
-                            <textarea name="description" class="form-control" rows="6"
+                            <label class="form-label editor-toolbar-label">
+                                Content / Description
+                                <!-- <div>
+                                    <span class="badge-free">Free</span>
+                                    <span class="badge-advanced">Advanced</span>
+                                </div> -->
+                            </label>
+                            <textarea name="description" id="description-editor" class="form-control" rows="6"
                                 placeholder="Write a detailed description of the service..."><?php echo htmlspecialchars($service['description'] ?? ''); ?></textarea>
                         </div>
                     </div>
@@ -130,6 +136,110 @@ if ($action == 'add' || $action == 'edit'): ?>
                         </a>
                     </div>
                 </form>
+
+                <script>
+                    tinymce.init({
+                        selector: '#description-editor',
+                        height: 450,
+                        menubar: true,
+                        plugins: [
+                            'advlist', 'autolink', 'lists', 'link', 'image', 'charmap', 'preview',
+                            'anchor', 'searchreplace', 'visualblocks', 'code', 'fullscreen',
+                            'insertdatetime', 'media', 'table', 'help', 'wordcount',
+                            'emoticons', 'codesample', 'directionality', 'nonbreaking',
+                            'quickbars', 'autoresize'
+                        ],
+                        toolbar: [
+                            'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough',
+                            'forecolor backcolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent',
+                            'link image media table | emoticons charmap codesample | blockquote hr nonbreaking',
+                            'removeformat fullscreen code help'
+                        ].join(' | '),
+                        toolbar_mode: 'sliding',
+                        block_formats: 'Paragraph=p; Heading 1=h1; Heading 2=h2; Heading 3=h3; Heading 4=h4; Heading 5=h5; Heading 6=h6; Preformatted=pre; Blockquote=blockquote',
+                        font_size_formats: '8px 10px 12px 14px 16px 18px 20px 24px 28px 32px 36px 48px 72px',
+                        content_style: `
+                            body {
+                                font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                                font-size: 15px;
+                                line-height: 1.7;
+                                color: #1C1C1C;
+                                padding: 15px 20px;
+                                max-width: 100%;
+                            }
+                            h1, h2, h3, h4, h5, h6 {
+                                font-weight: 700;
+                                margin-top: 1em;
+                                margin-bottom: 0.5em;
+                                color: #1C1C1C;
+                            }
+                            p { margin-bottom: 0.8em; }
+                            a { color: #f5a623; text-decoration: underline; }
+                            blockquote {
+                                border-left: 4px solid #f5a623;
+                                padding: 12px 20px;
+                                margin: 1em 0;
+                                background: #fefbf3;
+                                border-radius: 0 8px 8px 0;
+                                font-style: italic;
+                                color: #555;
+                            }
+                            table { border-collapse: collapse; width: 100%; }
+                            table td, table th {
+                                border: 1px solid #e9ecef;
+                                padding: 10px 14px;
+                            }
+                            table th { background: #f8f9fa; font-weight: 600; }
+                            img { max-width: 100%; height: auto; border-radius: 8px; }
+                            pre { background: #1e1e1e; color: #d4d4d4; padding: 16px; border-radius: 8px; overflow-x: auto; }
+                            code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 0.9em; }
+                            ul, ol { padding-left: 1.5em; margin-bottom: 1em; }
+                            li { margin-bottom: 0.3em; }
+                            hr { border: none; border-top: 2px solid #e9ecef; margin: 1.5em 0; }
+                        `,
+                        quickbars_selection_toolbar: 'bold italic | quicklink h2 h3 blockquote',
+                        quickbars_insert_toolbar: 'quickimage quicktable hr',
+                        contextmenu: 'link image table',
+                        image_advtab: true,
+                        image_caption: true,
+                        automatic_uploads: true,
+                        images_upload_url: 'upload_image.php',
+                        file_picker_types: 'image',
+                        promotion: false,
+                        branding: false,
+                        statusbar: true,
+                        resize: true,
+                        min_height: 350,
+                        max_height: 800,
+                        autoresize_bottom_margin: 20,
+                        setup: function(editor) {
+                            editor.on('init', function() {
+                                // Style the editor container after init
+                                var container = editor.getContainer();
+                                if (container) {
+                                    container.style.borderRadius = '12px';
+                                    container.style.overflow = 'hidden';
+                                    container.style.border = '1px solid #e9ecef';
+                                    container.style.transition = 'border-color 0.3s ease, box-shadow 0.3s ease';
+                                }
+                            });
+                            editor.on('focus', function() {
+                                var container = editor.getContainer();
+                                if (container) {
+                                    container.style.borderColor = '#f5a623';
+                                    container.style.boxShadow = '0 0 0 3px rgba(245, 166, 35, 0.2)';
+                                }
+                            });
+                            editor.on('blur', function() {
+                                var container = editor.getContainer();
+                                if (container) {
+                                    container.style.borderColor = '#e9ecef';
+                                    container.style.boxShadow = 'none';
+                                }
+                            });
+                        }
+                    });
+                </script>
             </div>
         </div>
 
@@ -217,7 +327,7 @@ if ($action == 'add' || $action == 'edit'): ?>
                                 </td>
                                 <td>
                                     <span
-                                        class="text-muted"><?php echo substr(htmlspecialchars($s['description']), 0, 80); ?>...</span>
+                                        class="text-muted"><?php echo substr(htmlspecialchars(strip_tags($s['description'])), 0, 80); ?>...</span>
                                 </td>
                                 <td>
                                     <div class="d-flex gap-2">

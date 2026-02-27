@@ -49,13 +49,14 @@ if (!$service) {
                                             <?php endif; ?>
                                         </div> -->
                                 </div>
-                            </div>
+                            </div>Content / Description
+
                         </div>
 
                         <div class="text-content mb-50">
                             <div class="text-title"><?php echo htmlspecialchars($service['title']); ?></div>
                             <div class="text">
-                                <?php echo nl2br(htmlspecialchars($service['description'])); ?>
+                                <?php echo $service['description']; ?>
                             </div>
                         </div>
                     </div>

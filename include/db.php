@@ -44,7 +44,7 @@ try {
         id INT AUTO_INCREMENT PRIMARY KEY,
         title VARCHAR(255) NOT NULL,
         icon VARCHAR(100),
-        description TEXT,
+        description LONGTEXT,
         image VARCHAR(255)
     )");
 
@@ -66,8 +66,6 @@ try {
         $stmt = $pdo->prepare("INSERT INTO admins (username, password) VALUES (?, ?)");
         $stmt->execute([$username, $password]);
     }
-
 } catch (\PDOException $e) {
     die("Connection failed: " . $e->getMessage());
 }
-?>

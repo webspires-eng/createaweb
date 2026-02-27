@@ -20,7 +20,64 @@ if (!isset($_SESSION['admin_id'])) {
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/tinymce@6/tinymce.min.js"></script>
     <style>
+        /* TinyMCE Rich Text Editor Styles */
+        .tox-tinymce {
+            border: 1px solid var(--gt-border) !important;
+            border-radius: 12px !important;
+            overflow: hidden;
+        }
+
+        .tox .tox-toolbar__primary {
+            background: var(--gt-bg) !important;
+            border-bottom: 1px solid var(--gt-border) !important;
+        }
+
+        .tox .tox-toolbar__group {
+            border-right: 1px solid var(--gt-border) !important;
+        }
+
+        .tox .tox-edit-area__iframe {
+            background: #fff !important;
+        }
+
+        .tox .tox-statusbar {
+            background: var(--gt-bg) !important;
+            border-top: 1px solid var(--gt-border) !important;
+        }
+
+        .editor-toolbar-label {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .editor-toolbar-label .badge-free {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #22c55e, #16a34a);
+            color: #fff;
+        }
+
+        .editor-toolbar-label .badge-advanced {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            padding: 3px 10px;
+            border-radius: 6px;
+            background: linear-gradient(135deg, #6366f1, #8b5cf6);
+            color: #fff;
+            margin-left: 6px;
+        }
+
         :root {
             --gt-theme: #f5a623;
             --gt-theme-rgb: 245, 166, 35;

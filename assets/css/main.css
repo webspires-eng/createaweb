@@ -26563,3 +26563,40 @@ body.loaded {
     aspect-ratio: 16/9;
   }
 }
+
+.service-details-area p,
+.service-details-area p span {
+  font-weight: normal !important;
+  color: #222 !important;
+  font-size: 16px;
+}
+
+.service-details-area h4 {
+  margin-top: 30px;
+  margin-bottom: 15px;
+  font-size: 24px !important;
+}
+
+.service-details-area h4 span {
+  font-size: 24px !important;
+}
+
+.service-details-area strong {
+  font-weight: 600 !important;
+}
+
+.service-details-area h5 {
+  color: #222222 !important;
+  font-weight: 600 !important;
+  margin-top: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.service-details-area ul {
+  margin-left: 20px;
+  list-style: disc;
+}
+
+.service-details-area ul li {
+  margin-bottom: 10px;
+}

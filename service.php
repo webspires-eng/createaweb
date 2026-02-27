@@ -24,7 +24,7 @@ $services = $stmt->fetchAll();
         <!-- Breadcrumb page Section Start -->
         <div class="breadcrumb-page-area-one style-2 pt-96 pb-150 fix">
             <div class="breadcrumb-page-wrap pt-250 pb-250"
-                style="background: url(./assets/img/pages/breadcrumbPageThumb1_1.png);">
+                style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/pages/breadcrumbPageThumb1_1.png) center  ; ">
                 <div class="container">
                     <div class="gt-breadcrumb-wrapper mb-0">
                         <div class="title">Our service</div>
@@ -94,7 +94,7 @@ $services = $stmt->fetchAll();
                                         </div>
 
                                         <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
-                                            <?php echo nl2br(htmlspecialchars(substr($service['description'], 0, 200))); ?><?php echo strlen($service['description']) > 200 ? '...' : ''; ?>
+                                            <?php echo nl2br(htmlspecialchars(substr(strip_tags($service['description']), 0, 200))); ?><?php echo strlen(strip_tags($service['description'])) > 200 ? '...' : ''; ?>
                                         </div>
 
                                         <div class="card-bottom-content">
