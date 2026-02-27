@@ -33,8 +33,8 @@ if (!$service) {
             <div class="service-details-wrapper mb-150">
                 <div class="container">
                     <div class="section-title text-center">
-                        <div class="sub-title">Service details</div>
-                        <div class="title title-anim"><?php echo htmlspecialchars($service['title']); ?></div>
+                        <!-- <div class="sub-title">Service details</div> -->
+                        <h1 class="title title-anim"><?php echo htmlspecialchars($service['title']); ?></h1>
                     </div>
 
                     <div class="main-content">
@@ -49,7 +49,7 @@ if (!$service) {
                                             <?php endif; ?>
                                         </div> -->
                                 </div>
-                            </div>Content / Description
+                            </div>
 
                         </div>
 

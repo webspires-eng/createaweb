@@ -83,7 +83,7 @@ include 'include/header.html';
                                             <span><?php echo $count; ?></span>
                                             <h3><?php echo htmlspecialchars($service['title']); ?></h3>
                                             <p class="text-justify">
-                                                <?php echo htmlspecialchars($service['description']); ?>
+                                                <?php echo nl2br(htmlspecialchars(substr(strip_tags($service['description']), 0, 200))); ?><?php echo strlen(strip_tags($service['description'])) > 200 ? '...' : ''; ?>
                                             </p>
                                         </div>
                                         <div class="bg-image">

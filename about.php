@@ -476,7 +476,7 @@
         <!-- About Section End -->
 
         <!-- Award Section Start -->
-        <div class="award-area-four award-area fix">
+        <!-- <div class="award-area-four award-area fix">
             <div class="award-wrapper">
                 <div class="container">
                     <div class="row gy-5">
@@ -593,7 +593,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Award Section End -->
 
         <!-- <div class="group tp-hero-2-wrapper fix pb-150">
