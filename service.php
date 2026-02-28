@@ -88,28 +88,30 @@ $services = $stmt->fetchAll();
                                     </div>
 
                                     <div class="card-back">
-                                        <div class="card-top-part">
-                                            <span class="number"><?php echo $num; ?></span>
-                                            <h3 class="title"><?php echo htmlspecialchars($service['title']); ?></h3>
-                                        </div>
-
-                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
-                                            <?php echo nl2br(htmlspecialchars(substr(strip_tags($service['description']), 0, 200))); ?><?php echo strlen(strip_tags($service['description'])) > 200 ? '...' : ''; ?>
-                                        </div>
-
-                                        <div class="card-bottom-content">
-                                            <div class="simple-btn">
-                                                <a href="service-details?id=<?php echo $service['id']; ?>"
-                                                    class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
-                                                    <span class="gt-btn-circle-text-2">details</span>
-                                                    <i class="gt-btn-circle-dot"></i>
-                                                </a>
+                                        <a href="service-details?id=<?php echo $service['id']; ?>">
+                                            <div class="card-top-part">
+                                                <span class="number"><?php echo $num; ?></span>
+                                                <h3 class="title"><?php echo htmlspecialchars($service['title']); ?></h3>
                                             </div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30"
-                                                viewBox="0 0 29 30" fill="none">
-                                                <path d="M0 30H29V0.75L0 30Z" fill="#22E66E" />
-                                            </svg>
-                                        </div>
+
+                                            <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                                <?php echo nl2br(htmlspecialchars(substr(strip_tags($service['description']), 0, 200))); ?><?php echo strlen(strip_tags($service['description'])) > 200 ? '...' : ''; ?>
+                                            </div>
+
+                                            <div class="card-bottom-content">
+                                                <div class="simple-btn">
+                                                    <a href="service-details?id=<?php echo $service['id']; ?>"
+                                                        class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                        <span class="gt-btn-circle-text-2">details</span>
+                                                        <i class="gt-btn-circle-dot"></i>
+                                                    </a>
+                                                </div>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30"
+                                                    viewBox="0 0 29 30" fill="none">
+                                                    <path d="M0 30H29V0.75L0 30Z" fill="#22E66E" />
+                                                </svg>
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                             </div>

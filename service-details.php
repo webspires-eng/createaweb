@@ -41,13 +41,13 @@ if (!$service) {
                         <div class="thumb-content mb-40">
                             <div class="row gy-5 justify-content-center">
                                 <div class="col-xl-8 col-lg-8 col-md-10 wow fadeInUp" data-wow-delay=".3s">
-                                    <!-- <div class="thumb fix">
-                                            <?php if (!empty($service['image'])): ?>
-                                                    <img data-speed=".8" src="<?php echo htmlspecialchars($service['image']); ?>" alt="<?php echo htmlspecialchars($service['title']); ?>" style="width: 100%; height: auto; border-radius: 20px;">
-                                            <?php else: ?>
-                                                    <img data-speed=".8" src="./assets/img/pages/servicePageThumb1_2.png" alt="Service Image">
-                                            <?php endif; ?>
-                                        </div> -->
+                                    <div class="thumb fix">
+                                        <?php if (!empty($service['image'])): ?>
+                                            <img data-speed=".8" src="<?php echo htmlspecialchars($service['image']); ?>" alt="<?php echo htmlspecialchars($service['title']); ?>" style="width: 100%; height: auto; border-radius: 20px;">
+                                        <?php else: ?>
+                                            <!-- <img data-speed=".8" src="./assets/img/pages/servicePageThumb1_2.png" alt="Service Image"> -->
+                                        <?php endif; ?>
+                                    </div>
                                 </div>
                             </div>
 

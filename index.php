@@ -89,7 +89,7 @@ include 'include/header.html';
                                         <div class="bg-image">
                                             <!-- <img src="<?php echo htmlspecialchars($service['image']); ?>" alt="img"> -->
                                         </div>
-                                        <a href="about" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
+                                        <a href="service-details?id=<?php echo $service['id']; ?>" class="work-btn">Read More<i class="fa-solid fa-arrow-up-right"></i></a>
                                     </div>
                                 </div>
                         <?php
