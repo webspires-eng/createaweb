@@ -276,174 +276,89 @@ include __DIR__ . '/../include/header.html';
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Contact Section Start -->
-    <div class="contact-form-area">
-        <div class="contact-form-wrapper pt-150 pb-150">
-            <div class="container">
-                <div class="row gy-5">
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="address-meta">
-                            <div class="address-meta-items">
-                                <div class="address-title">USA</div>
-                                <span>New York,<br> 287 Park Avenue South</span>
-                            </div>
+        <!-- Contact Section Start -->
+        <div class="contact-form-area">
+            <div class="contact-form-wrapper pt-150 pb-150">
+                <div class="container">
+                    <div class="row gy-5">
+                        <div class="col-xl-4 col-lg-4">
+                            <div class="address-meta">
+                                <div class="address-meta-items">
+                                    <div class="address-title">USA</div>
+                                    <span>New York,<br> 287 Park Avenue South</span>
+                                </div>
 
-                            <div class="address-meta-items">
-                                <div class="address-title">Poland</div>
-                                <span>Katowice,<br>Armii Krajowej St., 322</span>
-                            </div>
+                                <div class="address-meta-items">
+                                    <div class="address-title">Poland</div>
+                                    <span>Katowice,<br>Armii Krajowej St., 322</span>
+                                </div>
 
-                            <div class="address-meta-items">
-                                <div class="address-title">Ukraine</div>
-                                <span>Kyiv,<br>Goncharnaya St., 9a</span>
+                                <div class="address-meta-items">
+                                    <div class="address-title">Ukraine</div>
+                                    <span>Kyiv,<br>Goncharnaya St., 9a</span>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="form-title">
-                            Get a design consultation free quote
-                        </div>
-                        <div class="contact-form">
-                            <div class="container">
-                                <form action="#" method="post">
-                                    <div class="row gy-3">
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="name">
-                                        </div>
+                        <div class="col-xl-8 col-lg-8">
+                            <div class="form-title">
+                                Get a design consultation free quote
+                            </div>
+                            <div class="contact-form">
+                                <div class="container">
+                                    <form action="#" method="post">
+                                        <div class="row gy-3">
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" name="name"
+                                                    placeholder="name">
+                                            </div>
 
-                                        <div class="col-lg-6">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="email address">
-                                        </div>
+                                            <div class="col-lg-6">
+                                                <input type="email" class="form-control" name="email"
+                                                    placeholder="email address">
+                                            </div>
 
-                                        <div class="col-lg-6">
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="about project">
-                                        </div>
+                                            <div class="col-lg-6">
+                                                <input type="text" class="form-control" name="name"
+                                                    placeholder="about project">
+                                            </div>
 
-                                        <div class="col-lg-6">
-                                            <select class="form-control" name="subject">
-                                                <option value="" disabled selected>where did you hear about us?
-                                                </option>
-                                                <option value="web">Web Development</option>
-                                                <option value="design">Web Design</option>
-                                                <option value="consult">Consultation</option>
-                                            </select>
-                                        </div>
+                                            <div class="col-lg-6">
+                                                <select class="form-control" name="subject">
+                                                    <option value="" disabled selected>where did you hear about us?
+                                                    </option>
+                                                    <option value="web">Web Development</option>
+                                                    <option value="design">Web Design</option>
+                                                    <option value="consult">Consultation</option>
+                                                </select>
+                                            </div>
 
-                                        <div class="col-xl-6 col-lg-12">
-                                            <textarea class="form-control" name="message" rows="5"
-                                                placeholder="write about project . . ." required></textarea>
-                                        </div>
+                                            <div class="col-xl-6 col-lg-12">
+                                                <textarea class="form-control" name="message" rows="5"
+                                                    placeholder="write about project . . ." required></textarea>
+                                            </div>
 
-                                        <div class="col-xl-6 col-lg-12">
-                                            <div class="move-btn">
-                                                <div class="gt-hover-btn-wrapper mt-0">
-                                                    <button type="submit"
-                                                        class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
-                                                        <span class="gt-btn-circle-text-2">send message</span>
-                                                        <i class="gt-btn-circle-dot"></i>
-                                                    </button>
+                                            <div class="col-xl-6 col-lg-12">
+                                                <div class="move-btn">
+                                                    <div class="gt-hover-btn-wrapper mt-0">
+                                                        <button type="submit"
+                                                            class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                            <span class="gt-btn-circle-text-2">send message</span>
+                                                            <i class="gt-btn-circle-dot"></i>
+                                                        </button>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </form>
+                                    </form>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact Section Start -->
+        <!-- Contact Section End -->
 
-    <!-- Contact Section Start -->
-    <div class="contact-form-area">
-        <div class="contact-form-wrapper pt-150 pb-150">
-            <div class="container">
-                <div class="row gy-5">
-                    <div class="col-xl-4 col-lg-4">
-                        <div class="address-meta">
-                            <div class="address-meta-items">
-                                <div class="address-title">USA</div>
-                                <span>New York,<br> 287 Park Avenue South</span>
-                            </div>
-
-                            <div class="address-meta-items">
-                                <div class="address-title">Poland</div>
-                                <span>Katowice,<br>Armii Krajowej St., 322</span>
-                            </div>
-
-                            <div class="address-meta-items">
-                                <div class="address-title">Ukraine</div>
-                                <span>Kyiv,<br>Goncharnaya St., 9a</span>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-xl-8 col-lg-8">
-                        <div class="form-title">
-                            Get a design consultation free quote
-                        </div>
-                        <div class="contact-form">
-                            <div class="container">
-                                <form action="#" method="post">
-                                    <div class="row gy-3">
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="name">
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <input type="email" class="form-control" name="email"
-                                                placeholder="email address">
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <input type="text" class="form-control" name="name"
-                                                placeholder="about project">
-                                        </div>
-
-                                        <div class="col-md-6">
-                                            <select class="form-control" name="subject">
-                                                <option value="" disabled selected>where did you hear about us?
-                                                </option>
-                                                <option value="web">Web Development</option>
-                                                <option value="design">Web Design</option>
-                                                <option value="consult">Consultation</option>
-                                            </select>
-                                        </div>
-
-                                        <div class="col-xl-6 col-lg-12">
-                                            <textarea class="form-control" name="message" rows="5"
-                                                placeholder="write about project . . ." required></textarea>
-                                        </div>
-
-                                        <div class="col-xl-6 col-lg-12">
-                                            <div class="move-btn">
-                                                <div class="gt-hover-btn-wrapper mt-0">
-                                                    <button type="submit"
-                                                        class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
-                                                        <span class="gt-btn-circle-text-2">send message</span>
-                                                        <i class="gt-btn-circle-dot"></i>
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Contact Section Start -->
-
-    <?php include __DIR__ . '/../include/footer.html'; ?>
+        <?php include __DIR__ . '/../include/footer.html'; ?>
