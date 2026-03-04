@@ -1,8 +1,8 @@
 <?php
 require_once 'include/db.php';
 include 'include/header.html';
-$stmt = $pdo->query("SELECT * FROM services ORDER BY id DESC");
-$services = $stmt->fetchAll();
+// $stmt = $pdo->query("SELECT * FROM services ORDER BY id DESC");
+// $services = $stmt->fetchAll();
 ?>
 
 
@@ -57,7 +57,402 @@ $services = $stmt->fetchAll();
         <section class="service-area-one">
             <div class="service-wrapper pb-150">
                 <div class="container">
+
                     <div class="row gy-4">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">01</span>
+                                    </div>
+
+                                    <h3 class="title">Google Guarantee</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258681_protection-security-rights-guarantee-illustration.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=12">
+                                        <div class="card-top-part">
+                                            <span class="number">01</span>
+                                            <h3 class="title">Google Guarantee</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            Build Trust, Boost Visibility &amp;amp; Win More Local Customers<br>
+                                            At CreateAweb, we help businesses unlock the full potential of Google Guarantee. one of the most trusted trust-building features available... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=12">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=12">
+                                            </a><a href="service-details?id=12" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">02</span>
+                                    </div>
+
+                                    <h3 class="title">Website Hosting</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258597_dynamic-website-hosting-concept.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=11">
+                                        <div class="card-top-part">
+                                            <span class="number">02</span>
+                                            <h3 class="title">Website Hosting</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            At CreateAweb, we provide high-performance website hosting designed to keep your business online, secure, and running at peak speed.Your website is often the first impression customers have of your bu... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=11">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=11">
+                                            </a><a href="service-details?id=11" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">03</span>
+                                    </div>
+
+                                    <h3 class="title">CRM (Customer Relationship Management)</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258499_crm-business-company-strategy-marketing-concept.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=10">
+                                        <div class="card-top-part">
+                                            <span class="number">03</span>
+                                            <h3 class="title">CRM (Customer Relationship Management)</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            At CreateAweb, we design and develop powerful CRM systems that simplify your operations, automate your follow-ups, and transform customer data into predictable, measurable growth.<br>
+                                            In today&amp;rsquo;s co... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=10">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=10">
+                                            </a><a href="service-details?id=10" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">04</span>
+                                    </div>
+
+                                    <h3 class="title">Practice Growth</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258441_business-evaluation-information-growth-concept (1).jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=9">
+                                        <div class="card-top-part">
+                                            <span class="number">04</span>
+                                            <h3 class="title">Practice Growth</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            At CreateAweb, we specialise in helping professional practices grow with predictable, measurable marketing systems.<br>
+                                            Running a practice is demanding. Between managing clients, overseeing operations, a... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=9">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=9">
+                                            </a><a href="service-details?id=9" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">05</span>
+                                    </div>
+
+                                    <h3 class="title">Seasonal Event Campaigns</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258366_friends-having-covid-party-using-technology.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=8">
+                                        <div class="card-top-part">
+                                            <span class="number">05</span>
+                                            <h3 class="title">Seasonal Event Campaigns</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            Imely Campaigns. Maximum Impact. Measurable Results.<br>
+                                            At CreateAWeb, we design and execute powerful seasonal marketing campaigns that capture attention at the perfect moment &amp;nbsp;when your audience i... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=8">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=8">
+                                            </a><a href="service-details?id=8" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">06</span>
+                                    </div>
+
+                                    <h3 class="title">Facebook Ads</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258083_creative-team-having-discussion-social-media-application.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=6">
+                                        <div class="card-top-part">
+                                            <span class="number">06</span>
+                                            <h3 class="title">Facebook Ads</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            At CreateAWeb, we create and manage high-performing Facebook advertising campaigns that connect your brand with the right audience at the right time.<br>
+                                            With billions of active users across Facebook and... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=6">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=6">
+                                            </a><a href="service-details?id=6" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">07</span>
+                                    </div>
+
+                                    <h3 class="title">Google Ads</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258068_online-marketing-commercial-connection-technology.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=5">
+                                        <div class="card-top-part">
+                                            <span class="number">07</span>
+                                            <h3 class="title">Google Ads</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            At CreateAWeb, we design and manage high-performance Google Ads campaigns that generate qualified leads, increase sales, and maximise your return on investment.<br>
+                                            While SEO builds long-term growth, Goo... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=5">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=5">
+                                            </a><a href="service-details?id=5" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="service-card style-2 shadow-sm">
+                                <div class="card-front">
+                                    <div class="card-top-part">
+                                        <span class="number">08</span>
+                                    </div>
+
+                                    <h3 class="title">Search Engine Optimisation (SEO)</h3>
+                                    <div class="avatars text-center">
+                                        <!--                                                 <img src="./assets/uploads/1772258055_searching-engine-optimizing-seo-browsing-concept.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
+                                             -->
+                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                    </div>
+
+                                    <div class="service-card-shape">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="black"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <a href="service-details?id=4">
+                                        <div class="card-top-part">
+                                            <span class="number">08</span>
+                                            <h3 class="title">Search Engine Optimisation (SEO)</h3>
+                                        </div>
+
+                                        <div class="service-desc p-4 text-white text-justify" style="text-align: justify; font-size: 14px; line-height: 1.6;">
+                                            At CreateAWeb, we deliver results-driven SEO services that help businesses dominate search engines, attract qualified traffic, and convert visitors into loyal customers. In today&amp;rsquo;s competitive d... </div>
+
+                                    </a>
+                                    <div class="card-bottom-content"><a href="service-details?id=4">
+                                        </a>
+                                        <div class="simple-btn"><a href="service-details?id=4">
+                                            </a><a href="service-details?id=4" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                                <span class="gt-btn-circle-text-2">details</span>
+                                                <i class="gt-btn-circle-dot"></i>
+                                            </a>
+                                        </div>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="29" height="30" viewBox="0 0 29 30" fill="none">
+                                            <path d="M0 30H29V0.75L0 30Z" fill="#22E66E"></path>
+                                        </svg>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- <div class="row gy-4">
                         <?php
                         $count = 1;
                         foreach ($services as $service):
@@ -72,10 +467,10 @@ $services = $stmt->fetchAll();
 
                                         <h3 class="title"><?php echo htmlspecialchars($service['title']); ?></h3>
                                         <div class="avatars text-center">
-                                            <!-- <?php if ($service['image']): ?>
+                                            <?php if ($service['image']): ?>
                                                 <img src="./<?php echo $service['image']; ?>" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                             <?php else: ?>
-                                                <?php endif; ?> -->
+                                                <?php endif; ?>
                                             <div class="mt-4 text-center"><i class="fas <?php echo $service['icon'] ?: 'fa-cog'; ?> fa-4x text-dark"></i></div>
                                         </div>
 
@@ -122,7 +517,7 @@ $services = $stmt->fetchAll();
                                 <h4 class="text-white">No services added yet. Add them in the <a href="admin/services.php" class="text-primary text-decoration-underline">admin panel</a>.</h4>
                             </div>
                         <?php endif; ?>
-                    </div>
+                    </div> -->
                 </div>
             </div>
     </div>
