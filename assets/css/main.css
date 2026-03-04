@@ -26565,6 +26565,434 @@ body.loaded {
   }
 }
 
+/* =============================================
+   CRM SERVICE PAGE — REDESIGNED STYLES
+   ============================================= */
+
+/* ---------- HERO ---------- */
+.crm-hero {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  min-height: 500px;
+  max-height: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.crm-hero__bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.crm-hero__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(160deg, rgba(0, 0, 0, 0.72) 0%, rgba(0, 0, 0, 0.50) 100%);
+  z-index: 1;
+}
+
+.crm-hero__content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 0 20px;
+  max-width: 820px;
+}
+
+.crm-hero__badge {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  padding: 8px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 24px;
+}
+
+.crm-hero__title {
+  color: #fff !important;
+  font-size: clamp(30px, 5vw, 56px);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 18px;
+}
+
+.crm-hero__subtitle {
+  color: rgba(255, 255, 255, 0.85) !important;
+  font-size: clamp(15px, 2vw, 18px);
+  line-height: 1.6;
+  margin-bottom: 36px;
+  max-width: 600px;
+  margin-inline: auto;
+}
+
+.crm-hero__btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--gt-theme-2);
+  color: #fff !important;
+  padding: 16px 40px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 8px 30px rgba(245, 166, 35, 0.35);
+}
+
+.crm-hero__btn:hover {
+  background: #222;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+  color: #fff !important;
+}
+
+.crm-hero__btn i {
+  transition: transform 0.3s ease;
+}
+
+.crm-hero__btn:hover i {
+  transform: translateX(5px);
+}
+
+@media (max-width: 767px) {
+  .crm-hero {
+    height: 70vh;
+    min-height: 400px;
+  }
+}
+
+/* ---------- SECTION TITLES ---------- */
+.crm-section-title {
+  font-size: clamp(26px, 3.5vw, 40px);
+  font-weight: 700;
+  color: #1C1C1C;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.crm-section-desc {
+  font-size: 17px;
+  color: #555;
+  line-height: 1.75;
+  max-width: 750px;
+  margin-inline: auto;
+}
+
+/* ---------- INTRO ---------- */
+.crm-intro {
+  padding: 100px 0 60px 0;
+}
+
+@media (max-width: 767px) {
+  .crm-intro {
+    padding: 60px 0 30px 0;
+  }
+}
+
+/* ---------- SERVICE CARDS GRID ---------- */
+.crm-services-grid {
+  padding: 0 0 100px 0;
+}
+
+.crm-card {
+  background: #f8f8fa;
+  border-radius: 20px;
+  padding: 45px 35px;
+  text-align: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid transparent;
+  height: 100%;
+}
+
+.crm-card:hover {
+  background: #fff;
+  border-color: rgba(0, 0, 0, 0.06);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  transform: translateY(-8px);
+}
+
+.crm-card__icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 18px;
+  background: rgba(245, 166, 35, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 24px;
+  transition: all 0.35s ease;
+}
+
+.crm-card__icon i {
+  font-size: 28px;
+  color: var(--gt-theme-2);
+  transition: all 0.35s ease;
+}
+
+.crm-card:hover .crm-card__icon {
+  background: var(--gt-theme-2);
+}
+
+.crm-card:hover .crm-card__icon i {
+  color: #fff;
+}
+
+.crm-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1C1C1C;
+  margin-bottom: 12px;
+}
+
+.crm-card__text {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .crm-services-grid {
+    padding: 0 0 60px 0;
+  }
+
+  .crm-card {
+    padding: 35px 25px;
+  }
+}
+
+/* ---------- DETAIL SECTIONS ---------- */
+.crm-detail {
+  padding: 80px 0;
+}
+
+.crm-detail--alt {
+  background: #f8f8fa;
+}
+
+.crm-detail__img {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.crm-detail__img img {
+  width: 100%;
+  height: auto;
+  border-radius: 24px;
+  transition: transform 0.5s ease;
+}
+
+.crm-detail__img:hover img {
+  transform: scale(1.03);
+}
+
+.crm-detail__content {
+  padding-left: 20px;
+}
+
+@media (max-width: 991px) {
+  .crm-detail__content {
+    padding-left: 0;
+    margin-top: 30px;
+  }
+}
+
+.crm-detail__tag {
+  display: inline-block;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--gt-theme-2);
+  background: rgba(245, 166, 35, 0.1);
+  padding: 6px 18px;
+  border-radius: 50px;
+  margin-bottom: 18px;
+}
+
+.crm-detail__title {
+  font-size: clamp(22px, 3vw, 32px);
+  font-weight: 700;
+  color: #1C1C1C;
+  margin-bottom: 16px;
+  line-height: 1.3;
+}
+
+.crm-detail__content p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 16px;
+}
+
+.crm-detail__list {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.crm-detail__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: #444;
+  line-height: 1.5;
+  padding: 8px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.crm-detail__list li:last-child {
+  border-bottom: none;
+}
+
+.crm-detail__list li i {
+  color: var(--gt-theme-2);
+  font-size: 14px;
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+/* ---------- CTA STRIP ---------- */
+.crm-cta {
+  padding: 0 0 80px 0;
+}
+
+.crm-cta__inner {
+  background: linear-gradient(135deg, #1C1C1C 0%, #333 100%);
+  border-radius: 24px;
+  padding: 60px 50px;
+  position: relative;
+  overflow: hidden;
+}
+
+.crm-cta__inner::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(245, 166, 35, 0.15) 0%, transparent 70%);
+  border-radius: 50%;
+}
+
+.crm-cta__title {
+  color: #fff;
+  font-size: clamp(22px, 3vw, 30px);
+  font-weight: 700;
+  margin-bottom: 10px;
+  line-height: 1.3;
+}
+
+.crm-cta__text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 16px;
+  margin-bottom: 0;
+}
+
+.crm-cta__btn {
+  display: inline-block;
+  background: var(--gt-theme-2);
+  color: #fff !important;
+  padding: 16px 36px;
+  border-radius: 50px;
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 25px rgba(245, 166, 35, 0.3);
+  white-space: nowrap;
+}
+
+.crm-cta__btn:hover {
+  background: #fff;
+  color: #1C1C1C !important;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 991px) {
+  .crm-cta__inner {
+    padding: 40px 30px;
+    text-align: center;
+  }
+}
+
+/* ---------- WHY CHOOSE US ---------- */
+.crm-why {
+  padding: 100px 0;
+  background: #f8f8fa;
+}
+
+.crm-why__card {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  height: 100%;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 1px solid rgba(0, 0, 0, 0.04);
+}
+
+.crm-why__card:hover {
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+}
+
+.crm-why__icon {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gt-theme-2) 0%, #f7c46c 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 22px;
+}
+
+.crm-why__icon i {
+  font-size: 24px;
+  color: #fff;
+}
+
+.crm-why__card h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1C1C1C;
+  margin-bottom: 12px;
+}
+
+.crm-why__card p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .crm-why {
+    padding: 60px 0;
+  }
+}
+
+/* ---------- OVERRIDE for service-details-area (backward compat) ---------- */
 .service-details-area p,
 .service-details-area p span {
   font-weight: normal !important;
@@ -26625,7 +27053,6 @@ body.loaded {
   z-index: 2;
   text-align: center;
   width: 100%;
-
 }
 
 .service-header-content h1 {
@@ -26667,15 +27094,4 @@ body.loaded {
 .service-details-area .gt-hover-btn:hover {
   background-color: #222;
   color: #fff;
-}
-
-.mb-20 {
-  margin-bottom: 100px !important;
-}
-
-
-@media (max-width: 767px) {
-  .service-header-content h1 {
-    font-size: 1.5rem;
-  }
 }
