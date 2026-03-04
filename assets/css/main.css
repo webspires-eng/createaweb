@@ -524,8 +524,9 @@ Version: 1.0.0
 /* --------------------------------------------
     Template Default Fonts & Fonts Styles
  ---------------------------------------------- */
+
 body {
-  font-family: "Inter", sans-serif;
+  font-family: "Arial", sans-serif !important;
   font-size: 16px;
   font-weight: 400;
   line-height: 28px;
@@ -569,7 +570,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Anton", sans-serif;
+  font-family: "Arial", sans-serif !important;
   margin: 0px;
   padding: 0;
   color: var(--gt-header);
@@ -21821,20 +21822,20 @@ body.loaded {
   }
 }
 
-.service-details-wrapper {
+/* .service-details-wrapper {
   margin-top: 245px;
-}
+} */
 
 @media (max-width: 991px) {
-  .service-details-wrapper {
+  /* .service-details-wrapper {
     margin-top: 170px;
-  }
+  } */
 }
 
 @media (max-width: 767px) {
-  .service-details-wrapper {
+  /* .service-details-wrapper {
     margin-top: 150px;
-  }
+  } */
 }
 
 .service-details-wrapper .section-title {
@@ -26575,6 +26576,7 @@ body.loaded {
   margin-top: 30px;
   margin-bottom: 15px;
   font-size: 24px !important;
+  font-weight: 600;
 }
 
 .service-details-area h4 span {
@@ -26599,4 +26601,81 @@ body.loaded {
 
 .service-details-area ul li {
   margin-bottom: 10px;
+}
+
+.service-details-area .thumb {
+  position: relative;
+}
+
+.service-details-area .thumb:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.service-header-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+
+}
+
+.service-header-content h1 {
+  color: #fff;
+  font-size: clamp(20px, 4vw, 38px);
+  line-height: 1.2;
+}
+
+.service-header-content p {
+  color: #fff !important;
+  font-size: clamp(14px, 2vw, 16px);
+  line-height: 1.2;
+  margin: 10px 0;
+}
+
+.service-details-area img {
+  width: 90%;
+}
+
+.service-details-area .gt-hover-btn {
+  display: inline-block;
+  width: fit-content;
+  margin-top: 20px;
+  margin-inline: auto;
+  padding: 12px 30px;
+  background-color: var(--gt-theme-2);
+  color: var(--gt-white);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 0;
+}
+
+.service-details-area .gt-hover-btn:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.mb-20 {
+  margin-bottom: 100px !important;
+}
+
+
+@media (max-width: 767px) {
+  .service-header-content h1 {
+    font-size: 1.5rem;
+  }
 }

@@ -23,10 +23,10 @@ include 'include/header.html';
                         </h1>
                         <div class="hero-bottom">
                             <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".3s">
-                                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-twitter"></i></a>
-                                <a href="#"><i class="fab fa-vimeo-v"></i></a>
-                                <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                <a href="https://www.instagram.com/createa_web/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.facebook.com/profile.php?id=61583910927905" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                             <div class="content wow fadeInUp" data-wow-delay=".5s">
                                 <p class="text-justify">
@@ -553,7 +553,7 @@ include 'include/header.html';
             </div>
 
             <!-- Testimonial Section Start -->
-            <section class="testimonial-section-4 fix section-padding">
+            <!-- <section class="testimonial-section-4 fix section-padding">
                 <div class="container">
                     <div class="section-title5 style-4 text-center">
                         <h6 class="sub-title wow fadeInUp">
@@ -675,7 +675,7 @@ include 'include/header.html';
                         <div class="dot2"></div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Award Section Start -->
             <section class="award-section fix section-padding">
