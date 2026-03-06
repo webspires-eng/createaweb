@@ -16229,11 +16229,11 @@ span {
 }
 
 .header-section {
-  position: absolute;
+  position: relative;
   left: 0;
   top: 0;
   width: 100%;
-  background: transparent;
+  background: var(--gt-white);
   z-index: 9999;
 }
 

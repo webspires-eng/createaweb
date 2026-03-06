@@ -1,6 +1,6 @@
 <?php
-require_once 'include/db.php';
-include 'include/header.html';
+require_once '../include/db.php';
+include '../include/header.html';
 // $stmt = $pdo->query("SELECT * FROM services ORDER BY id DESC");
 // $services = $stmt->fetchAll();
 ?>
@@ -24,7 +24,7 @@ include 'include/header.html';
         <!-- Breadcrumb page Section Start -->
         <div class="breadcrumb-page-area-one style-2 pt-96 pb-150 fix">
             <div class="breadcrumb-page-wrap pt-250 pb-250"
-                style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./assets/img/pages/breadcrumbPageThumb1_1.png) center  ; ">
+                style="background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/img/pages/breadcrumbPageThumb1_1.png) center  ; ">
                 <div class="container">
                     <div class="gt-breadcrumb-wrapper mb-0">
                         <div class="title">Our service</div>
@@ -39,7 +39,7 @@ include 'include/header.html';
                 <div class="container">
                     <div class="content">
                         <div class="thumb">
-                            <img src="./assets/img/pages/servicePagelogo1_2.png" alt="shape">
+                            <img src="../assets/img/pages/servicePagelogo1_2.png" alt="shape">
                         </div>
 
                         <div class="text gt_text_invert">
@@ -70,7 +70,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258681_protection-security-rights-guarantee-illustration.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fa-solid fa-shield-check fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -92,10 +92,10 @@ include 'include/header.html';
                                             At CreateAweb, we help businesses unlock the full potential of Google Guarantee. one of the most trusted trust-building features available... </div>
 
                                     </a>
-                                    <div class="card-bottom-content"><a href="service-details?id=12">
+                                    <div class="card-bottom-content"><a href="services/google-guarantee.php">
                                         </a>
                                         <div class="simple-btn"><a href="services/google-guarantee.php">
-                                            </a><a href="service-details?id=12" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
+                                            </a><a href="services/google-guarantee.php" class="gt-hover-btn gt-hover-btn-item gt-btn-circle-2 d-flex align-items-center justify-content-center flex-column">
                                                 <span class="gt-btn-circle-text-2">details</span>
                                                 <i class="gt-btn-circle-dot"></i>
                                             </a>
@@ -119,7 +119,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258597_dynamic-website-hosting-concept.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fa-solid fa-server fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -167,7 +167,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258499_crm-business-company-strategy-marketing-concept.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fa-solid fa-users fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -216,7 +216,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258441_business-evaluation-information-growth-concept (1).jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fa-solid fa-chart-line fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -265,7 +265,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258366_friends-having-covid-party-using-technology.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fa-solid fa-calendar-star fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -314,7 +314,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258083_creative-team-having-discussion-social-media-application.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fab fa-facebook fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -363,7 +363,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258068_online-marketing-commercial-connection-technology.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fab fa-google fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -412,7 +412,7 @@ include 'include/header.html';
                                     <div class="avatars text-center">
                                         <!--                                                 <img src="./assets/uploads/1772258055_searching-engine-optimizing-seo-browsing-concept.jpg" alt="service image" style="width: 100%; border-radius: 10px; margin-top: 15px; height: 150px; object-fit: cover;">
                                              -->
-                                        <div class="mt-4 text-center"><i class="fas fa-cog fa-4x text-dark"></i></div>
+                                        <div class="mt-4 text-center"><i class="fa-solid fa-magnifying-glass-chart fa-4x text-dark"></i></div>
                                     </div>
 
                                     <div class="service-card-shape">
@@ -975,4 +975,4 @@ include 'include/header.html';
     </section>
 
     <!-- Brand Section End -->
-    <?php include 'include/footer.html'; ?>
+    <?php include '../include/footer.html'; ?>
