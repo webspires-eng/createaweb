@@ -37,7 +37,7 @@
                                         General Inquiries
                                     </div>
 
-                                    <a href="mailto:info@Createaweb.com">
+                                    <a href="mailto:info@createaweb.com">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -56,7 +56,7 @@
                                         Talk with us
                                     </div>
 
-                                    <a href="tel:+5284567592">
+                                    <a href="tel:+4407366164096">
                                         <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
                                             xmlns="http://www.w3.org/2000/svg">
                                             <g clip-path="url(#clip0_298_87)">
@@ -77,7 +77,7 @@
                                             </defs>
                                         </svg>
 
-                                        +(528) 456-7592
+                                        +44 07366164096
                                     </a>
                                 </div>
 

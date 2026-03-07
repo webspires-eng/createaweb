@@ -274,54 +274,7 @@
         </div>
         <!-- Work Process Section End -->
 
-        <!-- Accolades Section Start -->
-        <!-- <section class="accolades-area-two fix">
-            <div class="accolades-wrapper pb-150">
-                <div class="container">
-                    <div class="row gy-4">
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="accolades-card gt_fade_anim" data-delay=".3" data-fade-from="bottom">
-                                <div class="accolades-logo">
-                                    <img src="./assets/img/home-2/accolades/accoladesImage1_1.png" alt="thumb">
-                                </div>
 
-                                <h6 class="title text-justify">Proven client satisfaction and expertise</h6>
-                                <p class="text">With a 5-star rating on Clutch and over 62 reviews, our track record
-                                    reflects our
-                                    focus on effective, client-centric solutions.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="accolades-card gt_fade_anim" data-delay=".6" data-fade-from="bottom">
-                                <div class="accolades-logo">
-                                    <img src="./assets/img/home-2/accolades/accoladesImage1_2.png" alt="thumb">
-                                </div>
-
-                                <h6 class="title text-justify">Acknowledged web design excellence</h6>
-                                <p class="text">Awarded Honourable Mentions by Awwwards, highlighting our ability to
-                                    deliver
-                                    innovative and high-quality web designs.</p>
-                            </div>
-                        </div>
-
-                        <div class="col-xl-4 col-lg-6 col-md-6">
-                            <div class="accolades-card gt_fade_anim" data-delay=".9" data-fade-from="bottom">
-                                <div class="accolades-logo">
-                                    <img src="./assets/img/home-2/accolades/accoladesImage1_3.png" alt="thumb">
-                                </div>
-
-                                <h6 class="title text-justify">Celebrated for High-Impact Designe</h6>
-                                <p class="text">Our projects have earned ribbons on Behance, affirming our
-                                    reputation for
-                                    producing exceptional and inspiring digital experiences.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Accolades Section End -->
 
         <!-- About Section Start -->
         <div class="about-area fix">
@@ -1240,10 +1193,10 @@
 
                                         <div class="bottom-cta">
                                             <div class="client-data">
-                                                <div class="thumb">
+                                                <!-- <div class="thumb">
                                                     <img src="./assets/img/home-3/testimonial/testimonialThumb1_2.png"
                                                         alt="">
-                                                </div>
+                                                </div> -->
 
                                                 <div class="info-text">
                                                     <h4 class="name">Caroline Caldwell</h4>
@@ -1309,10 +1262,10 @@
 
                                         <div class="bottom-cta">
                                             <div class="client-data">
-                                                <div class="thumb">
+                                                <!-- <div class="thumb">
                                                     <img src="./assets/img/home-3/testimonial/testimonialThumb1_2.png"
                                                         alt="">
-                                                </div>
+                                                </div> -->
 
                                                 <div class="info-text">
                                                     <h4 class="name">Caroline Caldwell</h4>
@@ -1378,10 +1331,10 @@
 
                                         <div class="bottom-cta">
                                             <div class="client-data">
-                                                <div class="thumb">
+                                                <!-- <div class="thumb">
                                                     <img src="./assets/img/home-3/testimonial/testimonialThumb1_2.png"
                                                         alt="">
-                                                </div>
+                                                </div> -->
 
                                                 <div class="info-text">
                                                     <h4 class="name">Caroline Caldwell</h4>

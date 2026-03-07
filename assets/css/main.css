@@ -21038,7 +21038,7 @@ body.loaded {
   height: 100%;
   transition: all 0.6s ease;
   backface-visibility: hidden;
-  padding: 30px;
+  padding: 20px;
 }
 
 .service-area-one .service-wrapper .service-card .card-front {
@@ -21065,7 +21065,7 @@ body.loaded {
 
 .service-area-one .service-wrapper .service-card .card-front .title {
   color: var(--gt-black);
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 400;
   line-height: 40px;
@@ -21112,6 +21112,9 @@ body.loaded {
   display: flex;
   align-items: center;
   justify-content: end;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
 }
 
 .service-area-one .service-wrapper .service-card .card-back {
