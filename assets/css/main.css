@@ -26589,7 +26589,7 @@ body.loaded {
   position: absolute;
   inset: 0;
   width: 100%;
-  height: 100%;
+  height: 100% !important;
   object-fit: cover;
   z-index: 0;
 }
