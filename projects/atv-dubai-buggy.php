@@ -130,21 +130,21 @@
                     <p>Explore other projects from our portfolio</p>
                 </div>
                 <div class="more-projects-grid">
-                    <a href="smile-hair-transplant" class="mp-card fade-up">
+                    <a href="projects/smile-hair-transplant" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/09/WhatsApp-Image-2025-08-13-at-12.06.09-PM.jpeg" alt="Smile Hair Transplant" loading="lazy"><span class="mp-badge">Healthcare Website</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Smile Hair Transplant</div>
                             <p class="mp-excerpt">A modern destination for world-class dental and aesthetic treatments...</p>
                         </div>
                     </a>
-                    <a href="al-nafi-travels" class="mp-card fade-up">
+                    <a href="projects/al-nafi-travels" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/05/imgi_43_3.jpg" alt="Al Nafi Travels" loading="lazy"><span class="mp-badge">Travel & Visa</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Al Nafi Travels</div>
                             <p class="mp-excerpt">A professionally designed website for a travel and visa consultancy...</p>
                         </div>
                     </a>
-                    <a href="tailor-management-system" class="mp-card fade-up">
+                    <a href="projects/tailor-management-system" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2026/01/Screenshot-2026-01-03-at-4.28.34-PM-1024x474.png" alt="Tailor Management System" loading="lazy"><span class="mp-badge">Web Application</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Tailor Management System</div>

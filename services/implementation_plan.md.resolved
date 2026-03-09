@@ -1,0 +1,49 @@
+# Createaweb PHP to Laravel Conversion Plan
+
+## Source: `C:\Users\Akif Ullah\Desktop\WebSpires\createaweb` (Plain PHP)
+## Target: `C:\Users\Akif Ullah\Desktop\WebSpires\createa-web` (Laravel)
+
+## Pages to Convert
+1. **Home** (`index.php`) → `home` route - Hero, Work Process (DB: services), Portfolio, Services accordion, Marquee, Testimonials, Awards, Brands, Blog (DB: blogs)
+2. **About** (`about.php`) → `about` route - Breadcrumb hero, About section, Work Process, Accolades, Counter, Award tabs, Team slider
+3. **Services** (`service.php`) → `service` route - Hero, Service cards (DB: services), FAQ accordion, Brand marquee
+4. **Service Details** (`service-details.php`) → `service-details/{id}` route - (DB: services)
+5. **Projects** (`project.php`) → `project` route - Hero, Project slider (DB: projects), Contact form, CTA
+6. **Project Details** (`project-details.php`) → `project-details/{id}` route - (DB: projects)
+7. **Blog** (`blog.php`) → `blog` route - Blog list (DB: blogs)
+8. **Blog Details** (`blog-details.php`) → `blog-details/{id}` route - Blog detail + related (DB: blogs)
+9. **FAQ** (`faq.php`) → `faq` route - FAQ accordion (DB: faqs)
+10. **Contact** (`contact.php`) → `contact` route - Contact form, gallery
+11. **Team** (`team.php`) → `team` route
+12. **Team Details** (`team-details.php`) → `team-details` route
+13. **404** (`404.php`) → Laravel 404 handler
+
+## Database Tables Needed
+- `admins` (id, username, password)
+- `services` (id, title, icon, description, image)
+- `blogs` (id, title, content, author, thumb, created_at)
+- `projects` (id, title, category, description, image, created_at)
+- `faqs` (id, question, answer, created_at)
+
+## Assets to Copy
+- `assets/css/` → `public/assets/css/`
+- `assets/js/` → `public/assets/js/`
+- `assets/img/` → `public/assets/img/`
+- `assets/webfonts/` → `public/assets/webfonts/`
+- `assets/uploads/` → `public/assets/uploads/`
+
+## Laravel Structure
+- Layouts: `resources/views/layouts/app.blade.php` (header + footer)
+- Pages: `resources/views/pages/[page].blade.php`
+- Routes: `routes/web.php`
+- Models: `App\Models\Service`, `Blog`, `Project`, `Faq`
+- Migrations: For all tables
+- Controller: `PageController` for all pages
+
+## Key Conversions
+- `include 'include/header.html'` → `@extends('layouts.app')`
+- `include 'include/footer.html'` → Already in layout
+- `$pdo->query(...)` → Eloquent models
+- `htmlspecialchars()` → `{{ }}` Blade syntax
+- `assets/` paths → `{{ asset('assets/...') }}`
+- `.php` extensions → Named routes

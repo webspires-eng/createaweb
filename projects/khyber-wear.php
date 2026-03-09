@@ -132,21 +132,21 @@
                     <p>Explore other projects from our portfolio</p>
                 </div>
                 <div class="more-projects-grid">
-                    <a href="tailor-management-system" class="mp-card fade-up">
+                    <a href="projects/tailor-management-system" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2026/01/Screenshot-2026-01-03-at-4.28.34-PM-1024x474.png" alt="Tailor Management System" loading="lazy"><span class="mp-badge">Web Application</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Tailor Management System</div>
                             <p class="mp-excerpt">A digital solution designed to simplify daily tailoring operations...</p>
                         </div>
                     </a>
-                    <a href="atv-dubai-guide" class="mp-card fade-up">
+                    <a href="projects/atv-dubai-guide" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/09/IMG_6455.jpg" alt="ATV Dubai Guide" loading="lazy"><span class="mp-badge">Tourism Website</span></div>
                         <div class="mp-body">
                             <div class="mp-title">ATV Dubai Guide</div>
                             <p class="mp-excerpt">Experience your dream adventure with Atvdubaiguide — exceptional service...</p>
                         </div>
                     </a>
-                    <a href="al-nafi-travels" class="mp-card fade-up">
+                    <a href="projects/al-nafi-travels" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/05/imgi_43_3.jpg" alt="Al Nafi Travels" loading="lazy"><span class="mp-badge">Travel & Visa</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Al Nafi Travels</div>

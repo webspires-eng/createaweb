@@ -130,21 +130,21 @@
                     <p>Explore other projects from our portfolio</p>
                 </div>
                 <div class="more-projects-grid">
-                    <a href="tailor-management-system" class="mp-card fade-up">
+                    <a href="projects/tailor-management-system" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2026/01/Screenshot-2026-01-03-at-4.28.34-PM-1024x474.png" alt="Tailor Management System" loading="lazy"><span class="mp-badge">Web Application</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Tailor Management System</div>
                             <p class="mp-excerpt">A digital solution designed to simplify daily tailoring operations...</p>
                         </div>
                     </a>
-                    <a href="atv-dubai-buggy" class="mp-card fade-up">
+                    <a href="projects/atv-dubai-buggy" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/09/Canam-Maverick-2-Seater-2025-Model.jpg" alt="ATV Dubai Buggy" loading="lazy"><span class="mp-badge">Tourism Website</span></div>
                         <div class="mp-body">
                             <div class="mp-title">ATV Dubai Buggy</div>
                             <p class="mp-excerpt">Experience the ultimate Arabian Desert Safari with thrilling dune bashing...</p>
                         </div>
                     </a>
-                    <a href="smile-hair-transplant" class="mp-card fade-up">
+                    <a href="projects/smile-hair-transplant" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/09/WhatsApp-Image-2025-08-13-at-12.06.09-PM.jpeg" alt="Smile Hair Transplant" loading="lazy"><span class="mp-badge">Healthcare Website</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Smile Hair Transplant</div>

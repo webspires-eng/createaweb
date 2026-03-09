@@ -135,7 +135,7 @@
                     <p>Explore other projects from our portfolio</p>
                 </div>
                 <div class="more-projects-grid">
-                    <a href="atv-dubai-buggy" class="mp-card fade-up">
+                    <a href="projects/atv-dubai-buggy" class="mp-card fade-up">
                         <div class="mp-image">
                             <img src="https://webspires.com.pk/wp-content/uploads/2025/09/Canam-Maverick-2-Seater-2025-Model.jpg" alt="ATV Dubai Buggy" loading="lazy">
                             <span class="mp-badge">Tourism Website</span>
@@ -145,7 +145,7 @@
                             <p class="mp-excerpt">Experience the ultimate Arabian Desert Safari with thrilling dune bashing...</p>
                         </div>
                     </a>
-                    <a href="al-nafi-travels" class="mp-card fade-up">
+                    <a href="projects/al-nafi-travels" class="mp-card fade-up">
                         <div class="mp-image">
                             <img src="https://webspires.com.pk/wp-content/uploads/2025/05/imgi_43_3.jpg" alt="Al Nafi Travels" loading="lazy">
                             <span class="mp-badge">Travel & Visa</span>
@@ -155,7 +155,7 @@
                             <p class="mp-excerpt">A professionally designed website for a travel and visa consultancy...</p>
                         </div>
                     </a>
-                    <a href="khyber-wear" class="mp-card fade-up">
+                    <a href="projects/khyber-wear" class="mp-card fade-up">
                         <div class="mp-image">
                             <img src="https://webspires.com.pk/wp-content/uploads/2025/02/person-sitting-bed-with-laptop-1024x683.jpg" alt="Khyber Wear" loading="lazy">
                             <span class="mp-badge">E-Commerce</span>

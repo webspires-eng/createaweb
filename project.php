@@ -525,9 +525,9 @@
     <div id="smooth-content">
 
         <section class="projects-hero">
-            <div class="floating-dot" style="width:80px;height:80px;top:20%;left:10%;"></div>
+            <!-- <div class="floating-dot" style="width:80px;height:80px;top:20%;left:10%;"></div>
             <div class="floating-dot" style="width:40px;height:40px;top:60%;right:15%;animation-delay:2s;"></div>
-            <div class="floating-dot" style="width:60px;height:60px;bottom:20%;left:30%;animation-delay:4s;"></div>
+            <div class="floating-dot" style="width:60px;height:60px;bottom:20%;left:30%;animation-delay:4s;"></div> -->
             <div class="container">
                 <div class="hero-badge fade-up"><span class="dot"></span> Our Portfolio</div>
                 <h1 class="fade-up">Our <span>Projects</span></h1>
@@ -536,18 +536,7 @@
             <div class="grid-pattern"></div>
         </section>
 
-        <section class="projects-filter-section">
-            <div class="container">
-                <div class="filter-bar fade-up">
-                    <button class="filter-btn active" data-filter="all">All Projects</button>
-                    <button class="filter-btn" data-filter="web-application">Web Application</button>
-                    <button class="filter-btn" data-filter="healthcare-website">Healthcare Website</button>
-                    <button class="filter-btn" data-filter="tourism-website">Tourism Website</button>
-                    <button class="filter-btn" data-filter="travel-and-visa">Travel &amp; Visa</button>
-                    <button class="filter-btn" data-filter="e-commerce">E-Commerce</button>
-                </div>
-            </div>
-        </section>
+
 
         <section class="projects-grid-section">
             <div class="container">

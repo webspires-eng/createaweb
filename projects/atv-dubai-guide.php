@@ -130,21 +130,21 @@
                     <p>Explore other projects from our portfolio</p>
                 </div>
                 <div class="more-projects-grid">
-                    <a href="atv-dubai-buggy" class="mp-card fade-up">
+                    <a href="projects/atv-dubai-buggy" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/09/Canam-Maverick-2-Seater-2025-Model.jpg" alt="ATV Dubai Buggy" loading="lazy"><span class="mp-badge">Tourism Website</span></div>
                         <div class="mp-body">
                             <div class="mp-title">ATV Dubai Buggy</div>
                             <p class="mp-excerpt">Experience the ultimate Arabian Desert Safari with thrilling dune bashing...</p>
                         </div>
                     </a>
-                    <a href="smile-hair-transplant" class="mp-card fade-up">
+                    <a href="projects/smile-hair-transplant" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/09/WhatsApp-Image-2025-08-13-at-12.06.09-PM.jpeg" alt="Smile Hair Transplant" loading="lazy"><span class="mp-badge">Healthcare Website</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Smile Hair Transplant</div>
                             <p class="mp-excerpt">A modern destination for world-class dental and aesthetic treatments...</p>
                         </div>
                     </a>
-                    <a href="khyber-wear" class="mp-card fade-up">
+                    <a href="projects/khyber-wear" class="mp-card fade-up">
                         <div class="mp-image"><img src="https://webspires.com.pk/wp-content/uploads/2025/02/person-sitting-bed-with-laptop-1024x683.jpg" alt="Khyber Wear" loading="lazy"><span class="mp-badge">E-Commerce</span></div>
                         <div class="mp-body">
                             <div class="mp-title">Khyber Wear</div>
