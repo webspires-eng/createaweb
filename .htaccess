@@ -3,14 +3,14 @@ DirectoryIndex index.php
 
 ErrorDocument 404 /createaweb/404.php
 
-# Redirect .php → clean URL
-RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[\s?] [NC]
+# Redirect .php to clean URL
+RewriteCond %{THE_REQUEST} \s/createaweb/([^\s]+?)\.php[\s?] [NC]
 RewriteRule ^ %1 [R=301,L]
 
-# Internally load .php
+# Internally rewrite clean URL to .php
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ $1.php [L]
+RewriteRule ^([^/]+)$ $1.php [L]
 
 <IfModule mod_deflate.c>
 AddOutputFilterByType DEFLATE text/plain text/html text/xml text/css application/xml application/javascript image/svg+xml
