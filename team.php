@@ -77,76 +77,78 @@ $teams = $stmt->fetchAll();
             <div class="swiper team-slider-active">
                 <div class="swiper-wrapper">
                     <?php foreach ($teams as $member): ?>
-                            <div class="swiper-slide">
-                                <div class="team-card">
-                                    <div class="team-member-info">
-                                        <div class="name"><a class="text-black" href="#"><?php echo htmlspecialchars($member['name']); ?></a></div>
-                                        <p class="designation text-black"><?php echo htmlspecialchars($member['designation']); ?></p>
-                                    </div>
-                                    <div class="thumb">
-                                        <?php if ($member['image']): ?>
-                                                <img class="thumb-1" src="./<?php echo $member['image']; ?>" alt="thumb" style="width: 100%; height: 400px; object-fit: cover;">
-                                                <img class="thumb-2" src="./<?php echo $member['image']; ?>" alt="thumb" style="width: 100%; height: 400px; object-fit: cover;">
-                                        <?php else: ?>
-                                                <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
-                                                <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
-                                        <?php endif; ?>
+                        <div class="swiper-slide">
+                            <div class="team-card">
+                                <div class="team-member-info">
+                                    <div class="name"><a class="text-black" href="#"><?php echo htmlspecialchars($member['name']); ?></a></div>
+                                    <p class="designation text-black"><?php echo htmlspecialchars($member['designation']); ?></p>
+                                </div>
+                                <div class="thumb">
+                                    <?php if ($member['image']): ?>
+                                        <img class="thumb-1" src="./<?php echo $member['image']; ?>" alt="thumb" style="width: 100%; height: 400px; object-fit: cover;">
+                                        <img class="thumb-2" src="./<?php echo $member['image']; ?>" alt="thumb" style="width: 100%; height: 400px; object-fit: cover;">
+                                    <?php else: ?>
+                                        <img class="thumb-1" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
+                                        <img class="thumb-2" src="./assets/img/home-2/team/teamThumb1_2.png" alt="thumb">
+                                    <?php endif; ?>
 
-                                        <div class="social-links">
-                                            <ul>
-                                                <?php if ($member['facebook']): ?>
-                                                    <li>
-                                                        <a href="<?php echo htmlspecialchars($member['facebook']); ?>">
-                                                            <i class="fab fa-facebook-f"></i>
-                                                        </a>
-                                                    </li>
-                                                <?php endif; ?>
-                                                <?php if ($member['twitter']): ?>
-                                                    <li>
-                                                        <a href="<?php echo htmlspecialchars($member['twitter']); ?>">
-                                                            <i class="fab fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                <?php endif; ?>
-                                                <?php if ($member['linkedin']): ?>
-                                                    <li>
-                                                        <a href="<?php echo htmlspecialchars($member['linkedin']); ?>">
-                                                            <i class="fab fa-linkedin-in"></i>
-                                                        </a>
-                                                    </li>
-                                                <?php endif; ?>
-                                                <?php if ($member['instagram']): ?>
-                                                    <li>
-                                                        <a href="<?php echo htmlspecialchars($member['instagram']); ?>">
-                                                            <i class="fab fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                <?php endif; ?>
-                                            </ul>
-                                        </div>
+                                    <div class="social-links">
+                                        <ul>
+                                            <?php if ($member['facebook']): ?>
+                                                <li>
+                                                    <a href="<?php echo htmlspecialchars($member['facebook']); ?>">
+                                                        <i class="fab fa-facebook-f"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
+                                            <?php if ($member['twitter']): ?>
+                                                <li>
+                                                    <a href="<?php echo htmlspecialchars($member['twitter']); ?>">
+                                                        <i class="fab fa-twitter"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
+                                            <?php if ($member['linkedin']): ?>
+                                                <li>
+                                                    <a href="<?php echo htmlspecialchars($member['linkedin']); ?>">
+                                                        <i class="fab fa-linkedin-in"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
+                                            <?php if ($member['instagram']): ?>
+                                                <li>
+                                                    <a href="<?php echo htmlspecialchars($member['instagram']); ?>">
+                                                        <i class="fab fa-instagram"></i>
+                                                    </a>
+                                                </li>
+                                            <?php endif; ?>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        <?php endforeach; ?>
-                        
-                        <?php if (empty($teams)): ?>
-                            <div class="container"><p class="text-center">No team members found.</p></div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-
-                <div class="team-page-thumb mt-75 fix">
-                    <div class="container">
-                        <div class="thumb img-container">
-                            <img src="./assets/img/pages/teamPageShape1_1.png" alt="thumb">
                         </div>
+                    <?php endforeach; ?>
+
+                    <?php if (empty($teams)): ?>
+                        <div class="container">
+                            <p class="text-center">No team members found.</p>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+
+            <div class="team-page-thumb mt-75 fix">
+                <div class="container">
+                    <div class="thumb img-container">
+                        <img src="./assets/img/pages/teamPageShape1_1.png" alt="thumb">
                     </div>
                 </div>
             </div>
-            <!-- Our Team Section  End-->
+        </div>
+        <!-- Our Team Section  End-->
 
-            <!-- Contact Section Start -->
-            <div class="contact-form-area">
+        <!-- Contact Section Start -->
+        <!-- <div class="contact-form-area">
                 <div class="contact-form-wrapper pt-150 pb-150">
                     <div class="container">
                         <div class="row gy-5">
@@ -226,7 +228,7 @@ $teams = $stmt->fetchAll();
                         </div>
                     </div>
                 </div>
-            </div>
-            <!-- Contact Section Start -->
+            </div> -->
+        <!-- Contact Section Start -->
 
-            <?php include 'include/footer.html'; ?>
+        <?php include 'include/footer.html'; ?>

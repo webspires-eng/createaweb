@@ -24,12 +24,12 @@ include 'include/header.html';
                         <div class="hero-bottom">
                             <div class="social-icon d-flex align-items-center wow fadeInUp" data-wow-delay=".3s">
                                 <a href="https://www.instagram.com/createa_web/" target="_blank"><i class="fab fa-instagram"></i></a>
-                                <a href="https://www.facebook.com/profile.php?id=61583910927905" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                <a href="#"><i class="fab fa-tiktok"></i></a>
+                                <a href="https://www.facebook.com/Createawebltd/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="https://www.tiktok.com/@createaweb?lang=en-GB" target="_blank"><i class="fab fa-tiktok"></i></a>
                                 <a href="#"><i class="fab fa-linkedin-in"></i></a>
                             </div>
                             <div class="content wow fadeInUp" data-wow-delay=".5s">
-                                <p class="text-justify">
+                                <p class="">
                                     We help companies turn data into direction. By uncovering actionable insights, we
                                     identify growth opportunities, reduce risk, and empower smarter decisions that drive
                                     sustainable, long-term success.
@@ -209,7 +209,7 @@ include 'include/header.html';
             </section> -->
 
             <!-- Service Section Start -->
-            <section class="service-section-4 fix section-padding pt-0">
+            <!-- <section class="service-section-4 fix section-padding pt-0">
                 <div class="container">
                     <div class="row justify-content-center">
                         <div class="col-lg-6">
@@ -414,7 +414,7 @@ include 'include/header.html';
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
 
             <!-- Marquee Section Start -->
             <div class="marquee-section2 style-marque-5">

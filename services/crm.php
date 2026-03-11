@@ -302,7 +302,7 @@ include __DIR__ . '/../include/header.html';
         </section>
 
         <!-- ===== CONTACT SECTION ===== -->
-        <div class="contact-form-area">
+        <!-- <div class="contact-form-area">
             <div class="contact-form-wrapper pt-150 pb-150">
                 <div class="container">
                     <div class="row gy-5">
@@ -372,6 +372,6 @@ include __DIR__ . '/../include/header.html';
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
         <?php include __DIR__ . '/../include/footer.html'; ?>

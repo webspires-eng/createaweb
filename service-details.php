@@ -65,7 +65,7 @@ if (!$service) {
         </div>
 
         <!-- Contact Section Start -->
-        <div class="contact-form-area">
+        <!-- <div class="contact-form-area">
             <div class="contact-form-wrapper pt-150 pb-150">
                 <div class="container">
                     <div class="row gy-5">
@@ -145,7 +145,7 @@ if (!$service) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Contact Section Start -->
 
         <?php include 'include/footer.html'; ?>
