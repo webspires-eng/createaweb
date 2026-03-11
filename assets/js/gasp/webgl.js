@@ -1,6 +1,10 @@
 
 class WebGL {
     constructor(e) {
+            // Guard: only proceed if #canvas-slider exists on this page
+            const container = document.getElementById("canvas-slider");
+            if (!container) return;
+
             (this.scene = new THREE.Scene()),
             (this.vertex = "varying vec2 vUv;void main() {vUv = uv;gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );}"),
             (this.material = e.material),
@@ -12,7 +16,7 @@ class WebGL {
             this.renderer.setPixelRatio(window.devicePixelRatio),
             this.renderer.setSize(this.width, this.height),
             this.renderer.setClearColor(2303786, 1),
-            (this.container = document.getElementById("canvas-slider")),
+            (this.container = container),
             (this.images = Array.from(document.querySelectorAll(".slide-img"))),
             (this.width = this.container.offsetWidth),
             (this.height = this.container.offsetHeight),
